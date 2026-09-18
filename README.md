@@ -11,7 +11,7 @@
 
 **A community project for running Red Hat Enterprise Linux under WSL2 and exploring full Linux desktop environments on Windows.**
 
-<img src="wallpapers/RVMtJ.jpg" alt="Red Hat Enterprise Linux 10" width="920">
+<img src="assets/redhat-readme-header.jpg" alt="Red Hat Enterprise Linux 10.2 with KDE Plasma 6 on WSL2" width="920">
 
 </div>
 
@@ -640,3 +640,4 @@ This keeps the main page clean while allowing each desktop environment to have a
 Built as a community WSL desktop project by [vinberg88](https://github.com/vinberg88).
 
 </div>
+\n\n<div align="center">\n<img src="assets/redhat-readme-footer.jpg" alt="Red Hat WSL project footer — KDE 6, Flatpak, Snap, VS Code and more" width="920">\n</div>\n
