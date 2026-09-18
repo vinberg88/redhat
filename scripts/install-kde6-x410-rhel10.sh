@@ -10,7 +10,7 @@
 
 set -euo pipefail
 
-VERSION="0.1.1"
+VERSION="0.1.2"
 SYSTEM_LAUNCHER="/usr/local/bin/kde6-x410"
 LEGACY_LAUNCHER="$HOME/.local/bin/kde6-x410"
 STATE_DIR="$HOME/.local/state/kde6-x410"
@@ -64,7 +64,7 @@ cat > "$TMP_LAUNCHER" <<'LAUNCHER_EOF'
 
 set -u
 
-VERSION="0.1.1"
+VERSION="0.1.2"
 STATE_DIR="$HOME/.local/state/kde6-x410"
 LOG_FILE="$STATE_DIR/session.log"
 PID_FILE="$STATE_DIR/session.pid"
@@ -161,8 +161,48 @@ running() {
     pgrep -u "$(id -u)" -x kwin_x11 >/dev/null 2>&1
 }
 
+failed_user_units() {
+    systemctl --user --failed --no-legend --plain 2>/dev/null | awk 'NF {print $1}'
+}
+
+is_known_wsl_warning() {
+    local unit="$1"
+
+    case "$unit" in
+        app-nvidia*settings*|app-sealertauto*|obex.service|uresourced.service)
+            return 0
+            ;;
+        *)
+            return 1
+            ;;
+    esac
+}
+
 doctor() {
     setup_env || return 1
+
+    local user_systemd
+    local failed_count=0
+    local known_warning_count=0
+    local plasma_failed_count=0
+    local unit
+
+    user_systemd="$(systemctl --user is-system-running 2>/dev/null || true)"
+
+    while IFS= read -r unit; do
+        [[ -z "$unit" ]] && continue
+        ((failed_count++))
+
+        if is_known_wsl_warning "$unit"; then
+            ((known_warning_count++))
+        fi
+
+        case "$unit" in
+            plasma-*|app-org.kde.*|app-systemsettings*|app-org.kde.konsole*)
+                ((plasma_failed_count++))
+                ;;
+        esac
+    done < <(failed_user_units)
 
     echo
     echo "   RHEL KDE6 X410 $VERSION"
@@ -173,7 +213,23 @@ doctor() {
     printf "%-26s %s\n" "User:" "$(whoami)"
     printf "%-26s %s\n" "UID:" "$(id -u)"
     printf "%-26s %s\n" "PID 1:" "$(ps -p 1 -o comm=)"
-    printf "%-26s %s\n" "User systemd:" "$(systemctl --user is-system-running 2>/dev/null || true)"
+
+    if [[ "$user_systemd" == "degraded" && "$failed_count" -gt 0 && "$failed_count" -eq "$known_warning_count" ]]; then
+        printf "%-26s %s\n" "User systemd:" "degraded (WSL warnings only)"
+    else
+        printf "%-26s %s\n" "User systemd:" "$user_systemd"
+    fi
+
+    printf "%-26s %s\n" "Failed user units:" "$failed_count"
+
+    if [[ "$known_warning_count" -gt 0 ]]; then
+        printf "%-26s %s\n" "Known WSL warnings:" "$known_warning_count"
+    fi
+
+    if [[ "$plasma_failed_count" -gt 0 ]]; then
+        printf "%-26s %s\n" "Failed Plasma units:" "$plasma_failed_count"
+    fi
+
     printf "%-26s %s\n" "X410 DISPLAY:" "$DISPLAY"
 
     if check_x410; then
@@ -202,9 +258,30 @@ doctor() {
         printf "%-26s %s\n" "Plasma session:" "stopped"
     fi
 
-    echo
-}
+    if check_x410 >/dev/null 2>&1 &&
+       command -v startplasma-x11 >/dev/null 2>&1 &&
+       command -v kwin_x11 >/dev/null 2>&1 &&
+       command -v plasmashell >/dev/null 2>&1 &&
+       [[ "$plasma_failed_count" -eq 0 ]]; then
+        if [[ "$failed_count" -eq 0 ]]; then
+            printf "%-26s %s\n" "Status:" "READY"
+        elif [[ "$failed_count" -eq "$known_warning_count" ]]; then
+            printf "%-26s %s\n" "Status:" "READY WITH WSL WARNINGS"
+        else
+            printf "%-26s %s\n" "Status:" "READY WITH WARNINGS"
+        fi
+    else
+        printf "%-26s %s\n" "Status:" "CHECK REQUIRED"
+    fi
 
+    echo
+
+    if [[ "${1:-}" == "--verbose" && "$failed_count" -gt 0 ]]; then
+        echo "Failed user units:"
+        systemctl --user --failed --no-pager -l
+        echo
+    fi
+}
 start_session() {
     setup_env || exit 1
 
@@ -311,7 +388,7 @@ case "${1:-doctor}" in
         start_session
         ;;
     doctor|status)
-        doctor
+        doctor "${2:-}"
         ;;
     log)
         show_log
@@ -325,6 +402,7 @@ case "${1:-doctor}" in
         echo "  kde6-x410 stop"
         echo "  kde6-x410 restart"
         echo "  kde6-x410 doctor"
+        echo "  kde6-x410 doctor --verbose"
         echo "  kde6-x410 log"
         exit 1
         ;;
@@ -365,5 +443,6 @@ echo
 echo "Other commands:"
 echo "  kde6-x410 stop"
 echo "  kde6-x410 restart"
+echo "  kde6-x410 doctor --verbose"
 echo "  kde6-x410 log"
 echo
