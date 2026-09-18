@@ -10,7 +10,7 @@
 
 set -euo pipefail
 
-VERSION="0.1.2"
+VERSION="0.1.3"
 SYSTEM_LAUNCHER="/usr/local/bin/kde6-x410"
 LEGACY_LAUNCHER="$HOME/.local/bin/kde6-x410"
 STATE_DIR="$HOME/.local/state/kde6-x410"
@@ -64,7 +64,7 @@ cat > "$TMP_LAUNCHER" <<'LAUNCHER_EOF'
 
 set -u
 
-VERSION="0.1.2"
+VERSION="0.1.3"
 STATE_DIR="$HOME/.local/state/kde6-x410"
 LOG_FILE="$STATE_DIR/session.log"
 PID_FILE="$STATE_DIR/session.pid"
@@ -185,6 +185,7 @@ doctor() {
     local failed_count=0
     local known_warning_count=0
     local plasma_failed_count=0
+    local audio_ok=0
     local unit
 
     user_systemd="$(systemctl --user is-system-running 2>/dev/null || true)"
@@ -247,6 +248,7 @@ doctor() {
     done
 
     if [[ -S /mnt/wslg/PulseServer ]]; then
+        audio_ok=1
         printf "%-26s %s\n" "WSLg audio socket:" "yes"
     else
         printf "%-26s %s\n" "WSLg audio socket:" "no"
@@ -263,7 +265,13 @@ doctor() {
        command -v kwin_x11 >/dev/null 2>&1 &&
        command -v plasmashell >/dev/null 2>&1 &&
        [[ "$plasma_failed_count" -eq 0 ]]; then
-        if [[ "$failed_count" -eq 0 ]]; then
+        if [[ "$audio_ok" -eq 0 && "$failed_count" -eq 0 ]]; then
+            printf "%-26s %s\n" "Status:" "READY WITH AUDIO WARNING"
+        elif [[ "$audio_ok" -eq 0 && "$failed_count" -eq "$known_warning_count" ]]; then
+            printf "%-26s %s\n" "Status:" "READY WITH WSL/AUDIO WARNINGS"
+        elif [[ "$audio_ok" -eq 0 ]]; then
+            printf "%-26s %s\n" "Status:" "READY WITH WARNINGS"
+        elif [[ "$failed_count" -eq 0 ]]; then
             printf "%-26s %s\n" "Status:" "READY"
         elif [[ "$failed_count" -eq "$known_warning_count" ]]; then
             printf "%-26s %s\n" "Status:" "READY WITH WSL WARNINGS"
