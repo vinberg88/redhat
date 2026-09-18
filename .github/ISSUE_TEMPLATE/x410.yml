@@ -1,0 +1,36 @@
+name: X410 / display
+description: X410 is not reachable, windows open on the wrong server, mixed WSLg
+title: "[x410] "
+labels: ["x410"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this when DISPLAY is wrong, X410 does not accept WSL clients, or apps leak to WSLg.
+  - type: input
+    id: display
+    attributes:
+      label: DISPLAY value
+      placeholder: "172.x.x.x:0.0"
+  - type: dropdown
+    id: reachable
+    attributes:
+      label: Does `kde6-x410 doctor` say X410 is reachable?
+      options:
+        - Yes
+        - No
+        - Did not run doctor
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Extra checks
+      description: "Useful: X410 allow public/WSL connections, Windows firewall, `echo $DISPLAY $WAYLAND_DISPLAY`"
+      render: text

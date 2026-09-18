@@ -1,0 +1,23 @@
+{
+  "name": "RHEL 10.2 WSL",
+  "background": "#06101F",
+  "foreground": "#EEF7FF",
+  "cursorColor": "#FFD34E",
+  "selectionBackground": "#0D4D8C",
+  "black": "#041526",
+  "red": "#F97316",
+  "green": "#84CC16",
+  "yellow": "#FFD34E",
+  "blue": "#4DA3FF",
+  "purple": "#A855F7",
+  "cyan": "#22D3EE",
+  "white": "#EEF7FF",
+  "brightBlack": "#7AA0C2",
+  "brightRed": "#FDBA74",
+  "brightGreen": "#BEF264",
+  "brightYellow": "#FFE37A",
+  "brightBlue": "#7EC8FF",
+  "brightPurple": "#D8B4FE",
+  "brightCyan": "#67E8F9",
+  "brightWhite": "#FFFFFF"
+}
