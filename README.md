@@ -4,7 +4,7 @@
 
 # Red Hat Enterprise Linux on WSL - REDHAT 10
 
-## Sister WSL desktop projects
+Sister WSL desktop projects for WSL
 
 | Distro | Repo |
 |---|---|
