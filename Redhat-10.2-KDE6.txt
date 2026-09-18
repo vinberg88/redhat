@@ -1,9 +1,11 @@
 Redhat 10.2 and KDE 6 - Install KDE 6 via Redhat 10 - WSL - X410 - Windows 11 - Linux - 2026
 
-How to install KDE 6 via Red Hat Enterprise Linux 10.2 - TEXT - for WSL.
-Comming Zone….
+How to install KDE 6 via Red Hat Enterprise Linux 10.2 - TEXT VIA GITHUB for WSL.
+https://github.com/vinberg88/redhat/blob/main/Redhat-10.2-KDE6.txt
 
-How to install KDE 6 via Red Hat Enterprise Linux 10.2 - MOVIE - for WSL.
+Go here for more info - RedHat WSL - GITHUB Guide - https://github.com/vinberg88/redhat
+
+How to install KDE 6 via Red Hat Enterprise Linux 10.2 - MOVIE VIA YOUTUBE for WSL.
 Comming Zone….
 
 Download Redhat 10.2 Enterprise via this link: https://console.redhat.com/insights/image-builder
@@ -40,6 +42,9 @@ https://apps.microsoft.com/detail/9pm8lp83g3l3?hl=en-US&gl=US
 Raft WSL is a powerful tool for managing Windows Subsystem Linux Distros.
 https://apps.microsoft.com/detail/9msmjqd017x7?hl=en-US&gl=US
 
+WSL UI - This tool is free and works like Raft WSL for WSL.
+https://apps.microsoft.com/detail/9p8548knj2m9?hl=sv-SE&gl=SE
+
 About Red Hat Enterprise Linux 10.2 - https://www.Redhat.com/en
 
 Red Hat is the leading provider of enterprise open source
@@ -67,7 +72,7 @@ responsibly, we continue to be a catalyst in open
 source communities, helping you build flexible, powerful
 IT infrastructure solutions.
 
-About KDE 6 - https://kde.org
+About KDE 6 for REDHAT 10.2 - https://kde.org
 
 KDE Plasma is a modern, feature-rich desktop environment 
 for Linux-based operating systems. Known for its 
@@ -79,13 +84,19 @@ Find More Stuff for WSL and Linux. Desktops for WSL - https://github.com/vinberg
 
 ABOUT WSL for WINDOWS via GITHUB - MY PAGE - https://vinberg88.github.io
 
+New page for project - WSL - https://github.com/vinberg88
+
 WSL stands for Windows Subsystem for Linux, a feature of Windows that
 allows users to run a Linux environment directly on their Windows
 machine without needing a separate virtual machine or dual-booting.
 
---------------------------------
+More info - RedHat WSL - GITHUB Guide - https://github.com/vinberg88/redhat
+
+------------------------------------------------------
 
 TIME TO START INSTALL OF KDE 6 AND Red Hat Enterprise Linux 10.2 VIA WINDOWS 11 - WSL
+
+DOWNLOAD REDHAT 10 FROM THIS ADRESS AND PRESS BLUB ICON: https://console.redhat.com/insights/image-builder
 
 ------------------------------------------------------
 
@@ -112,11 +123,11 @@ after that set password for user and root...
 passwd adolf
 passwd root
 
------------------------------------
+------------------------------------------------------
 
 Restart Redhat 10.2 and login as normal user - Restart Redhat 10.2 and login as normal user.
 
------------------------------------
+------------------------------------------------------
 
 Add this Repos to terminal for Redhat 10.2
 
@@ -133,13 +144,13 @@ sudo rpmkeys --import /usr/share/distribution-gpg-keys/rpmfusion/RPM-GPG-KEY-rpm
 sudo dnf --setopt=localpkg_gpgcheck=1 install https://mirrors.rpmfusion.org/free/el/rpmfusion-free-release-$(rpm -E %rhel).noarch.rpm
 sudo dnf --setopt=localpkg_gpgcheck=1 install https://mirrors.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-$(rpm -E %rhel).noarch.rpm
 
------------------------------------
+------------------------------------------------------
 
 Paste in terminal - Update RedHat 10.2
 
 sudo dnf upgrade --refresh
 
------------------------------------
+------------------------------------------------------
 
 Basic Programs för KDE 6 and RedHat 10.2 - Install all programs.
 
@@ -152,7 +163,7 @@ sudo dnf install dconf* git wget curl nano bash pipx net-tools dbus-x11 dbus* -y
 sudo dnf install curl git bash librepo pip -y --allowerasing --skip-broken --nobest -y
 sudo dnf group install "System-Tools" --allowerasing --nobest --skip-broken -y
 
------------------------------------
+------------------------------------------------------
 
 Get kwin and tools for KDE 6 and REDHAT 10.2
 
@@ -164,7 +175,31 @@ sudo dnf install kwin-x11 plasma-workspace-x11 xsetroot
 
 sudo echo -e "DESKTOP=KDE\nPREFERRED=startplasma-x11" > sudo /etc/sysconfig/desktop
 
------------------------------------
+------------------------------------------------------
+
+                                            RedHat WSL - GITHUB - https://github.com/vinberg88/redhat 🔟
+
+           .MMM..:MMMMMMM                   Host: Windows Subsystem for Linux - RedHatEnterpriseLinux-10.2 (2.9.12.0)
+          MMMMMMMMMMMMMMMMMM                
+          MMMMMMMMMMMMMMMMMMMM.             Kernel: Linux 6.18.40.1-microsoft-standard-WSL2
+         MMMMMMMMMMMMMMMMMMMMMM             
+        ,MMMMMMMMMMMMMMMMMMMMMM:            MEDIA MATTIAS VINBERG - STOCKHOLM - SWEDEN - 2026 - REDHAT INC
+        MMMMMMMMMMMMMMMMMMMMMMMM            
+  .MMMM'  MMMMMMMMMMMMMMMMMMMMMM            OS: Windows 11 Pro for Workstations (25H2) x86_64 
+ MMMMMM    `MMMMMMMMMMMMMMMMMMMM.           
+MMMMMMMM      MMMMMMMMMMMMMMMMMM .          FIND ME ON GITHUB - WSL - https://github.com/vinberg88
+MMMMMMMMM.       `MMMMMMMMMMMMM' MM.        
+MMMMMMMMMMM.                     MMMM       More desktops for WSL: https://github.com/vinberg88/opensuse
+`MMMMMMMMMMMMM.                 ,MMMMM.     
+ `MMMMMMMMMMMMMMMMM.          ,MMMMMMMM.    Mail: mattiasvinberg@duck.com
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    
+      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:    OS: Red Hat Enterprise Linux 10.2 (Coughlan) x86_64
+         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     
+            `MMMMMMMMMMMMMMMMMMMMMMMM:      Wsl info page - https://vinberg88.github.io
+                ``MMMMMMMMMMMMMMMMM'                                                                                      
+                                            WM: WSLg 1.0.79 (Wayland)
+
+------------------------------------------------------
 
 Install KDE 6 for Red Hat Enterprise Linux 10.2
 
@@ -176,13 +211,13 @@ sudo dnf groupinstall "KDE Applications" -y
 
 sudo systemctl daemon-reload
 
------------------------------------
+------------------------------------------------------
 
 Install qt5 / qt6 and ffmpeg for Red Hat Enterprise Linux 10.2 and KDE 6 desktop
 
 sudo dnf install qt6* qt5* ffmpeg* x11* xorg* weston* mesa* wayland* -y --allowerasing --nobest --skip-broken
 
------------------------------------
+------------------------------------------------------
 
 Install fastfetch - like Neofetch but faster for RedHat 10.2 and kde 6
 
@@ -227,14 +262,14 @@ Install CODE Visual studio code - 2026 - Microsoft - RedHat 10.2
 wget https://www.knulla.org/scripts/code-1.95.3-1731513157.el8.x86_64.rpm
 sudo dnf install ./code-1.95.3-1731513157.el8.x86_64.rpm -y
 
------------------------------------
+------------------------------------------------------
 
 Listen to sounds -- Blanket -- RedHat 10.2 -- KDE 6 -- 2026
 
 wget https://www.swehub.com/blanket/blanket-0.8.0-1.noarch.rpm
 sudo dnf install ./blanket-0.8.0-1.noarch.rpm -y
 
------------------------------------
+------------------------------------------------------
 
 Install Snapd for RedHat 10.2.
 
@@ -247,11 +282,11 @@ sudo systemctl enable snapd.socket --now
 sudo systemctl enable snapd
 sudo ln -s /var/lib/snapd/snap /snap
 
------------------------------------
+------------------------------------------------------
 
 Restart REDHAT 10 - RESTART redhat 10 - RESTART redhat 🔟 
 
------------------------------------
+------------------------------------------------------
 
 Continue installing snapd Programs for Redhat 10.2
 
@@ -309,7 +344,7 @@ sudo snap install gtk-theme-breeze
 
 Find More Programs for REDHAT vua snapd - https://snapcraft.io
 
------------------------------------
+------------------------------------------------------
 
 Install LibreOffice for RedHat 10.2 via flatpak
 
@@ -338,6 +373,30 @@ Gimp for REDHAT 10.2.
 sudo dnf copr enable jridky/gimp10 rhel-10-x86_64 -y
 
 sudo dnf install gimp -y
+
+-------------------------------------------------------------
+
+                                            RedHat WSL - GITHUB - https://github.com/vinberg88/redhat 🔟
+
+           .MMM..:MMMMMMM                   Host: Windows Subsystem for Linux - RedHatEnterpriseLinux-10.2 (2.9.12.0)
+          MMMMMMMMMMMMMMMMMM                
+          MMMMMMMMMMMMMMMMMMMM.             Kernel: Linux 6.18.40.1-microsoft-standard-WSL2
+         MMMMMMMMMMMMMMMMMMMMMM             
+        ,MMMMMMMMMMMMMMMMMMMMMM:            MEDIA MATTIAS VINBERG - STOCKHOLM - SWEDEN - 2026 - REDHAT INC
+        MMMMMMMMMMMMMMMMMMMMMMMM            
+  .MMMM'  MMMMMMMMMMMMMMMMMMMMMM            OS: Windows 11 Pro for Workstations (25H2) x86_64 
+ MMMMMM    `MMMMMMMMMMMMMMMMMMMM.           
+MMMMMMMM      MMMMMMMMMMMMMMMMMM .          FIND ME ON GITHUB - WSL - https://github.com/vinberg88
+MMMMMMMMM.       `MMMMMMMMMMMMM' MM.        
+MMMMMMMMMMM.                     MMMM       More desktops for WSL: https://github.com/vinberg88/opensuse
+`MMMMMMMMMMMMM.                 ,MMMMM.     
+ `MMMMMMMMMMMMMMMMM.          ,MMMMMMMM.    Mail: mattiasvinberg@duck.com
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    
+      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:    OS: Red Hat Enterprise Linux 10.2 (Coughlan) x86_64
+         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     
+            `MMMMMMMMMMMMMMMMMMMMMMMM:      Wsl info page - https://vinberg88.github.io
+                ``MMMMMMMMMMMMMMMMM'                                                                                      
+                                            WM: WSLg 1.0.79 (Wayland)
 
 -------------------------------------------------------------
 
