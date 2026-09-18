@@ -24,7 +24,6 @@ Sister WSL desktop projects for WSL
 [![WSL2](https://img.shields.io/badge/WSL-2-0078D4?style=for-the-badge&logo=windows11&logoColor=white)](https://github.com/vinberg88)
 [![Windows 11](https://img.shields.io/badge/Windows-11-0078D4?style=for-the-badge&logo=windows11&logoColor=white)](https://www.microsoft.com/windows/windows-11)
 [![KDE](https://img.shields.io/badge/KDE%20Plasma-6%20launcher-5294E2?style=for-the-badge&logo=kde&logoColor=white)](#-kde-plasma-6)
-[![License](https://img.shields.io/badge/Community-unofficial-444444?style=for-the-badge)](#-important-notes)
 
 **Windows on the outside. Enterprise Linux on the inside.**
 
