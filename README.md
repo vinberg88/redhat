@@ -53,7 +53,7 @@ A community project for running a real Red Hat Enterprise Linux userspace under 
 
 ---
 
-## Table of contents
+## Table of contents FOR REDHAT 10 AND KDE, GNOME AND MATE DESKTOP!
 
 - [Start here — install RHEL 10.2](#-start-here--install-rhel-102-on-wsl2)
 - [About this project](#-about-this-project)
