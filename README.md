@@ -17,6 +17,175 @@
 
 ---
 
+# 🚀 START HERE — Install RHEL 10.2 on WSL2
+
+The easiest way to start this project is to use the **official pre-built Red Hat Enterprise Linux 10.2 WSL2 image** from Red Hat.
+
+Red Hat provides WSL images to RHEL subscribers, including the **no-cost Red Hat Developer Subscription**. You must sign in with a Red Hat account before downloading the image.
+
+### 1. Create or sign in to your Red Hat account
+
+Open the official RHEL download page:
+
+🔗 [Download Red Hat Enterprise Linux](https://developers.redhat.com/products/rhel/download)
+
+Sign in, then find:
+
+```text
+Red Hat Enterprise Linux 10.2
+Architecture: x86_64
+Image type: WSL2 image
+```
+
+Download the WSL2 image to Windows.
+
+> [!NOTE]
+> The official RHEL WSL images are intended for development and are documented by Red Hat as self-supported.
+
+### 2. Install the downloaded RHEL 10.2 WSL image
+
+If the download is a `.wsl` file, the simplest method is to **double-click the file in Windows**.
+
+You can also install it from PowerShell:
+
+```powershell
+wsl --install --from-file "C:\\Users\\YOURNAME\\Downloads\\YOUR-RHEL-10.2-FILE.wsl"
+```
+
+Then check the installed distribution:
+
+```powershell
+wsl -l -v
+```
+
+Make sure RHEL is running as **WSL version 2**.
+
+### 3. Change the default `cloud-user` account
+
+The RHEL 10.2 WSL image tested for this project initially uses:
+
+```text
+cloud-user
+```
+
+This project changes that account to a personal username while keeping the existing UID and account configuration.
+
+First start RHEL as root from PowerShell. Replace the distribution name with the name shown by `wsl -l -v`:
+
+```powershell
+wsl -d RedHatEnterpriseLinux-10.2 -u root
+```
+
+Example below changes `cloud-user` to `adolf`. **Use your own username instead.**
+
+```bash
+usermod -l adolf cloud-user
+groupmod -n adolf cloud-user
+usermod -d /home/adolf -m adolf
+usermod -aG wheel adolf
+```
+
+Set passwords:
+
+```bash
+passwd adolf
+passwd root
+```
+
+### 4. Register RHEL with Red Hat
+
+Use the same Red Hat account that you used on the Red Hat website:
+
+```bash
+subscription-manager register
+subscription-manager status
+```
+
+### 5. Install the basic tools
+
+```bash
+dnf install -y dnf-plugins-core sudo wget nano
+```
+
+### 6. Set your own user as the default WSL user
+
+Edit:
+
+```bash
+nano /etc/wsl.conf
+```
+
+Add:
+
+```ini
+[user]
+default=adolf
+```
+
+Change `adolf` to your own username.
+
+If `/etc/wsl.conf` already contains other settings, keep them and only add the `[user]` section.
+
+### 7. Check sudo access
+
+The renamed user should remain a member of the `wheel` group. Verify it:
+
+```bash
+id adolf
+```
+
+RHEL normally grants sudo access through:
+
+```text
+%wheel ALL=(ALL) ALL
+```
+
+If you want to inspect or edit the sudo configuration, always use `visudo`:
+
+```bash
+EDITOR=nano visudo
+```
+
+### 8. Restart WSL
+
+Exit RHEL:
+
+```bash
+exit
+```
+
+Then from PowerShell:
+
+```powershell
+wsl --shutdown
+```
+
+Start RHEL again and verify:
+
+```bash
+whoami
+id
+echo $HOME
+sudo -v
+```
+
+A successful result should show your own username, UID 1000 and your new home directory.
+
+Example from the tested setup:
+
+```text
+adolf
+uid=1000(adolf) gid=1000(adolf) groups=1000(adolf),4(adm),10(wheel),190(systemd-journal)
+/home/adolf
+```
+
+✅ **RHEL 10.2 is now ready for the desktop guides in this repository.**
+
+> [!TIP]
+> Want a customized RHEL WSL image instead of the official pre-built image? See the **Advanced Image Builder option** further down this page.
+
+---
+
 ## 📖 About this project
 
 Red Hat Enterprise Linux and Windows Subsystem for Linux make a powerful development combination.
@@ -193,27 +362,25 @@ kde6-x410 stop
 
 ---
 
-# 🚀 Getting RHEL for WSL
+# 🧪 Advanced option — Build your own RHEL WSL image
 
-Red Hat publishes WSL images for **RHEL 8, RHEL 9 and RHEL 10** through the Red Hat Customer Portal.
+The official pre-built RHEL 10.2 WSL2 image above is the easiest option.
 
-A Red Hat subscription is required to access RHEL content. A no-cost Red Hat Developer Subscription can also be used where applicable.
+If you want a **custom RHEL image** with your own packages and image configuration, Red Hat Image Builder can generate a native WSL image.
 
-Useful official resources:
+🔗 [Red Hat Image Builder](https://console.redhat.com/insights/image-builder)
 
-- 🔗 [Red Hat Enterprise Linux](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux)
-- 🔗 [Red Hat Customer Portal](https://access.redhat.com/)
-- 🔗 [RHEL 10 — Generating a WSL2 image with Image Builder](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/composing_a_customized_rhel_system_image/generating-wsl2-image-with-rhel-image-builder)
-- 🔗 [Microsoft WSL documentation](https://learn.microsoft.com/windows/wsl/)
-- 🔗 [Microsoft WSL GUI application documentation](https://learn.microsoft.com/windows/wsl/tutorials/gui-apps)
+Official documentation:
 
-RHEL Image Builder can also produce a native `.wsl` image:
+🔗 [RHEL 10 — Generating a WSL2 image with Image Builder](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/composing_a_customized_rhel_system_image/generating-wsl2-image-with-rhel-image-builder)
+
+A local Image Builder workflow can also build the WSL image with:
 
 ```bash
 image-builder build wsl --blueprint <blueprint-name>
 ```
 
-The generated image can then be deployed on Windows using modern WSL tooling.
+The generated `.wsl` image can then be installed on Windows.
 
 ---
 
