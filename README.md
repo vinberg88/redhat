@@ -12,7 +12,7 @@ You will see this and download - last in image is WSL REDHAT for Windows11:
 
 Look here: https://github.com/vinberg88/redhat/blob/main/redhat-wsl-image.png
 
-Full install for REDHAT AS USER AND KDE 6: 
+Full install for REDHAT AS USER AND KDE 6: https://github.com/vinberg88/redhat/blob/main/Redhat-10.2-KDE6.txt
 
 ### Enterprise Linux on Windows — with MATE, GNOME and KDE Plasma 6
 
