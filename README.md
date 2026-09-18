@@ -11,6 +11,8 @@
 
 **A community project for running Red Hat Enterprise Linux under WSL2 and exploring full Linux desktop environments on Windows.**
 
+<img src="wallpapers/RVMtJ.jpg" alt="Red Hat Enterprise Linux 10" width="920">
+
 </div>
 
 ---
@@ -31,6 +33,74 @@ The goal is to document clean, repeatable setups for **WSL2 + systemd + GUI + au
 
 > [!IMPORTANT]
 > Red Hat provides RHEL 8, RHEL 9 and RHEL 10 WSL images for development use. Red Hat documents these images as **self-supported**, and notes that graphical interfaces can behave differently under WSL. The desktop configurations in this repository are community experiments and are not official Red Hat desktop-on-WSL configurations.
+
+---
+
+## 🎨 Wallpapers
+
+Community wallpapers for **RHEL 10** and the Red Hat fedora. Unofficial fan art — not official Red Hat brand assets.
+
+All files live in [`wallpapers/`](wallpapers/).
+
+### RHEL 10 — color mix
+
+<p align="center">
+  <img src="wallpapers/QfXn8.jpg" alt="RHEL 10 blue and yellow" width="48%">
+  <img src="wallpapers/bzS52.jpg" alt="RHEL 10 yellow and blue" width="48%">
+</p>
+<p align="center">
+  <img src="wallpapers/9MJPK.jpg" alt="RHEL 10 forest" width="48%">
+  <img src="wallpapers/U5poz.jpg" alt="RHEL 10 purple and cyan" width="48%">
+</p>
+<p align="center">
+  <img src="wallpapers/Th3nk.jpg" alt="RHEL 10 blue and gold" width="92%">
+</p>
+
+### RHEL 10 — enterprise
+
+<p align="center">
+  <img src="wallpapers/RVMtJ.jpg" alt="RHEL 10 classic" width="48%">
+  <img src="wallpapers/RKq23.jpg" alt="RHEL 10 Lightspeed" width="48%">
+</p>
+<p align="center">
+  <img src="wallpapers/uEMx9.jpg" alt="RHEL 10 teal clouds" width="48%">
+  <img src="wallpapers/S6jUS.jpg" alt="RHEL 10 image mode" width="48%">
+</p>
+<p align="center">
+  <img src="wallpapers/UW0CC.jpg" alt="RHEL 10 security" width="48%">
+  <img src="wallpapers/EkUzE.jpg" alt="RHEL 10 light" width="48%">
+</p>
+<p align="center">
+  <img src="wallpapers/pt5tI.jpg" alt="RHEL 10 geometric" width="48%">
+  <img src="wallpapers/Tn2pA.jpg" alt="RHEL 10 terminal" width="48%">
+</p>
+<p align="center">
+  <img src="wallpapers/6aSVZ.jpg" alt="RHEL 10 mountains" width="48%">
+  <img src="wallpapers/pwGBt.jpg" alt="RHEL 10 gold" width="48%">
+</p>
+
+### Red Hat fedora
+
+<p align="center">
+  <img src="wallpapers/IIwxn.jpg" alt="Red Hat classic" width="48%">
+  <img src="wallpapers/QPink.jpg" alt="Red Hat neon" width="48%">
+</p>
+<p align="center">
+  <img src="wallpapers/ZBTp0.jpg" alt="Red Hat light" width="48%">
+  <img src="wallpapers/iNZU9.jpg" alt="Red Hat geometric" width="48%">
+</p>
+<p align="center">
+  <img src="wallpapers/IhcJl.jpg" alt="Red Hat circuits" width="48%">
+  <img src="wallpapers/mExW0.jpg" alt="Red Hat teal" width="48%">
+</p>
+<p align="center">
+  <img src="wallpapers/P8K8O.jpg" alt="Red Hat mountains" width="48%">
+  <img src="wallpapers/6olQG.jpg" alt="Red Hat terminal rain" width="48%">
+</p>
+<p align="center">
+  <img src="wallpapers/D0Pla.jpg" alt="Red Hat gold" width="48%">
+  <img src="wallpapers/tnxVT.jpg" alt="Red Hat ink" width="48%">
+</p>
 
 ---
 
@@ -162,15 +232,15 @@ kde6-x410 stop
 # 🧩 How the setup fits together
 
 ```text
-┌──────────────────────────────────────────────────────────┐
+┌─────────────────────────────────────────────────────────┐
 │                      Windows 11                          │
 │                                                          │
-│  ┌──────────────────────┐   ┌────────────────────────┐   │
+│  ┌──────────────────────┐   ┌───────────────────────┐   │
 │  │        WSLg          │   │         X410           │   │
 │  │ GUI apps + audio     │   │ Full X11 desktop      │   │
-│  └──────────┬───────────┘   └────────────┬───────────┘   │
+│  └──────────┬───────────┘   └───────────┬───────────┘   │
 │             │                            │               │
-│  ┌──────────┴────────────────────────────┴────────────┐  │
+│  ┌──────────┴──────────────────────────┴────────────┐  │
 │  │                     WSL2                          │  │
 │  │                                                  │  │
 │  │   Red Hat Enterprise Linux                      │  │
@@ -179,8 +249,8 @@ kde6-x410 stop
 │  │   ├── MATE / GNOME / KDE Plasma 6               │  │
 │  │   ├── Podman                                    │  │
 │  │   └── Linux development tools                   │  │
-│  └──────────────────────────────────────────────────┘  │
-└──────────────────────────────────────────────────────────┘
+│  └─────────────────────────────────────────────────┘  │
+└─────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -274,7 +344,7 @@ systemctl --failed --no-pager
 
 ---
 
-# 🪟 WSLg vs X410
+# 🚪 WSLg vs X410
 
 WSLg and X410 solve different problems.
 
@@ -388,11 +458,12 @@ Each desktop guide will only be marked **READY** after the important WSL compone
 
 # 🗂️ Planned repository layout
 
-As the project grows, the repository will be organized around separate desktop guides and launchers:
-
 ```text
 redhat/
 ├── README.md
+├── wallpapers/
+│   ├── README.md
+│   └── *.jpg
 ├── mate/
 │   ├── README.md
 │   └── scripts/
@@ -420,7 +491,8 @@ This keeps the main page clean while allowing each desktop environment to have a
 - [ ] Add KDE Plasma 6
 - [ ] Add KDE6 X410 launcher
 - [ ] Validate WSLg audio on all desktops
-- [ ] Add screenshots
+- [x] Add community wallpapers
+- [ ] Add desktop screenshots
 - [ ] Add tested-version matrix
 - [ ] Add troubleshooting documentation
 - [ ] Add YouTube installation/demo links
@@ -432,6 +504,7 @@ This keeps the main page clean while allowing each desktop environment to have a
 - This repository is an **independent community project**.
 - It is **not affiliated with, sponsored by or endorsed by Red Hat, Inc.**
 - Red Hat, RHEL and Red Hat Enterprise Linux are trademarks or registered trademarks of Red Hat, Inc.
+- The wallpapers in this repository are unofficial community artwork.
 - Full desktop environments under WSL are experimental and may require workarounds that are unnecessary on a native RHEL installation.
 - WSLg is optimized for individual GUI applications; a complete desktop session may require a different display-server strategy.
 - Always check the current Red Hat documentation for support status and release-specific limitations.
