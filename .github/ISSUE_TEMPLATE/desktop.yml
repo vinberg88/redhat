@@ -1,0 +1,48 @@
+name: Desktop does not start
+description: Plasma, GNOME or MATE will not come up under WSL
+title: "[desktop] "
+labels: ["desktop"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this when a full desktop session fails to start or only half of it appears.
+  - type: dropdown
+    id: desktop
+    attributes:
+      label: Desktop
+      options:
+        - KDE Plasma 6
+        - GNOME
+        - MATE
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: display
+    attributes:
+      label: Display path
+      options:
+        - X410
+        - WSLg
+        - Mixed / not sure
+    validations:
+      required: true
+  - type: input
+    id: rhel
+    attributes:
+      label: RHEL version
+      placeholder: "Red Hat Enterprise Linux 10.2"
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      placeholder: Commands you ran and what you saw
+    validations:
+      required: true
+  - type: textarea
+    id: doctor
+    attributes:
+      label: Doctor output
+      description: Paste `kde6-x410 doctor` or `rhel-wsl doctor` if you have it.
+      render: text

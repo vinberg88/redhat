@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: AlmaLinux WSL desktops
+    url: https://github.com/vinberg88/almalinux
+    about: Sister project for AlmaLinux 10 on WSL2
+  - name: openSUSE WSL desktops
+    url: https://github.com/vinberg88/opensuse
+    about: Sister project for openSUSE desktops on WSL2

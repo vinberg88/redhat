@@ -1,0 +1,41 @@
+name: Audio
+description: No sound, wrong device, or competing PulseAudio servers
+title: "[audio] "
+labels: ["audio"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Desktop launchers in this repo try to reuse WSLg PulseAudio at `/mnt/wslg/PulseServer`.
+  - type: dropdown
+    id: socket
+    attributes:
+      label: Is `/mnt/wslg/PulseServer` present?
+      options:
+        - Yes
+        - No
+        - Not sure
+    validations:
+      required: true
+  - type: dropdown
+    id: desktop
+    attributes:
+      label: Desktop
+      options:
+        - KDE Plasma 6
+        - GNOME
+        - MATE
+        - Single GUI app via WSLg
+        - Other
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Extra output
+      description: "Useful: `test -S /mnt/wslg/PulseServer && echo OK`, `echo $PULSE_SERVER`"
+      render: text
