@@ -7,7 +7,7 @@
 ### RHEL 10.2 · Windows 11 · MATE · GNOME · KDE Plasma 6
 
 [![RHEL](https://img.shields.io/badge/Red%20Hat-Enterprise%20Linux%2010.2-EE0000?style=for-the-badge&logo=redhat&logoColor=white)](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux)
-[![WSL2](https://img.shields.io/badge/WSL-2-0078D4?style=for-the-badge&logo=windows11&logoColor=white)](https://learn.microsoft.com/windows/wsl/)
+[![WSL2](https://img.shields.io/badge/WSL-2-0078D4?style=for-the-badge&logo=windows11&logoColor=white)](https://github.com/vinberg88)
 [![Windows 11](https://img.shields.io/badge/Windows-11-0078D4?style=for-the-badge&logo=windows11&logoColor=white)](https://www.microsoft.com/windows/windows-11)
 [![KDE](https://img.shields.io/badge/KDE%20Plasma-6%20launcher-5294E2?style=for-the-badge&logo=kde&logoColor=white)](#-kde-plasma-6)
 [![License](https://img.shields.io/badge/Community-unofficial-444444?style=for-the-badge)](#-important-notes)
