@@ -2,7 +2,7 @@
 
 # 🔴 Red Hat Enterprise Linux on WSL
 
-Download REDHAT 10.2 for wsl HERE ✅
+**Download REDHAT 10.2 for wsl HERE ✅
 
 Download Red Hat Enterprise Linux 10.2 here: https://developers.redhat.com/products/rhel/download
 
@@ -14,7 +14,7 @@ Look here: https://github.com/vinberg88/redhat/blob/main/redhat-wsl-image.png
 
 Full install for REDHAT AS USER AND KDE 6: https://github.com/vinberg88/redhat/blob/main/Redhat-10.2-KDE6.txt
 
-### Enterprise Linux on Windows — with MATE, GNOME and KDE Plasma 6
+### Enterprise Linux on Windows — with MATE, GNOME and KDE Plasma 6**
 
 [![RHEL](https://img.shields.io/badge/Red%20Hat-Enterprise%20Linux-EE0000?style=for-the-badge&logo=redhat&logoColor=white)](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux)
 [![WSL2](https://img.shields.io/badge/WSL-2-0078D4?style=for-the-badge&logo=windows11&logoColor=white)](https://learn.microsoft.com/windows/wsl/)
