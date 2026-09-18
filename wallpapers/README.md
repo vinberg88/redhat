@@ -1,10 +1,30 @@
-# Wallpapers
+<div align="center">
 
-Unofficial community wallpapers for [vinberg88/redhat](https://github.com/vinberg88/redhat).
+# 🎨 RHEL 10 wallpapers
 
-These are fan wallpapers for **Red Hat** and **Red Hat Enterprise Linux 10**. They are not official Red Hat brand assets.
+Community wallpapers for **Red Hat Enterprise Linux 10** and the Red Hat fedora.
+
+Unofficial fan art — not official Red Hat brand assets.
+
+[Back to the main project](https://github.com/vinberg88/redhat)
+
+</div>
+
+---
 
 ## RHEL 10 — color mix
+
+<p align="center">
+  <img src="QfXn8.jpg" alt="RHEL 10 blue and yellow" width="48%">
+  <img src="bzS52.jpg" alt="RHEL 10 yellow and blue" width="48%">
+</p>
+<p align="center">
+  <img src="9MJPK.jpg" alt="RHEL 10 forest" width="48%">
+  <img src="U5poz.jpg" alt="RHEL 10 purple and cyan" width="48%">
+</p>
+<p align="center">
+  <img src="Th3nk.jpg" alt="RHEL 10 blue and gold" width="92%">
+</p>
 
 | File | Theme |
 |---|---|
@@ -14,7 +34,30 @@ These are fan wallpapers for **Red Hat** and **Red Hat Enterprise Linux 10**. Th
 | [`U5poz.jpg`](U5poz.jpg) | Purple background, cyan + yellow text |
 | [`Th3nk.jpg`](Th3nk.jpg) | Blue + gold split |
 
+---
+
 ## RHEL 10 — enterprise
+
+<p align="center">
+  <img src="RVMtJ.jpg" alt="RHEL 10 classic" width="48%">
+  <img src="RKq23.jpg" alt="RHEL 10 Lightspeed" width="48%">
+</p>
+<p align="center">
+  <img src="uEMx9.jpg" alt="RHEL 10 teal clouds" width="48%">
+  <img src="S6jUS.jpg" alt="RHEL 10 image mode" width="48%">
+</p>
+<p align="center">
+  <img src="UW0CC.jpg" alt="RHEL 10 security" width="48%">
+  <img src="EkUzE.jpg" alt="RHEL 10 light" width="48%">
+</p>
+<p align="center">
+  <img src="pt5tI.jpg" alt="RHEL 10 geometric" width="48%">
+  <img src="Tn2pA.jpg" alt="RHEL 10 terminal" width="48%">
+</p>
+<p align="center">
+  <img src="6aSVZ.jpg" alt="RHEL 10 mountains" width="48%">
+  <img src="pwGBt.jpg" alt="RHEL 10 gold" width="48%">
+</p>
 
 | File | Theme |
 |---|---|
@@ -29,7 +72,30 @@ These are fan wallpapers for **Red Hat** and **Red Hat Enterprise Linux 10**. Th
 | [`6aSVZ.jpg`](6aSVZ.jpg) | Crimson mountains |
 | [`pwGBt.jpg`](pwGBt.jpg) | Gold premium |
 
+---
+
 ## Red Hat fedora
+
+<p align="center">
+  <img src="IIwxn.jpg" alt="Red Hat classic" width="48%">
+  <img src="QPink.jpg" alt="Red Hat neon" width="48%">
+</p>
+<p align="center">
+  <img src="ZBTp0.jpg" alt="Red Hat light" width="48%">
+  <img src="iNZU9.jpg" alt="Red Hat geometric" width="48%">
+</p>
+<p align="center">
+  <img src="IhcJl.jpg" alt="Red Hat circuits" width="48%">
+  <img src="mExW0.jpg" alt="Red Hat teal" width="48%">
+</p>
+<p align="center">
+  <img src="P8K8O.jpg" alt="Red Hat mountains" width="48%">
+  <img src="6olQG.jpg" alt="Red Hat terminal rain" width="48%">
+</p>
+<p align="center">
+  <img src="D0Pla.jpg" alt="Red Hat gold" width="48%">
+  <img src="tnxVT.jpg" alt="Red Hat ink" width="48%">
+</p>
 
 | File | Theme |
 |---|---|
