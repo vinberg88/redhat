@@ -10,10 +10,12 @@
 
 set -euo pipefail
 
-VERSION="0.1.0"
-INSTALL_DIR="$HOME/.local/bin"
-LAUNCHER="$INSTALL_DIR/kde6-x410"
+VERSION="0.1.1"
+SYSTEM_LAUNCHER="/usr/local/bin/kde6-x410"
+LEGACY_LAUNCHER="$HOME/.local/bin/kde6-x410"
 STATE_DIR="$HOME/.local/state/kde6-x410"
+TMP_LAUNCHER="$(mktemp)"
+trap 'rm -f "$TMP_LAUNCHER"' EXIT
 
 ok()   { printf '\033[1;32m[OK]\033[0m %s\n' "$*"; }
 info() { printf '\033[1;34m[INFO]\033[0m %s\n' "$*"; }
@@ -42,7 +44,7 @@ if ! grep -qi microsoft /proc/version 2>/dev/null; then
 fi
 
 missing=0
-for cmd in startplasma-x11 kwin_x11 plasmashell systemctl ip pgrep pkill timeout; do
+for cmd in startplasma-x11 kwin_x11 plasmashell systemctl ip pgrep pkill timeout sudo install; do
     if ! command -v "$cmd" >/dev/null 2>&1; then
         err "Missing command: $cmd"
         missing=1
@@ -55,14 +57,14 @@ if [[ "$missing" -ne 0 ]]; then
     exit 1
 fi
 
-mkdir -p "$INSTALL_DIR" "$STATE_DIR"
+mkdir -p "$STATE_DIR"
 
-cat > "$LAUNCHER" <<'LAUNCHER_EOF'
+cat > "$TMP_LAUNCHER" <<'LAUNCHER_EOF'
 #!/usr/bin/env bash
 
 set -u
 
-VERSION="0.1.0"
+VERSION="0.1.1"
 STATE_DIR="$HOME/.local/state/kde6-x410"
 LOG_FILE="$STATE_DIR/session.log"
 PID_FILE="$STATE_DIR/session.pid"
@@ -329,27 +331,35 @@ case "${1:-doctor}" in
 esac
 LAUNCHER_EOF
 
-chmod +x "$LAUNCHER"
+chmod 755 "$TMP_LAUNCHER"
 
-if [[ ":$PATH:" != *":$INSTALL_DIR:"* ]]; then
-    if ! grep -Fq 'export PATH="$HOME/.local/bin:$PATH"' "$HOME/.bashrc" 2>/dev/null; then
-        echo >> "$HOME/.bashrc"
-        echo 'export PATH="$HOME/.local/bin:$PATH"' >> "$HOME/.bashrc"
-        ok "Added ~/.local/bin to PATH in ~/.bashrc"
-    fi
+# Remove the old per-user launcher if it exists.  A stale ~/.local/bin copy
+# can shadow /usr/local/bin and was the cause of the original PATH problem.
+if [[ -e "$LEGACY_LAUNCHER" || -L "$LEGACY_LAUNCHER" ]]; then
+    info "Removing legacy launcher: $LEGACY_LAUNCHER"
+    rm -f "$LEGACY_LAUNCHER" 2>/dev/null || sudo rm -f "$LEGACY_LAUNCHER"
 fi
 
-ok "Installed: $LAUNCHER"
+info "Installing kde6-x410 system-wide in /usr/local/bin..."
+sudo install -m 0755 "$TMP_LAUNCHER" "$SYSTEM_LAUNCHER"
+
+if [[ ! -x "$SYSTEM_LAUNCHER" ]]; then
+    err "Installation failed: $SYSTEM_LAUNCHER is not executable."
+    exit 1
+fi
+
+ok "Installed: $SYSTEM_LAUNCHER"
 
 echo
 echo "Installation complete."
 echo
-echo "Run:"
+echo "No shell reload is required."
 echo
-echo "  source ~/.bashrc"
+echo "Run immediately:"
+echo
 echo "  kde6-x410 doctor"
 echo
-echo "Then, when X410 is reachable:"
+echo "Then:"
 echo "  kde6-x410 start"
 echo
 echo "Other commands:"
