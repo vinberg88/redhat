@@ -2,7 +2,21 @@
 
 <img src="assets/redhat-readme-header.svg" alt="Red Hat Enterprise Linux 10.2 on WSL2 — MATE, GNOME and KDE Plasma 6" width="100%">
 
-# Red Hat Enterprise Linux on WSL
+# Red Hat Enterprise Linux on WSL - REDHAT 10
+
+## Sister WSL desktop projects
+
+| Distro | Repo |
+|---|---|
+| AlmaLinux 10 | https://github.com/vinberg88/almalinux |
+| openSUSE | https://github.com/vinberg88/opensuse |
+| Ubuntu | https://github.com/vinberg88/ubuntu |
+| Debian | https://github.com/vinberg88/debian |
+| openSUSE Leap / Tumbleweed notes | https://github.com/vinberg88/suse |
+| Manjaro | https://github.com/vinberg88/manjaro |
+| Pop!_OS | https://github.com/vinberg88/pop-os-wsl |
+| Overview site | https://github.com/vinberg88/vinberg88.github.io |
+
 
 ### RHEL 10.2 · Windows 11 · MATE · GNOME · KDE Plasma 6
 
