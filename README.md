@@ -2,6 +2,13 @@
 
 # 🔴 Red Hat Enterprise Linux on WSL
 
+Download REDHAT 10.2 for wsl HERE ✅
+
+Download Red Hat Enterprise Linux 10.2 here: https://developers.redhat.com/products/rhel/download
+Sign in to REDHAT PAGE and find: Red Hat Enterprise Linux 10.2 - Architecture: x86_64 - Image type: WSL2 image
+You will see this and download - last in image is WSL REDHAT for Windows11:
+Look here: https://github.com/vinberg88/redhat/blob/main/redhat-wsl-image.png
+
 ### Enterprise Linux on Windows — with MATE, GNOME and KDE Plasma 6
 
 [![RHEL](https://img.shields.io/badge/Red%20Hat-Enterprise%20Linux-EE0000?style=for-the-badge&logo=redhat&logoColor=white)](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux)
