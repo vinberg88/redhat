@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/redhat-readme-header.jpg" alt="Red Hat Enterprise Linux 10.2 on WSL2 — MATE, GNOME and KDE Plasma 6" width="100%">
+<img src="assets/redhat-readme-header.svg" alt="Red Hat Enterprise Linux 10.2 on WSL2 — MATE, GNOME and KDE Plasma 6" width="100%">
 
 # Red Hat Enterprise Linux on WSL
 
@@ -98,7 +98,7 @@ If the download is a `.wsl` file, the simplest method is to **double-click it in
 Or install from PowerShell:
 
 ```powershell
-wsl --install --from-file "C:\Users\YOURNAME\Downloads\YOUR-RHEL-10.2-FILE.wsl"
+wsl --install --from-file "C:\\Users\\YOURNAME\\Downloads\\YOUR-RHEL-10.2-FILE.wsl"
 ```
 
 Then check the installed distribution:
@@ -405,25 +405,12 @@ The launcher will:
 # 🧩 How the setup fits together
 
 ```text
-┌──────────────────────────────────────────────────────────────┐
-│                         Windows 11                           │
-│                                                              │
-│   ┌──────────────────────┐     ┌─────────────────────────┐    │
-│   │        WSLg         │     │          X410           │    │
-│   │  GUI apps + audio   │     │   Full X11 desktop      │    │
-│   └──────────┬──────────┘     └───────────┬────────────┘    │
-│              │                             │                 │
-│   ┌─────────┬──────────────────────────────────┴─────────────┐   │
-│   │                        WSL2                          │   │
-│   │                                                      │   │
-│   │   Red Hat Enterprise Linux 10.2                      │   │
-│   │   ├── systemd                                        │   │
-│   │   ├── D-Bus                                          │   │
-│   │   ├── MATE / GNOME / KDE Plasma 6                    │   │
-│   │   ├── Podman                                         │   │
-│   │   └── Linux development tools                        │   │
-│   └──────────────────────────────────────────────────────┘   │
-└──────────────────────────────────────────────────────────────┘
+Windows 11
+  WSLg (GUI apps + audio)     X410 (full X11 desktop)
+                 \                 /
+                  \               /
+               WSL2 + RHEL 10.2
+               systemd, D-Bus, MATE / GNOME / KDE Plasma 6, Podman
 ```
 
 ---
@@ -631,6 +618,8 @@ redhat/
 ├── Redhat-10.2-KDE6.txt
 ├── redhat-wsl-image.png
 ├── assets/
+│   ├── redhat-readme-header.svg
+│   ├── redhat-readme-footer.svg
 │   ├── redhat-readme-header.jpg
 │   └── redhat-readme-footer.jpg
 ├── scripts/
@@ -687,6 +676,6 @@ Community project by [vinberg88](https://github.com/vinberg88)
 
 <br>
 
-<img src="assets/redhat-readme-footer.jpg" alt="Red Hat WSL footer — KDE 6, Flatpak, Snap, VS Code and more" width="100%">
+<img src="assets/redhat-readme-footer.svg" alt="Red Hat WSL footer — KDE 6, Flatpak, Snap, VS Code and more" width="100%">
 
 </div>

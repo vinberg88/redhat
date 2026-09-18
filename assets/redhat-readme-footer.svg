@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="300" viewBox="0 0 1680 300" role="img" aria-label="Windows on the outside. Enterprise Linux on the inside.">
+  <defs>
+    <linearGradient id="fbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06101f"/>
+      <stop offset="1" stop-color="#0d4d8c"/>
+    </linearGradient>
+    <radialGradient id="fglow" cx="78%" cy="30%" r="50%">
+      <stop offset="0" stop-color="#3db7ff" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#3db7ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fgold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffd34e" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#ffd34e" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#7ec8ff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1680" height="300" rx="28" fill="url(#fbg)"/>
+  <rect width="1680" height="300" rx="28" fill="url(#fglow)"/>
+  <path d="M-60 210 C280 120 520 270 860 180 S1300 120 1740 200" fill="none" stroke="url(#fgold)" stroke-width="5"/>
+  <g transform="translate(86 58)">
+    <ellipse cx="54" cy="58" rx="60" ry="12" fill="#f0b429"/>
+    <path d="M12 52 C16 18 34 4 54 4 C74 4 92 18 96 52 C82 44 66 42 54 42 C42 42 26 44 12 52Z" fill="#ffd34e"/>
+    <rect x="20" y="46" width="68" height="8" rx="2" fill="#0a2a58"/>
+  </g>
+  <text x="220" y="78" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="34" font-weight="800">Windows on the outside. Enterprise Linux on the inside.</text>
+  <text x="220" y="118" fill="#9fd0ff" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="600" letter-spacing="2">Community project · RHEL 10.2 · WSL2 · not affiliated with Red Hat, Inc.</text>
+  <g font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="700" text-anchor="middle">
+    <rect x="86" y="168" rx="16" width="196" height="72" fill="#020914" opacity=".75" stroke="#ffd34e"/>
+    <text x="184" y="212" fill="#ffffff">MATE</text>
+    <rect x="302" y="168" rx="16" width="196" height="72" fill="#020914" opacity=".75" stroke="#4da3ff"/>
+    <text x="400" y="212" fill="#ffffff">GNOME</text>
+    <rect x="518" y="168" rx="16" width="196" height="72" fill="#020914" opacity=".75" stroke="#36a8ff"/>
+    <text x="616" y="212" fill="#ffffff">KDE 6</text>
+    <rect x="734" y="168" rx="16" width="196" height="72" fill="#020914" opacity=".75" stroke="#ffd34e"/>
+    <text x="832" y="212" fill="#ffffff">Podman</text>
+    <rect x="950" y="168" rx="16" width="196" height="72" fill="#020914" opacity=".75" stroke="#4da3ff"/>
+    <text x="1048" y="212" fill="#ffffff">systemd</text>
+    <rect x="1166" y="168" rx="16" width="196" height="72" fill="#020914" opacity=".75" stroke="#22d3ee"/>
+    <text x="1264" y="212" fill="#ffffff">X410</text>
+    <rect x="1382" y="168" rx="16" width="196" height="72" fill="#020914" opacity=".75" stroke="#ffd34e"/>
+    <text x="1480" y="212" fill="#ffffff">WSLg</text>
+  </g>
+  <rect x="1.5" y="1.5" width="1677" height="297" rx="27" fill="none" stroke="#4da3ff" stroke-opacity=".35"/>
+</svg>
