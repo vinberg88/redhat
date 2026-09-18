@@ -303,7 +303,7 @@ Install fastfetch - like Neofetch but faster for RedHat 10.2 and kde 6
 
 sudo dnf install fastfetch
 
-Put this in terminal to Test: hyfetch
+Put this in terminal to Test: fastfetch
 
                                             RedHat WSL - GITHUB - https://github.com/vinberg88/redhat 🔟
 
