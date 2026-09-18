@@ -22,7 +22,7 @@ Sister WSL desktop projects for WSL
 
 [![RHEL](https://img.shields.io/badge/Red%20Hat-Enterprise%20Linux%2010.2-EE0000?style=for-the-badge&logo=redhat&logoColor=white)](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux)
 [![WSL2](https://img.shields.io/badge/WSL-2-0078D4?style=for-the-badge&logo=windows11&logoColor=white)](https://github.com/vinberg88)
-[![Windows 11](https://img.shields.io/badge/Windows-11-0078D4?style=for-the-badge&logo=windows11&logoColor=white)](https://www.microsoft.com/windows/windows-11)
+[![Windows 11](https://img.shields.io/badge/Windows-11-0078D4?style=for-the-badge&logo=windows11&logoColor=white)](https://github.com/vinberg88)
 [![KDE](https://img.shields.io/badge/KDE%20Plasma-6%20launcher-5294E2?style=for-the-badge&logo=kde&logoColor=white)](#-kde-plasma-6)
 
 **Windows on the outside. Enterprise Linux on the inside.**
