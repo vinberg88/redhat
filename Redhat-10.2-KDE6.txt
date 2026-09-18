@@ -8,7 +8,7 @@ Go here for more info - RedHat WSL - GITHUB Guide - https://github.com/vinberg88
 How to install KDE 6 via Red Hat Enterprise Linux 10.2 - MOVIE VIA YOUTUBE for WSL.
 Comming Zone….
 
-Download Redhat 10.2 Enterprise via this link: https://console.redhat.com/insights/image-builder
+Download Redhat 10.2 Enterprise via this link: https://developers.redhat.com/products/rhel/download
 
 NOTE: You need to build Red Hat Enterprise Linux 10.2 for WSL via redhat.com - Takes some time...
 
@@ -34,7 +34,7 @@ MMMMMMMMMMM.                     MMMM       More desktops for WSL: https://githu
                 ``MMMMMMMMMMMMMMMMM'                                                                                      
                                             WM: WSLg 1.0.79 (Wayland)
 
-TOOLS THAT I USE FOR WSL
+TOOLS THAT I USE FOR WSL and WINDOWS 11 - REDHAT 10 AND KDE 6
 
 Use X410 - X Server for Windows 11 and it works well.
 https://apps.microsoft.com/detail/9pm8lp83g3l3?hl=en-US&gl=US
@@ -46,6 +46,8 @@ WSL UI - This tool is free and works like Raft WSL for WSL.
 https://apps.microsoft.com/detail/9p8548knj2m9?hl=sv-SE&gl=SE
 
 About Red Hat Enterprise Linux 10.2 - https://www.Redhat.com/en
+
+Download Redhat 40.2: https://developers.redhat.com/products/rhel/download
 
 Red Hat is the leading provider of enterprise open source
 software—including Linux®, hybrid cloud, AI, and automation
