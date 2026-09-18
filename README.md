@@ -38,69 +38,7 @@ The goal is to document clean, repeatable setups for **WSL2 + systemd + GUI + au
 
 ## 🎨 Wallpapers
 
-Community wallpapers for **RHEL 10** and the Red Hat fedora. Unofficial fan art — not official Red Hat brand assets.
-
-All files live in [`wallpapers/`](wallpapers/).
-
-### RHEL 10 — color mix
-
-<p align="center">
-  <img src="wallpapers/QfXn8.jpg" alt="RHEL 10 blue and yellow" width="48%">
-  <img src="wallpapers/bzS52.jpg" alt="RHEL 10 yellow and blue" width="48%">
-</p>
-<p align="center">
-  <img src="wallpapers/9MJPK.jpg" alt="RHEL 10 forest" width="48%">
-  <img src="wallpapers/U5poz.jpg" alt="RHEL 10 purple and cyan" width="48%">
-</p>
-<p align="center">
-  <img src="wallpapers/Th3nk.jpg" alt="RHEL 10 blue and gold" width="92%">
-</p>
-
-### RHEL 10 — enterprise
-
-<p align="center">
-  <img src="wallpapers/RVMtJ.jpg" alt="RHEL 10 classic" width="48%">
-  <img src="wallpapers/RKq23.jpg" alt="RHEL 10 Lightspeed" width="48%">
-</p>
-<p align="center">
-  <img src="wallpapers/uEMx9.jpg" alt="RHEL 10 teal clouds" width="48%">
-  <img src="wallpapers/S6jUS.jpg" alt="RHEL 10 image mode" width="48%">
-</p>
-<p align="center">
-  <img src="wallpapers/UW0CC.jpg" alt="RHEL 10 security" width="48%">
-  <img src="wallpapers/EkUzE.jpg" alt="RHEL 10 light" width="48%">
-</p>
-<p align="center">
-  <img src="wallpapers/pt5tI.jpg" alt="RHEL 10 geometric" width="48%">
-  <img src="wallpapers/Tn2pA.jpg" alt="RHEL 10 terminal" width="48%">
-</p>
-<p align="center">
-  <img src="wallpapers/6aSVZ.jpg" alt="RHEL 10 mountains" width="48%">
-  <img src="wallpapers/pwGBt.jpg" alt="RHEL 10 gold" width="48%">
-</p>
-
-### Red Hat fedora
-
-<p align="center">
-  <img src="wallpapers/IIwxn.jpg" alt="Red Hat classic" width="48%">
-  <img src="wallpapers/QPink.jpg" alt="Red Hat neon" width="48%">
-</p>
-<p align="center">
-  <img src="wallpapers/ZBTp0.jpg" alt="Red Hat light" width="48%">
-  <img src="wallpapers/iNZU9.jpg" alt="Red Hat geometric" width="48%">
-</p>
-<p align="center">
-  <img src="wallpapers/IhcJl.jpg" alt="Red Hat circuits" width="48%">
-  <img src="wallpapers/mExW0.jpg" alt="Red Hat teal" width="48%">
-</p>
-<p align="center">
-  <img src="wallpapers/P8K8O.jpg" alt="Red Hat mountains" width="48%">
-  <img src="wallpapers/6olQG.jpg" alt="Red Hat terminal rain" width="48%">
-</p>
-<p align="center">
-  <img src="wallpapers/D0Pla.jpg" alt="Red Hat gold" width="48%">
-  <img src="wallpapers/tnxVT.jpg" alt="Red Hat ink" width="48%">
-</p>
+Community wallpapers for **RHEL 10** and the Red Hat fedora live in [`wallpapers/`](wallpapers/).
 
 ---
 
@@ -232,15 +170,15 @@ kde6-x410 stop
 # 🧩 How the setup fits together
 
 ```text
-┌─────────────────────────────────────────────────────────┐
+┌────────────────────────────────────────────────────────┐
 │                      Windows 11                          │
 │                                                          │
-│  ┌──────────────────────┐   ┌───────────────────────┐   │
+│  ┌──────────────────────┐   ┌──────────────────────┐   │
 │  │        WSLg          │   │         X410           │   │
 │  │ GUI apps + audio     │   │ Full X11 desktop      │   │
-│  └──────────┬───────────┘   └───────────┬───────────┘   │
+│  └──────────┬───────────┘   └──────────┬───────────┘   │
 │             │                            │               │
-│  ┌──────────┴──────────────────────────┴────────────┐  │
+│  ┌──────────┴─────────────────────────┴────────────┐  │
 │  │                     WSL2                          │  │
 │  │                                                  │  │
 │  │   Red Hat Enterprise Linux                      │  │
@@ -249,8 +187,8 @@ kde6-x410 stop
 │  │   ├── MATE / GNOME / KDE Plasma 6               │  │
 │  │   ├── Podman                                    │  │
 │  │   └── Linux development tools                   │  │
-│  └─────────────────────────────────────────────────┘  │
-└─────────────────────────────────────────────────────────┘
+│  └────────────────────────────────────────────────┘  │
+└────────────────────────────────────────────────────────┘
 ```
 
 ---
