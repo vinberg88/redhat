@@ -47,7 +47,9 @@ https://apps.microsoft.com/detail/9p8548knj2m9?hl=sv-SE&gl=SE
 
 About Red Hat Enterprise Linux 10.2 - https://www.Redhat.com/en
 
-Download Redhat 40.2: https://developers.redhat.com/products/rhel/download
+Download Redhat 10.2: https://developers.redhat.com/products/rhel/download
+
+See here how to install: https://github.com/vinberg88/redhat/blob/main/Redhat-10.2-KDE6.txt
 
 Red Hat is the leading provider of enterprise open source
 software—including Linux®, hybrid cloud, AI, and automation
