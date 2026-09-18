@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 200" role="img" aria-label="Windows on the outside. Enterprise Linux on the inside.">
+  <defs>
+    <linearGradient id="fbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0b0d"/>
+      <stop offset="100%" stop-color="#16090b"/>
+    </linearGradient>
+    <linearGradient id="fred" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7a0000"/>
+      <stop offset="50%" stop-color="#ee0000"/>
+      <stop offset="100%" stop-color="#7a0000"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="200" fill="url(#fbg)"/>
+  <rect width="1600" height="4" fill="url(#fred)"/>
+
+  <g fill="#ee0000" opacity="0.08" transform="translate(1180,18) scale(0.72)">
+    <ellipse cx="210" cy="150" rx="220" ry="28"/>
+    <path d="M80 140 C90 62 150 24 210 24 C270 24 330 62 340 140 C300 122 240 116 210 116 C180 116 120 122 80 140 Z"/>
+  </g>
+
+  <text x="800" y="52" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="22" fill="#f2f2f2">Windows on the outside. Enterprise Linux on the inside.</text>
+  <text x="800" y="80" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#9a9a9a">Community project · not affiliated with Red Hat, Inc.</text>
+
+  <g font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="600" text-anchor="middle">
+    <rect x="145" y="112" rx="10" width="150" height="40" fill="#17171b" stroke="#ee0000"/>
+    <text x="220" y="137" fill="#ffffff">MATE</text>
+    <rect x="315" y="112" rx="10" width="150" height="40" fill="#17171b" stroke="#4b4b52"/>
+    <text x="390" y="137" fill="#ffffff">GNOME</text>
+    <rect x="485" y="112" rx="10" width="150" height="40" fill="#17171b" stroke="#5294E2"/>
+    <text x="560" y="137" fill="#ffffff">KDE 6</text>
+    <rect x="655" y="112" rx="10" width="150" height="40" fill="#17171b" stroke="#4b4b52"/>
+    <text x="730" y="137" fill="#ffffff">Podman</text>
+    <rect x="825" y="112" rx="10" width="150" height="40" fill="#17171b" stroke="#ee0000"/>
+    <text x="900" y="137" fill="#ffffff">systemd</text>
+    <rect x="995" y="112" rx="10" width="150" height="40" fill="#17171b" stroke="#4b4b52"/>
+    <text x="1070" y="137" fill="#ffffff">X410</text>
+    <rect x="1165" y="112" rx="10" width="150" height="40" fill="#17171b" stroke="#0078D4"/>
+    <text x="1240" y="137" fill="#ffffff">WSLg</text>
+  </g>
+</svg>
