@@ -203,7 +203,7 @@ RHEL normally grants sudo through:
 Inspect or edit sudo with `visudo` only:
 
 ```bash
-EDITOR=nano visudo
+sudo EDITOR=nano visudo
 ```
 
 ### 8. Restart WSL
