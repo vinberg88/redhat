@@ -10,36 +10,27 @@ Download Redhat 10.2 Enterprise via this link: https://console.redhat.com/insigh
 
 NOTE: You need to build Red Hat Enterprise Linux 10.2 for WSL via redhat.com - Takes some time...
 
+                                            RedHat WSL - GITHUB - https://github.com/vinberg88/redhat 🔟
 
-
-           .MMM..:MMMMMMM                            .MMM..:MMMMMMM
-          MMMMMMMMMMMMMMMMMM                        MMMMMMMMMMMMMMMMMM
-          MMMMMMMMMMMMMMMMMMMM.                     MMMMMMMMMMMMMMMMMMMM.
-         MMMMMMMMMMMMMMMMMMMMMM                    MMMMMMMMMMMMMMMMMMMMMM
-        ,MMMMMMMMMMMMMMMMMMMMMM:                  ,MMMMMMMMMMMMMMMMMMMMMM:
-        MMMMMMMMMMMMMMMMMMMMMMMM                  MMMMMMMMMMMMMMMMMMMMMMMM
-  .MMMM'  MMMMMMMMMMMMMMMMMMMMMM            .MMMM'  MMMMMMMMMMMMMMMMMMMMMM
- MMMMMM    `MMMMMMMMMMMMMMMMMMMM.          MMMMMM    `MMMMMMMMMMMMMMMMMMMM.
-MMMMMMMM      MMMMMMMMMMMMMMMMMM .        MMMMMMMM      MMMMMMMMMMMMMMMMMM .
-MMMMMMMMM.       `MMMMMMMMMMMMM' MM.      MMMMMMMMM.       `MMMMMMMMMMMMM' MM.
-MMMMMMMMMMM.                     MMMM     MMMMMMMMMMM.                     MMMM
-`MMMMMMMMMMMMM.                 ,MMMMM.   `MMMMMMMMMMMMM.                 ,MMMMM.
- `MMMMMMMMMMMMMMMMM.          ,MMMMMMMM.   `MMMMMMMMMMMMMMMMM.          ,MMMMMMMM.
-    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:
-         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM            MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-            `MMMMMMMMMMMMMMMMMMMMMMMM:                `MMMMMMMMMMMMMMMMMMMMMMMM:
-                ``MMMMMMMMMMMMMMMMM'                      ``MMMMMMMMMMMMMMMMM''              
-
-
-
-MEDIA: MATTIAS VINBERG - SWEDEN - STOCKHOLM - REDHAT - 2026
-
-OS: Red Hat Enterprise Linux 10.2 x86_64
-Host: Windows Subsystem for Linux - RedHatEnterpriseLinux-10.0 (2.5.10.0)
-Kernel: Linux 6.6.87.2-microsoft-standard-WSL2
-Windows: Windows 11 - Dev - Latest edition
-Desktop for Linux: KDE 6
+           .MMM..:MMMMMMM                   Host: Windows Subsystem for Linux - RedHatEnterpriseLinux-10.2 (2.9.12.0)
+          MMMMMMMMMMMMMMMMMM                
+          MMMMMMMMMMMMMMMMMMMM.             Kernel: Linux 6.18.40.1-microsoft-standard-WSL2
+         MMMMMMMMMMMMMMMMMMMMMM             
+        ,MMMMMMMMMMMMMMMMMMMMMM:            MEDIA MATTIAS VINBERG - STOCKHOLM - SWEDEN - 2026 - REDHAT INC
+        MMMMMMMMMMMMMMMMMMMMMMMM            
+  .MMMM'  MMMMMMMMMMMMMMMMMMMMMM            OS: Windows 11 Pro for Workstations (25H2) x86_64 
+ MMMMMM    `MMMMMMMMMMMMMMMMMMMM.           
+MMMMMMMM      MMMMMMMMMMMMMMMMMM .          FIND ME ON GITHUB - WSL - https://github.com/vinberg88
+MMMMMMMMM.       `MMMMMMMMMMMMM' MM.        
+MMMMMMMMMMM.                     MMMM       More desktops for WSL: https://github.com/vinberg88/opensuse
+`MMMMMMMMMMMMM.                 ,MMMMM.     
+ `MMMMMMMMMMMMMMMMM.          ,MMMMMMMM.    Mail: mattiasvinberg@duck.com
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    
+      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:    OS: Red Hat Enterprise Linux 10.2 (Coughlan) x86_64
+         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     
+            `MMMMMMMMMMMMMMMMMMMMMMMM:      Wsl info page - https://vinberg88.github.io
+                ``MMMMMMMMMMMMMMMMM'                                                                                      
+                                            WM: WSLg 1.0.79 (Wayland)
 
 TOOLS THAT I USE FOR WSL
 
