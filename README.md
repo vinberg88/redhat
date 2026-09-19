@@ -4,8 +4,6 @@
 
 # Red Hat Enterprise Linux on WSL - REDHAT 10
 
-How to install REDHAT 10 - https://github.com/vinberg88/redhat/blob/main/REDHAT-INSTALL.txt
-
 Sister WSL desktop projects for WSL
 
 | Distro | Repo |
@@ -38,6 +36,20 @@ A community project for running a real Red Hat Enterprise Linux userspace under 
 [Wallpapers](wallpapers/)
 
 </div>
+
+---
+
+Download Red Hat Enterprise Linux 10.2 for wsl here  https://developers.redhat.com/products/rhel/download ✅
+
+Sign in to REDHAT PAGE and find: Red Hat Enterprise Linux 10.2 - Architecture: x86_64 - Image type: WSL2 image
+
+You will see this and download after login - last in image is WSL REDHAT for Windows11:
+
+Look here: https://github.com/vinberg88/redhat/blob/main/redhat-wsl-image.png
+
+How to install REDHAT 10 - https://github.com/vinberg88/redhat/blob/main/REDHAT-INSTALL.txt
+
+Install it from PowerShell after download: wsl --install --from-file "rhel-10.2-x86_64-wsl2.wsl"
 
 ---
 
