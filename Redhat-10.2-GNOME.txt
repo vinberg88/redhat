@@ -7,7 +7,7 @@ Install Redhat 10 via this link for WSL: https://github.com/vinberg88/redhat/blo
 SAME SETUP FOR KDE AND GNOME TO START REDHAT =] See more here: https://github.com/vinberg88/redhat
 
 How to install GNOME 49 via Red Hat Enterprise Linux 10.2 - TEXT VIA GITHUB.
-Comming Zone….
+https://github.com/vinberg88/redhat/blob/main/Redhat-10.2-GNOME.txt
 
 How to install GNOME 49 via Red Hat Enterprise Linux 10.2 - MOVIE VIA YOUTUBE.
 Comming Zone….
