@@ -444,7 +444,7 @@ sudo dnf install ./blanket-0.8.0-1.noarch.rpm -y
 
 Install Snapd for RedHat 10.2 AND GNOME 49.4
 
-Copy and paste: sudo dnf install snapd*
+Copy and paste: sudo dnf install snapd* snap-confine* snapd-* snapp* snap* ghc-snap* --allowerasing --nobest --skip-broken
 
 Copy and paste all. Do this 3 times.
 
@@ -465,6 +465,10 @@ Continue installing snapd Programs for Redhat 10.2
 Copy and paste: sudo snap install core
 
 Copy and paste: sudo snap install snapd
+
+Copy and paste: sudo snap install firefox
+
+Copy and paste: sudo snap install thunderbird
 
 Themes to install for REDHAT via snapd =)
 
@@ -522,11 +526,27 @@ Copy and paste: sudo dnf install flatpak* -y --skip-broken --nobest
 
 Copy and paste: sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
-Copy and paste: sudo flatpak install flathub com.discordapp.Discord
+Talk, play, hang out - sudo flatpak install flathub com.discordapp.Discord
 
-Copy and paste: sudo flatpak install flathub com.wps.Office
+Discord is a free all in one messaging, voice, and video client thats
+available on your computer and phone. Whether you’re part of a school club,
+gaming group, worldwide art community, or just a handful of friends
+that want to spend time together, Discord makes it easy to talk every
+day and hang out more often.
 
-Copy and paste: sudo flatpak install flathub org.mozilla.thunderbird
+Send and receive email - Convey - sudo flatpak install flathub net.donnybeelo.Convey
+
+Convey is an email application built around conversations, for the GNOME desktop.
+It allows you to read, find and send email with a straightforward, modern interface.
+
+WPS 365 Suite - sudo flatpak install flathub cn.wps.wps_365
+
+The new generation of WPS 365, a one-stop digital office platform under
+Kingsoft Office, not only offers genuine WPS suites, online documents,
+enterprise cloud disks and other content creation and management tools,
+but also provides audio and video conferencing, Kingsoft Workbench IM
+and other collaborative office software to facilitate the digital
+transformation of enterprises.
 
 Find more programs for FLATPAK here: https://flathub.org
 
@@ -603,6 +623,29 @@ sudo dnf install cinnamon-theme-orchis -y
 sudo dnf install tango-icon-theme -y
 sudo dnf install awf-gtk4 -y
 sudo dnf install awf-gtk3 -y
+sudo dnf install adwaita++-Icons -y
+sudo dnf install tau-helium -y
+sudo dnf install gnome-shell-extension-user-theme -y
+sudo dnf install gnome-icon-theme-legacy gnome-icon-theme -y
+sudo dnf install aurorae -y
+sudo dnf install awf-gtk2 -y
+sudo dnf install awf-gtk4 -y
+sudo dnf install breeze-gtk -y
+sudo dnf install breeze-gtk-common -y
+sudo dnf install breeze-gtk-gtk2 -y
+sudo dnf install breeze-gtk-gtk3 -y
+sudo dnf install breeze-gtk-gtk4 -y
+
+sudo dnf install darkly redhat-backgrounds --allowerasing --nobest --skip-broken
+sudo dnf install redhat-backgrounds redhat-cloud-client-configuration redhat-cloud-client-configuration-cdn redhat-display-fonts --allowerasing --nobest --skip-broken
+sudo dnf install redhat-display-vf-fonts redhat-flatpak-preinstall-firefox redhat-flatpak-preinstall-thunderbird redhat-flatpak-repo redhat-indexhtml --allowerasing --nobest --skip-broken
+
+sudo dnf install desktop-backgrounds grantlee-editor gtk-update-icon-cache gtk2-engines icon-naming-utils kf6-breeze-icons --allowerasing --nobest --skip-broken
+sudo dnf install kf6-breeze-icons-devel mkdocs-material oxygen-sounds --allowerasing --nobest --skip-broken
+sudo dnf install python3-accessible-pygments python3-furo python3-jupyterlab_pygments python3-shibuya --allowerasing --nobest --skip-broken
+sudo dnf install python3-sphinx-basic-ng rust-xcursor+default-devel rust-xcursor-devel --allowerasing --nobest --skip-broken
+
+------------------------------------------------------
 
 Tokyonight theme for GNOME and REDHAT 10.2
 
