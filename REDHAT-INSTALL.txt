@@ -1,0 +1,194 @@
+TIME TO START INSTALL Red Hat Enterprise Linux 10 VIA WINDOWS 11 - WSL - SETUP
+
++-------------------------------------------+
+
+                                            RedHat WSL - GITHUB - https://github.com/vinberg88/redhat 🔟
+
+           .MMM..:MMMMMMM                   Host: Windows Subsystem for Linux - RedHatEnterpriseLinux-10.2 (2.9.12.0)
+          MMMMMMMMMMMMMMMMMM                
+          MMMMMMMMMMMMMMMMMMMM.             Kernel: Linux 6.18.40.1-microsoft-standard-WSL2
+         MMMMMMMMMMMMMMMMMMMMMM             
+        ,MMMMMMMMMMMMMMMMMMMMMM:            MEDIA MATTIAS VINBERG - STOCKHOLM - SWEDEN - 2026 - REDHAT INC
+        MMMMMMMMMMMMMMMMMMMMMMMM            
+  .MMMM'  MMMMMMMMMMMMMMMMMMMMMM            OS: Windows 11 Pro for Workstations (25H2) x86_64 
+ MMMMMM    `MMMMMMMMMMMMMMMMMMMM.           
+MMMMMMMM      MMMMMMMMMMMMMMMMMM .          FIND ME ON GITHUB - WSL - https://github.com/vinberg88
+MMMMMMMMM.       `MMMMMMMMMMMMM' MM.        
+MMMMMMMMMMM.                     MMMM       More desktops for WSL: https://github.com/vinberg88/opensuse
+`MMMMMMMMMMMMM.                 ,MMMMM.     
+ `MMMMMMMMMMMMMMMMM.          ,MMMMMMMM.    Mail: mattiasvinberg@duck.com
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    
+      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:    OS: Red Hat Enterprise Linux 10.2 (Coughlan) x86_64
+         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     
+            `MMMMMMMMMMMMMMMMMMMMMMMM:      Wsl info page - https://vinberg88.github.io
+                ``MMMMMMMMMMMMMMMMM'                                                                                      
+                                            Download Redhat 10.2: https://developers.redhat.com/products/rhel/download
+
+
++-------------------------------------------+
+
+Download Red Hat Enterprise Linux 10.2 here: https://developers.redhat.com/products/rhel/download
+
+You will see this and download in redhat-wsl-image.png - last in image is WSL REDHAT 10.2 for Windows11
+
+Look here: https://github.com/vinberg88/redhat/blob/main/redhat-wsl-image.png
+
++-------------------------------------------+
+
+Download REDHAT 10.2 for wsl ✅
+
+Download Red Hat Enterprise Linux 10.2 here: https://developers.redhat.com/products/rhel/download
+
+Sign in to REDHAT PAGE and find: Red Hat Enterprise Linux 10.2 - Architecture: x86_64 - Image type: WSL2 image
+
+You will see this and download - last in image is WSL REDHAT for Windows11:
+
+Look here: https://github.com/vinberg88/redhat/blob/main/redhat-wsl-image.png
+
++-------------------------------------------+
+
+NEXT INSTALL REDHAT 10.2 FOR WSL ✅
+
+After download press the BLUE ICON and you are running: REDHAT 10.2
+
+You will have something like this: rhel-10.2-x86_64-wsl2.wsl and a BLUE Icon.
+
+You can also install it from PowerShell: wsl --install --from-file "rhel-10.2-x86_64-wsl2.wsl"
+
++-------------------------------------------+
+
+After Red Hat Enterprise Linux 10.2 is installed
+
+NOTE: Restart RHEL 10.2 and login as ROOT USER ✅
+
++-------------------------------------------+
+
+Login as ROOT if you not use TOOL like RAFT WSL or WSL UI ✅
+
+Then check the installed distribution in powershell to be root: wsl -l -v
+
+You will see this in powershell: RedHatEnterpriseLinux-10.2 Stopped 2
+
+Now run this from powershell: wsl -d RedHatEnterpriseLinux-10.2 -u root
+
++-------------------------------------------+
+
+CHANGE THE DEFAULT USERNAME FOR REDHAT 10. The official RHEL 10.2 WSL image uses: cloud-user ✅
+
+Change cloud-user to your own username. Example: My username is adolf.
+
+
+Copy and paste in terminal - root user: usermod -l adolf cloud-user
+
+Copy and paste in terminal - root user: groupmod -n adolf cloud-user
+
+Copy and paste in terminal - root user: usermod -d /home/adolf -m adolf
+
++-------------------------------------------+
+
+Make sure the user is a member of Wheel remember to change adolf to your username ✅
+
+Copy and paste in terminal - root user: usermod -aG wheel adolf
+
++-------------------------------------------+
+
+Set passwords for your USER and ROOT ✅
+
+Copy and paste in terminal - root user: passwd adolf
+
+Copy and paste in terminal - root user: passwd root
+
+Type in terminal CD so you are in root dir: CD 
+
++-------------------------------------------+
+
+Now registerat REDHAT 10 via terminal in WSL. Login in terminal and use same login as redhat page ✅
+
+Copy and paste in terminal - root user: subscription-manager register
+
+Follow instructions in terminal for REDHAT 10.2
+
+Copy and paste in terminal - root user: subscription-manager status
+
+You will see this if all works on REDHAT 10.2
+
++-------------------------------------------+
+   System Status Details
++-------------------------------------------+
+
+Overall Status: Registered
+
++-------------------------------------------+
+
+Install nano, sudo, wget and dnf-plugins-core as root user ✅
+
+dnf install dnf-plugins-core -y
+dnf install sudo -y
+dnf install wget -y
+dnf install nano -y
+
+sudo nano /etc/dnf/dnf.conf
+
+Add the following line: max_parallel_downloads=10 and fastestmirror=True in bottom in nano.
+
+max_parallel_downloads=20
+fastestmirror=True
+
++-------------------------------------------+
+
+Next open nano and add username. adolf is my name you use your username for REDHAT 10 ✅
+
+Copy and paste in terminal - root user: nano /etc/wsl.conf
+
+Like this in terminal for Redhat 10 - Dont forget to change username from adolf =]
+
+[boot]
+systemd = true
+
+[user]
+default=adolf
+
++-------------------------------------------+
+
+Next add your username to visudo file ✅
+
+Copy and paste in terminal - root user: sudo EDITOR=nano visudo
+
+Like this - Change adolf to your username.
+
+adolf ALL=(ALL) ALL
+root ALL=(ALL) ALL
+
++-------------------------------------------+
+
+Restart Redhat 10.2 and login as normal user - Restart Redhat 10.2 and login as normal user ✅
+
+After restart you will see you username in terminal: [adolf@vinberg88 ~]$
+
++-------------------------------------------+
+
+                                            RedHat WSL - GITHUB - https://github.com/vinberg88/redhat 🔟
+
+           .MMM..:MMMMMMM                   Host: Windows Subsystem for Linux - RedHatEnterpriseLinux-10.2 (2.9.12.0)
+          MMMMMMMMMMMMMMMMMM                
+          MMMMMMMMMMMMMMMMMMMM.             Kernel: Linux 6.18.40.1-microsoft-standard-WSL2
+         MMMMMMMMMMMMMMMMMMMMMM             
+        ,MMMMMMMMMMMMMMMMMMMMMM:            MEDIA MATTIAS VINBERG - STOCKHOLM - SWEDEN - 2026 - REDHAT INC
+        MMMMMMMMMMMMMMMMMMMMMMMM            
+  .MMMM'  MMMMMMMMMMMMMMMMMMMMMM            OS: Windows 11 Pro for Workstations (25H2) x86_64 
+ MMMMMM    `MMMMMMMMMMMMMMMMMMMM.           
+MMMMMMMM      MMMMMMMMMMMMMMMMMM .          FIND ME ON GITHUB - WSL - https://github.com/vinberg88
+MMMMMMMMM.       `MMMMMMMMMMMMM' MM.        
+MMMMMMMMMMM.                     MMMM       More desktops for WSL: https://github.com/vinberg88/opensuse
+`MMMMMMMMMMMMM.                 ,MMMMM.     
+ `MMMMMMMMMMMMMMMMM.          ,MMMMMMMM.    Mail: mattiasvinberg@duck.com
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    
+      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:    OS: Red Hat Enterprise Linux 10.2 (Coughlan) x86_64
+         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     
+            `MMMMMMMMMMMMMMMMMMMMMMMM:      Wsl info page - https://vinberg88.github.io
+                ``MMMMMMMMMMMMMMMMM'                                                                                      
+                                            Download Redhat 10.2: https://developers.redhat.com/products/rhel/download
+
+Regards Mattias Vinberg - Red Hat Enterprise Linux 10.2 - KDE 6 - X410 - Linux - Microsoft - Windows 11 - Sweden - 2026
+
++-------------------------------------------+
