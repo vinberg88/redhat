@@ -51,6 +51,8 @@ How to install REDHAT 10 - https://github.com/vinberg88/redhat/blob/main/REDHAT-
 
 Install it from PowerShell after download: wsl --install --from-file "rhel-10.2-x86_64-wsl2.wsl"
 
+OR PRESS THE BLUE ICON AND YOU ARE DONE AFTER DOWNLOAD - NEED SOME SETUP BUT NOT MUCH - rhel-10.2-x86_64-wsl2.wsl
+
 ---
 
 ## At a glance
@@ -262,7 +264,7 @@ Full notes from the tested KDE 6 user setup: [`Redhat-10.2-KDE6.txt`](Redhat-10.
 
 ---
 
-## 📖 About this project
+## 📖 About this project FOR REDHAT AND WSL - GNOME - KDE - MATE
 
 Red Hat Enterprise Linux and Windows Subsystem for Linux are a strong development pair.
 
@@ -350,6 +352,10 @@ mate-x410 stop
 GNOME is the desktop most people associate with a RHEL graphical workstation.
 
 A full GNOME session inside WSL is more experimental than launching individual GNOME apps through WSLg. Modern GNOME leans on Mutter, D-Bus, systemd user services and a modern display stack.
+
+<img width="1920" height="1080" alt="Redhat-10 2-GNOME" src="https://github.com/user-attachments/assets/1485e8c1-99b3-4d22-962e-e6f6dfb9842e" />
+
+
 
 ### Planned GNOME guide
 
