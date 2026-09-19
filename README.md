@@ -316,8 +316,8 @@ Modern WSL2 can run **systemd**, which is what makes services and full desktop-s
 
 | Desktop | Style | Display target | Status |
 |---|---|---|---|
-| 🟢 **MATE** | Traditional, lightweight | X410 / X11 | 🚧 Validation |
-| 🔵 **GNOME** | Modern RHEL-style workstation | WSLg / X11 experiments | 🚧 Validation |
+| 🟢 **MATE** | Traditional, lightweight | X410 / X11 | Comming SONE |
+| 🔵 **GNOME** | Modern RHEL-style workstation | WSLg / X11 experiments | Comming SONE |
 | 🟣 **KDE Plasma 6** | Feature-rich, highly customizable | X410 / X11 | 🧪 Launcher available |
 
 ---
