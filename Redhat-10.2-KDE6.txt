@@ -1,16 +1,20 @@
 Redhat 10.2 and KDE 6 - Install KDE 6 via RedHat Enterprise Linux 10 - WSL - X410 - Windows 11 - Linux - 2026
 
+❤ Thank you for being a part of Redhat 10 and KDE 6 for WSL2 ❤
+
+Install Redhat 10 via this link for WSL: https://github.com/vinberg88/redhat/blob/main/REDHAT-INSTALL.txt
+
 How to install KDE 6 via Red Hat Enterprise Linux 10.2 - TEXT VIA GITHUB for WSL.
 https://github.com/vinberg88/redhat/blob/main/Redhat-10.2-KDE6.txt
-
-Go here for more info - RedHat WSL - GITHUB Guide - https://github.com/vinberg88/redhat
 
 How to install KDE 6 via Red Hat Enterprise Linux 10.2 - MOVIE VIA YOUTUBE for WSL.
 Comming Zone….
 
-Download Redhat 10.2 Enterprise via this link: https://developers.redhat.com/products/rhel/download
+Go here for more info - RedHat WSL - GITHUB Guide - https://github.com/vinberg88/redhat
 
-NOTE: You need to build Red Hat Enterprise Linux 10.2 for WSL via redhat.com - Takes some time...
+See here how to install REDHAT 10: https://github.com/vinberg88/redhat/blob/main/Redhat-10.2-KDE6.txt
+
+                                            RedHat 10 Install https://github.com/vinberg88/redhat/blob/main/REDHAT-INSTALL.txt
 
                                             RedHat WSL - GITHUB - https://github.com/vinberg88/redhat 🔟
 
@@ -32,7 +36,7 @@ MMMMMMMMMMM.                     MMMM       More desktops for WSL: https://githu
          MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     
             `MMMMMMMMMMMMMMMMMMMMMMMM:      Wsl info page - https://vinberg88.github.io
                 ``MMMMMMMMMMMMMMMMM'                                                                                      
-                                            WM: WSLg 1.0.79 (Wayland)
+                                            Download Redhat 10.2: https://developers.redhat.com/products/rhel/download
 
 TOOLS THAT I USE FOR WSL and WINDOWS 11 - REDHAT 10 AND KDE 6
 
@@ -124,7 +128,9 @@ You can also install it from PowerShell: wsl --install --from-file "rhel-10.2-x8
 
 ------------------------------------------------------
 
-After Red Hat Enterprise Linux 10.2 is installed - Restart RHEL 10.2 and login as ROOT USER ✅
+After Red Hat Enterprise Linux 10.2 is installed
+
+NOTE: Restart RHEL 10.2 and login as ROOT USER ✅
 
 ------------------------------------------------------
 
@@ -149,11 +155,13 @@ Copy and paste in terminal - root user: groupmod -n adolf cloud-user
 
 Copy and paste in terminal - root user: usermod -d /home/adolf -m adolf
 
+------------------------------------------------------
 
 Make sure the user is a member of Wheel remember to change adolf to your username ✅
 
 Copy and paste in terminal - root user: usermod -aG wheel adolf
 
+------------------------------------------------------
 
 Set passwords for your USER and ROOT ✅
 
@@ -171,6 +179,41 @@ Copy and paste in terminal - root user: subscription-manager register
 
 Follow instructions in terminal for REDHAT 10.2
 
+Copy and paste in terminal - root user: subscription-manager status
+
+You will see this if all works on REDHAT 10.2
+
++-------------------------------------------+
+   System Status Details
++-------------------------------------------+
+
+Overall Status: Registered
+
+------------------------------------------------------
+
+                                            RedHat WSL - GITHUB - https://github.com/vinberg88/redhat 🔟
+
+           .MMM..:MMMMMMM                   Host: Windows Subsystem for Linux - RedHatEnterpriseLinux-10.2 (2.9.12.0)
+          MMMMMMMMMMMMMMMMMM                
+          MMMMMMMMMMMMMMMMMMMM.             Kernel: Linux 6.18.40.1-microsoft-standard-WSL2
+         MMMMMMMMMMMMMMMMMMMMMM             
+        ,MMMMMMMMMMMMMMMMMMMMMM:            MEDIA MATTIAS VINBERG - STOCKHOLM - SWEDEN - 2026 - REDHAT INC
+        MMMMMMMMMMMMMMMMMMMMMMMM            
+  .MMMM'  MMMMMMMMMMMMMMMMMMMMMM            OS: Windows 11 Pro for Workstations (25H2) x86_64 
+ MMMMMM    `MMMMMMMMMMMMMMMMMMMM.           
+MMMMMMMM      MMMMMMMMMMMMMMMMMM .          FIND ME ON GITHUB - WSL - https://github.com/vinberg88
+MMMMMMMMM.       `MMMMMMMMMMMMM' MM.        
+MMMMMMMMMMM.                     MMMM       More desktops for WSL: https://github.com/vinberg88/opensuse
+`MMMMMMMMMMMMM.                 ,MMMMM.     
+ `MMMMMMMMMMMMMMMMM.          ,MMMMMMMM.    Mail: mattiasvinberg@duck.com
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    
+      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:    OS: Red Hat Enterprise Linux 10.2 (Coughlan) x86_64
+         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     
+            `MMMMMMMMMMMMMMMMMMMMMMMM:      Wsl info page - https://vinberg88.github.io
+                ``MMMMMMMMMMMMMMMMM'                                                                                      
+                                            RedHat 10 Install https://github.com/vinberg88/redhat/blob/main/REDHAT-INSTALL.txt
+
+------------------------------------------------------
 
 Install nano, sudo, wget and dnf-plugins-core as root user ✅
 
@@ -178,6 +221,15 @@ dnf install dnf-plugins-core -y
 dnf install sudo -y
 dnf install wget -y
 dnf install nano -y
+
+sudo nano /etc/dnf/dnf.conf
+
+Add the following line: max_parallel_downloads=10 and fastestmirror=True in bottom in nano.
+
+max_parallel_downloads=20
+fastestmirror=True
+
+------------------------------------------------------
 
 Next open nano and add username. adolf is my name you use your username for REDHAT 10 ✅
 
@@ -191,17 +243,18 @@ systemd = true
 [user]
 default=adolf
 
+------------------------------------------------------
 
 Next add your username to visudo file ✅
 
 Copy and paste in terminal - root user: sudo EDITOR=nano visudo
 
-Like this - Change adolf to your username...
+Like this - Change adolf to your username.
 
 adolf ALL=(ALL) ALL
 root ALL=(ALL) ALL
 
------------------------------------
+------------------------------------------------------
 
 Restart Redhat 10.2 and login as normal user - Restart Redhat 10.2 and login as normal user ✅
 
@@ -228,20 +281,20 @@ sudo dnf --setopt=localpkg_gpgcheck=1 install https://mirrors.rpmfusion.org/nonf
 
 Paste in terminal - Update RedHat 10.2
 
-sudo dnf upgrade --refresh
+sudo dnf upgrade --refresh --allowerasing --nobest --skip-broken -y
 
 ------------------------------------------------------
 
 Basic Programs för KDE 6 and RedHat 10.2 - Install all programs.
 
 sudo dnf install git systemd* wget curl bash pipx xorg net-tools dbus-x11 dbus* yum -y --skip-broken
-sudo dnf install kwin* xorg* -y --nobest --allowerasing --skip-broken
+sudo dnf install kwin* xorg* x11* -y --nobest --allowerasing --skip-broken
 sudo dnf install llvm dialog rsync -y
 sudo dnf install sddm* -y --allowerasing --skip-broken --nobest
 
-sudo dnf install dconf* git wget curl nano bash pipx net-tools dbus-x11 dbus* -y --allowerasing --skip-broken --nobest -y
-sudo dnf install curl git bash librepo pip -y --allowerasing --skip-broken --nobest -y
-sudo dnf group install "System-Tools" --allowerasing --nobest --skip-broken -y
+sudo dnf install dconf* npm* git wget curl nano bash pipx net-tools dbus-x11 dbus* -y --allowerasing --skip-broken --nobest -y
+sudo dnf install rpm* yum* librepo pip* --allowerasing --nobest --skip-broken -y
+sudo dnf group install "System-Tools" "Base" "Multimedia" "Sound and Video" --allowerasing --nobest --skip-broken -y
 
 ------------------------------------------------------
 
@@ -256,6 +309,8 @@ sudo dnf install kwin-x11 plasma-workspace-x11 xsetroot
 sudo echo -e "DESKTOP=KDE\nPREFERRED=startplasma-x11" > sudo /etc/sysconfig/desktop
 
 ------------------------------------------------------
+
+                                            RedHat 10 Install - https://github.com/vinberg88/redhat/blob/main/REDHAT-INSTALL.txt
 
                                             RedHat WSL - GITHUB - https://github.com/vinberg88/redhat 🔟
 
@@ -289,13 +344,13 @@ sudo dnf install plasma* -y --allowerasing --skip-broken --nobest
 sudo dnf groupinstall "Workstation" "Base" -y --allowerasing --nobest --skip-broken
 sudo dnf groupinstall "KDE Applications" -y
 
-sudo systemctl daemon-reload
+Run this after installation: sudo systemctl daemon-reload
 
 ------------------------------------------------------
 
 Install qt5 / qt6 and ffmpeg for Red Hat Enterprise Linux 10.2 and KDE 6 desktop
 
-sudo dnf install qt6* qt5* ffmpeg* x11* xorg* weston* mesa* wayland* -y --allowerasing --nobest --skip-broken
+sudo dnf install qt5* ffmpeg* x11* xorg* weston* mesa* wayland* -y --allowerasing --nobest --skip-broken
 
 ------------------------------------------------------
 
@@ -325,7 +380,7 @@ MMMMMMMMMMM.                     MMMM       More desktops for WSL: https://githu
          MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     
             `MMMMMMMMMMMMMMMMMMMMMMMM:      Wsl info page - https://vinberg88.github.io
                 ``MMMMMMMMMMMMMMMMM'                                                                                      
-                                            WM: WSLg 1.0.79 (Wayland)
+                                            RedHat 10 Install - https://github.com/vinberg88/redhat/blob/main/REDHAT-INSTALL.txt
 
 ------------------------------------------------------
 
@@ -436,9 +491,27 @@ Copy and paste: sudo flatpak install flathub org.libreoffice.LibreOffice
 
 Copy and paste: sudo flatpak install flathub com.wps.Office
 
+Copy and paste: sudo flatpak install flathub io.github.kolunmi.Bazaar
+
+Copy and paste: sudo flatpak install flathub space.f1nn.chorus
+
 Find more programs for FLATPAK here: https://flathub.org
 
------------------------------------
+------------------------------------------------------
+
+Install LibreOffice via rpm package for REDHAT 10
+
+wget https://mirror.accum.se/mirror/documentfoundation.org/libreoffice/stable/26.2.6/rpm/x86_64/LibreOffice_26.2.6_Linux_x86-64_rpm.tar.gz
+
+tar -xzvf LibreOffice_26.2.6_Linux_x86-64_rpm.tar.gz
+
+cd LibreOffice_26.2.6.3_Linux_x86-64_rpm
+
+cd RPMS
+
+sudo dnf install -y *.rpm
+
+------------------------------------------------------
 
 Now lets install Spotify From Sweden - REDHAT 10.2
 
@@ -446,7 +519,7 @@ sudo dnf config-manager --add-repo=https://negativo17.org/repos/epel-spotify.rep
 
 sudo dnf -y install spotify-client
 
--------------------------------------------------------------
+------------------------------------------------------
 
 Gimp for REDHAT 10.2.
 
@@ -454,7 +527,7 @@ sudo dnf copr enable jridky/gimp10 rhel-10-x86_64 -y
 
 sudo dnf install gimp -y
 
--------------------------------------------------------------
+------------------------------------------------------
 
                                             RedHat WSL - GITHUB - https://github.com/vinberg88/redhat 🔟
 
@@ -476,9 +549,9 @@ MMMMMMMMMMM.                     MMMM       More desktops for WSL: https://githu
          MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     
             `MMMMMMMMMMMMMMMMMMMMMMMM:      Wsl info page - https://vinberg88.github.io
                 ``MMMMMMMMMMMMMMMMM'                                                                                      
-                                            WM: WSLg 1.0.79 (Wayland)
+                                            RedHat 10 Install - https://github.com/vinberg88/redhat/blob/main/REDHAT-INSTALL.txt
 
--------------------------------------------------------------
+------------------------------------------------------
 
 INSTALL THEMES FOR KDE 6 via WSL and REDHAT 10.2
 
@@ -506,13 +579,13 @@ cd themes
 ./install.sh
 cd
 
------------------------------------
+------------------------------------------------------
 
 Install some more programs for REDHAT 10 and KDE 6 - 2026
 
 sudo dnf install -y ffmpeg* dconf-editor xhost procps bind-utils iproute iputils nmap-ncat --allowerasing --skip-broken
 
------------------------------------
+------------------------------------------------------
 
 Copy and Paste in terminal for REDHAT 10.2
 
@@ -520,31 +593,33 @@ xdg-user-dirs-update
 sudo systemctl set-default graphical.target
 sudo ln -fs /usr/lib/systemd/system/graphical.target /etc/systemd/system/default.target
 
------------------------------------
+------------------------------------------------------
 
 Paste this one time in Console - RedHat 10.2
 
 sudo mkdir /run/user/1000 && sudo chmod 700 /run/user/1000 && sudo chown $(whoami): /run/user/1000
 
------------------------------------
+------------------------------------------------------
 
-Redhat 10 - Type this in terminal and put your username there - sudo loginctl enable-linger adolf
+Redhat 10 - Add this lines to terminal. KDE 6 and Redhat 10.2
 
------------------------------------
+Type this in terminal and put your username there - sudo loginctl enable-linger adolf
+
+------------------------------------------------------
 
 Install some more programs for KDE 6 and RedHat 10.2
 
-sudo dnf install dconf-editor curl wget git bash* zeal* qt6* qt5* qt* gtk* librepo* --nobest --skip-broken -y
+sudo dnf install dconf-editor curl wget git bash* zeal* qt5* gtk* librepo* --nobest --skip-broken -y
 
------------------------------------
+------------------------------------------------------
 
 Install THEMES for KDE 6 and RedHat 10.2
 
-sudo yum install tau-helium plasma-integration kf6-breeze-icons kf6-kiconthemes gtk4-theme-orchis adwaita-cursor-theme mkdocs-material desktop-backgrounds-waves papirus-icon-theme
-sudo yum install adwaita-icon-theme epapirus-icon-theme fluent-kde-theme google-black-cursor-theme plasma-mobile-sounds oxygen-sounds gtk2-engines papirus-icon-theme-dark
-sudo yum install bibata-cursor-theme breeze-icon-theme-rcc tango-icon-theme rust-syntect+default-themes-devel plymouth-theme-script grantleetheme plank-theme-orchis  
-sudo yum install papirus-icon-theme-light plymouth-system-theme metacity-theme-orchis kf6-kiconthemes-html kf6-kiconthemes-doc kf6-kiconthemes-devel kf6-kiconthemes 
-sudo yum install fluent-kde-theme-sddm fluent-kde-theme fluent-icon-theme breeze-plus-icon-theme breeze-icon-theme breeze-cursor-theme kf6-kiconthemes grantleetheme
+sudo yum install tau-helium plasma-integration kf6-breeze-icons kf6-kiconthemes gtk4-theme-orchis adwaita-cursor-theme mkdocs-material desktop-backgrounds-waves papirus-icon-theme -y
+sudo yum install adwaita-icon-theme epapirus-icon-theme fluent-kde-theme google-black-cursor-theme plasma-mobile-sounds oxygen-sounds gtk2-engines papirus-icon-theme-dark -y
+sudo yum install bibata-cursor-theme breeze-icon-theme-rcc tango-icon-theme rust-syntect+default-themes-devel plymouth-theme-script grantleetheme plank-theme-orchis -y
+sudo yum install papirus-icon-theme-light plymouth-system-theme metacity-theme-orchis kf6-kiconthemes-html kf6-kiconthemes-doc kf6-kiconthemes-devel kf6-kiconthemes -y
+sudo yum install fluent-kde-theme-sddm fluent-kde-theme fluent-icon-theme breeze-plus-icon-theme breeze-icon-theme breeze-cursor-theme kf6-kiconthemes grantleetheme -y
 
 ------------------------------------------------------
 
@@ -557,6 +632,14 @@ sudo mkdir -p ~/.local/share/Icons
 sudo unzip Tokyonight-Dark-Icons.zip -d ~/.local/share/icons/
 
 Works Perfect for Redhat and KDE 6 - 2026 - ✔
+
+------------------------------------------------------
+
+For KDE Plasma Desktop and REDHAT 10 and KDE 6
+
+git clone --depth=1 https://github.com/catppuccin/kde catppuccin-kde && cd catppuccin-kde
+
+Run the install script using ./install.sh and follow the instructions.
 
 ------------------------------------------------------
 
@@ -583,9 +666,33 @@ sudo chattr +i /etc/resolv.conf
 sudo systemctl restart systemd-resolved
 sudo cat /etc/resolv.conf
 
-DONE - alot of problem fixed =]
+DONE - alot of problem fixed REDHAT 10.2 and KDE 6 for WSL and WINDOWS 11.
 
--------------------------------------------------------------
+------------------------------------------------------
+
+                                            RedHat WSL - GITHUB - https://github.com/vinberg88/redhat 🔟
+
+           .MMM..:MMMMMMM                   Host: Windows Subsystem for Linux - RedHatEnterpriseLinux-10.2 (2.9.12.0)
+          MMMMMMMMMMMMMMMMMM                
+          MMMMMMMMMMMMMMMMMMMM.             Kernel: Linux 6.18.40.1-microsoft-standard-WSL2
+         MMMMMMMMMMMMMMMMMMMMMM             
+        ,MMMMMMMMMMMMMMMMMMMMMM:            MEDIA MATTIAS VINBERG - STOCKHOLM - SWEDEN - 2026 - REDHAT INC
+        MMMMMMMMMMMMMMMMMMMMMMMM            
+  .MMMM'  MMMMMMMMMMMMMMMMMMMMMM            OS: Windows 11 Pro for Workstations (25H2) x86_64 
+ MMMMMM    `MMMMMMMMMMMMMMMMMMMM.           
+MMMMMMMM      MMMMMMMMMMMMMMMMMM .          FIND ME ON GITHUB - WSL - https://github.com/vinberg88
+MMMMMMMMM.       `MMMMMMMMMMMMM' MM.        
+MMMMMMMMMMM.                     MMMM       More desktops for WSL: https://github.com/vinberg88/opensuse
+`MMMMMMMMMMMMM.                 ,MMMMM.     
+ `MMMMMMMMMMMMMMMMM.          ,MMMMMMMM.    RedHat 10 Install - https://github.com/vinberg88/redhat/blob/main/REDHAT-INSTALL.txt
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    
+      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:    OS: Red Hat Enterprise Linux 10.2 (Coughlan) x86_64
+         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     
+            `MMMMMMMMMMMMMMMMMMMMMMMM:      Wsl info page - https://vinberg88.github.io
+                ``MMMMMMMMMMMMMMMMM'                                                                                      
+                                            Download Redhat 10.2: https://developers.redhat.com/products/rhel/download
+
+------------------------------------------------------
 
 Install this for KDE 6 AND REDHAT 10 - fix so startplasma-x11 work.
 
@@ -597,7 +704,11 @@ wget https://www.swehub.com/rocky/plasma-wsl-starter-1.3.0-1.el10.noarch.rpm
 
 sudo dnf -y install ./plasma-wsl-starter-1.3.0-1.el10.noarch.rpm
 
------------------------------------
+------------------------------------------------------
+
+Restart REDHAT 10 - RESTART redhat 10 - RESTART redhat 🔟 
+
+------------------------------------------------------
 
 Last step for Red Hat Enterprise Linux 10 — KDE Plasma 6 + X410
 
@@ -605,7 +716,7 @@ The last thing to install is the start script that makes KDE Plasma 6 work with 
 
 IMPORTANT!: START X410 XSERVER FOR WINDOWS 11 FIRST.
 
-NOTE: Do not continue until X410 is running.
+NOTE: Do not continue until X410 is runningv via WINDOWS 11
 
 After X410 has started, open your Red Hat Enterprise Linux 10 terminal and run:
 
@@ -613,12 +724,22 @@ wget -O install-kde6-x410-rhel10.sh \
 https://raw.githubusercontent.com/vinberg88/redhat/main/scripts/install-kde6-x410-rhel10.sh
 
 chmod +x install-kde6-x410-rhel10.sh
-
 ./install-kde6-x410-rhel10.sh
+
+If you get an error run this lines.
+
+sudo chown -R "$USER:$(id -gn)" "$HOME/.local/state/kde6-x410"
+chmod -R u+rwX "$HOME/.local/state/kde6-x410"
+
+rm -f "$HOME/.local/state/kde6-x410/session.pid"
+rm -f "$HOME/.local/state/kde6-x410/session.log"
+
+ls -ld ~/.local/state/kde6-x410
+ls -la ~/.local/state/kde6-x410
 
 Now check the installation via terminal:
 
-kde6-x410 doctor
+Copy and PASTE in TERMINAL: kde6-x410 doctor
 
 You will see something like this =)
 
@@ -645,9 +766,9 @@ Time to start KDE 6 and Redhat 10.2 =]
 
 If X410 is reachable and the status is READY, start KDE Plasma 6 with:
 
-export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0
+Copy and PASTE in TERMINAL: export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0
 
-kde6-x410 start
+Copy and PASTE in TERMINAL: kde6-x410 start
 
 NOTE: IT TAKE SOME TIME TO START FIRST ROUND - JUST WAIT REDHAT WORKS WELL UNDER WSL =)
 
@@ -660,7 +781,7 @@ Regards Mattias Vinberg - Red Hat Enterprise Linux 10.2 - KDE 6 - X410 - Linux -
 
            .MMM..:MMMMMMM                   Host: Windows Subsystem for Linux - RedHatEnterpriseLinux-10.2 (2.9.12.0)
           MMMMMMMMMMMMMMMMMM                
-          MMMMMMMMMMMMMMMMMMMM.             Kernel: Linux 6.18.40.1-microsoft-standard-WSL2
+          MMMMMMMMMMMMMMMMMMMM.             RedHat 10 Install - https://github.com/vinberg88/redhat/blob/main/REDHAT-INSTALL.txt
          MMMMMMMMMMMMMMMMMMMMMM             
         ,MMMMMMMMMMMMMMMMMMMMMM:            MEDIA MATTIAS VINBERG - STOCKHOLM - SWEDEN - 2026 - REDHAT INC
         MMMMMMMMMMMMMMMMMMMMMMMM            
@@ -681,6 +802,6 @@ MMMMMMMMMMM.                     MMMM       More desktops for WSL: https://githu
 
 ❤ Thank you for being a part of the Red Hat Enterprise 10 and KDE 6 Project for WSL2 ❤
 
-Red Hat and RHEL are trademarks or registered trademarks of Red Hat, Inc.
-                                        
+Red Hat - RHEL - Red Hat Inc - 2026 - REDHAT WSL SETUP - https://github.com/vinberg88/redhat/blob/main/REDHAT-INSTALL.txt
+
 -----------------------------------
