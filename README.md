@@ -373,7 +373,7 @@ gnome-wsl stop
 
 ---
 
-## 🟣 KDE Plasma 6 - Comming SONE
+## 🟣 KDE 6 VIA REDHAT 10 FOR WSL - SONE DONE!
 
 KDE Plasma 6 is the most configurable desktop in the project and the first one with a dedicated X410 launcher.
 
