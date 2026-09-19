@@ -696,6 +696,8 @@ redhat/
 
 ---
 
+<img width="1116" height="590" alt="WSL-REDHAT" src="https://github.com/user-attachments/assets/f14daf48-fa83-4610-945c-30164cc317ba" />
+
 <div align="center">
 
 ## Red Hat + WSL + Linux Desktop
