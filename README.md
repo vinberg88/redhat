@@ -4,6 +4,8 @@
 
 # Red Hat Enterprise Linux on WSL - REDHAT 10
 
+How to install REDHAT 10 - https://github.com/vinberg88/redhat/blob/main/REDHAT-INSTALL.txt
+
 Sister WSL desktop projects for WSL
 
 | Distro | Repo |
