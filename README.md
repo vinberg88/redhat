@@ -373,11 +373,15 @@ gnome-wsl stop
 
 ---
 
-## 🟣 KDE Plasma 6
+## 🟣 KDE Plasma 6 - Comming SONE
 
 KDE Plasma 6 is the most configurable desktop in the project and the first one with a dedicated X410 launcher.
 
 The design goal is simple: keep the **entire** Plasma session on one display server. No Konsole on X410 and System Settings leaking out through WSLg.
+
+<img width="1920" height="1080" alt="Redhat-10-KDE6" src="https://github.com/user-attachments/assets/b32f9fc0-f26e-487f-a839-64acad01ecb5" />
+
+How to install KDE 6 via REDHAT - https://github.com/vinberg88/redhat/blob/main/Redhat-10.2-KDE6.txt
 
 ### What you already have in this repo
 
