@@ -355,7 +355,9 @@ A full GNOME session inside WSL is more experimental than launching individual G
 
 <img width="1920" height="1080" alt="Redhat-10 2-GNOME" src="https://github.com/user-attachments/assets/1485e8c1-99b3-4d22-962e-e6f6dfb9842e" />
 
+How to install GNOME desktop via Redhat https://github.com/vinberg88/redhat/blob/main/Redhat-10.2-GNOME.txt
 
+Video is cooming SONE...
 
 ### Planned GNOME guide
 
@@ -388,6 +390,8 @@ The design goal is simple: keep the **entire** Plasma session on one display ser
 <img width="1920" height="1080" alt="Redhat-10-KDE6" src="https://github.com/user-attachments/assets/b32f9fc0-f26e-487f-a839-64acad01ecb5" />
 
 How to install KDE 6 via REDHAT - https://github.com/vinberg88/redhat/blob/main/Redhat-10.2-KDE6.txt
+
+Video is cooming SONE...
 
 ### What you already have in this repo
 
