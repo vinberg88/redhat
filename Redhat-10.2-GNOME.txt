@@ -1,0 +1,797 @@
+Redhat 10 and GNOME 49 - Install GNOME 49 via RedHat Enterprise Linux 10.2 - WSL - X410 - Windows 11 - Linux - 2026
+
+❤ Thank you for being a part of Redhat 10.2 and GNOME 49 for WSL2 ❤
+
+Install Redhat 10 via this link for WSL: https://github.com/vinberg88/redhat/blob/main/REDHAT-INSTALL.txt
+
+SAME SETUP FOR KDE AND GNOME TO START REDHAT =] See more here: https://github.com/vinberg88/redhat
+
+How to install GNOME 49 via Red Hat Enterprise Linux 10.2 - TEXT VIA GITHUB.
+Comming Zone….
+
+How to install GNOME 49 via Red Hat Enterprise Linux 10.2 - MOVIE VIA YOUTUBE.
+Comming Zone….
+
+Go here for more info - RedHat WSL - GITHUB Guide - https://github.com/vinberg88/redhat
+
+See here how to install REDHAT 10: https://github.com/vinberg88/redhat/blob/main/REDHAT-INSTALL.txt
+
+
+                                            Install Redhat 10 for KDE as Gnome - https://github.com/vinberg88/redhat/blob/main/REDHAT-INSTALL.txt
+
+                                            RedHat WSL - GITHUB - https://github.com/vinberg88/redhat 🔟
+
+           .MMM..:MMMMMMM                   Host: Windows Subsystem for Linux - RedHatEnterpriseLinux-10.2 (2.9.12.0)
+          MMMMMMMMMMMMMMMMMM                
+          MMMMMMMMMMMMMMMMMMMM.             Kernel: Linux 6.18.40.1-microsoft-standard-WSL2
+         MMMMMMMMMMMMMMMMMMMMMM             
+        ,MMMMMMMMMMMMMMMMMMMMMM:            MEDIA MATTIAS VINBERG - STOCKHOLM - SWEDEN - 2026 - REDHAT INC
+        MMMMMMMMMMMMMMMMMMMMMMMM            
+  .MMMM'  MMMMMMMMMMMMMMMMMMMMMM            OS: Windows 11 Pro for Workstations (25H2) x86_64 
+ MMMMMM    `MMMMMMMMMMMMMMMMMMMM.           
+MMMMMMMM      MMMMMMMMMMMMMMMMMM .          FIND ME ON GITHUB - WSL - https://github.com/vinberg88
+MMMMMMMMM.       `MMMMMMMMMMMMM' MM.        
+MMMMMMMMMMM.                     MMMM       More desktops for WSL: https://github.com/vinberg88/opensuse
+`MMMMMMMMMMMMM.                 ,MMMMM.     
+ `MMMMMMMMMMMMMMMMM.          ,MMMMMMMM.    Mail: mattiasvinberg@duck.com
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    
+      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:    OS: Red Hat Enterprise Linux 10.2 (Coughlan) x86_64
+         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     
+            `MMMMMMMMMMMMMMMMMMMMMMMM:      OS FOR LINUX OR DESKTOP - GNOME 49 - REDHAT INC - SWEDEN - 2026 💷 
+                ``MMMMMMMMMMMMMMMMM'                                                                                      
+                                            Download Redhat 10.2: https://developers.redhat.com/products/rhel/download
+
+
+TOOLS THAT I USE FOR WSL and WINDOWS 11 - REDHAT 10 AND GNOME 49
+
+Use X410 - X Server for Windows 11 and it works well.
+https://apps.microsoft.com/detail/9pm8lp83g3l3?hl=en-US&gl=US
+
+Raft WSL is a powerful tool for managing Windows Subsystem Linux Distros.
+https://apps.microsoft.com/detail/9msmjqd017x7?hl=en-US&gl=US
+
+WSL UI - This tool is free and works like Raft WSL for WSL.
+https://apps.microsoft.com/detail/9p8548knj2m9?hl=sv-SE&gl=SE
+
+About Red Hat Enterprise Linux 10.2 - https://www.Redhat.com/en
+
+Download Redhat 10.2: https://developers.redhat.com/products/rhel/download
+
+HAVE TO INSTALL SEE HERE: https://github.com/vinberg88/redhat/blob/main/REDHAT-INSTALL.txt
+
+Red Hat is the leading provider of enterprise open source
+software—including Linux®, hybrid cloud, AI, and automation
+technologies. We work alongside a community of contributors,
+customers, and partners to build technology that unlocks
+opportunities for innovation, everywhere. With engineers
+connected to open source communities, the freedom of our
+subscription model, and a broad portfolio of Products
+that's constantly expanding, Red Hat is here to help
+you face your business challenges head-on. We're 
+successful because we stay true to the original intent
+of open source. Red Hat taps into the collective talent
+and innovation of open source communities to produce
+better software. Red Hatters are empowered to
+contribute their ideas and skills, no matter their
+job title. Passionate, diverse groups of people are
+free to debate, collaborate, and take action.
+Together, we create an environment where the best
+ideas thrive. Red Hat delivers hardened, open source
+solutions that make it easier for enterprises to work
+across platforms and environments, from the core datacenter
+to the network edge. By operating transparently and 
+responsibly, we continue to be a catalyst in open 
+source communities, helping you build flexible, powerful
+IT infrastructure solutions.
+
+About GNOME desktop - GNOME 49 AND REDHAT - https://www.gnome.org
+
+GNOME is designed to help you have the best possible computing
+experience. Every aspect of GNOME has been crafted to fit together
+as a harmonious whole, providing a consistent and integrated 
+experience. Our attention to detail means a smooth and polished
+product that lets you do the things you want without getting
+in the way. GNOME is satisfying to use and beautiful to behold.
+GNOME provides a focused working environment that helps you get
+things done. It is packed with features that will make you more
+productive: a powerful search feature that helps you access all
+your work from one place; side-by-side windows that make it easy
+to view several documents at the same time; seamless integration
+with online accounts which allows you to access all your data in
+one place; and a messaging system that comfortably deals with 
+notifications, letting you quickly respond in place or return to 
+them in a convenient time. Gnome desktop is my favorite!
+
+Find More Stuff for WSL and Linux. Desktops for WSL - https://github.com/vinberg88/opensuse
+
+ABOUT WSL for WINDOWS via GITHUB - MY PAGE - https://vinberg88.github.io
+
+New page for project - WSL - https://github.com/vinberg88
+
+WSL stands for Windows Subsystem for Linux, a feature of Windows that
+allows users to run a Linux environment directly on their Windows
+machine without needing a separate virtual machine or dual-booting.
+
+More info - RedHat WSL - GITHUB Guide - GNOME 49 - https://github.com/vinberg88/redhat
+
+------------------------------------------------------
+
+TIME TO START INSTALL OF GNOME 49 AND Red Hat Enterprise Linux 10.2 VIA WINDOWS 11 - WSL
+
+------------------------------------------------------
+
+Download REDHAT 10.2 for wsl HERE and start to build GNOME desktop ✅ - 2026
+
+Download Red Hat Enterprise Linux 10.2 here: https://developers.redhat.com/products/rhel/download
+
+Sign in to REDHAT PAGE and find: Red Hat Enterprise Linux 10.2 - Architecture: x86_64 - Image type: WSL2 image
+
+You will see this and download - last in image is WSL REDHAT for Windows11:
+
+Look here: https://github.com/vinberg88/redhat/blob/main/redhat-wsl-image.png
+
+------------------------------------------------------
+
+NEXT INSTALL REDHAT 10.2 FOR WSL ✅ - GNOME 49 - REDHAT 10 - WSL - 2026
+
+After download press the BLUE ICON and you are running: REDHAT 10.2
+
+You will have something like this: rhel-10.2-x86_64-wsl2.wsl and a BLUE Icon.
+
+You can also install it from PowerShell: wsl --install --from-file "rhel-10.2-x86_64-wsl2.wsl"
+
+------------------------------------------------------
+
+After Red Hat Enterprise Linux 10.2 is installed
+
+NOTE: Restart RHEL 10.2 and login as ROOT USER ✅
+
+------------------------------------------------------
+
+Login as ROOT if you not use TOOLS like RAFT WSL or WSL UI ✅
+
+Then check the installed distribution in powershell: wsl -l -v
+
+You will see this in powershell: RedHatEnterpriseLinux-10.2 Stopped 2
+
+Now run this from powershell: wsl -d RedHatEnterpriseLinux-10.2 -u root
+
+Type in terminal CD so you are note in root dir - if you need: cd
+
+------------------------------------------------------
+
+CHANGE THE DEFAULT USERNAME FOR REDHAT 10. The official RHEL 10.2 WSL image uses: cloud-user ✅
+
+Change cloud-user to your own username. Example: My username is adolf.
+
+
+Copy and paste in terminal - root user: usermod -l adolf cloud-user
+
+Copy and paste in terminal - root user: groupmod -n adolf cloud-user
+
+Copy and paste in terminal - root user: usermod -d /home/adolf -m adolf
+
+------------------------------------------------------
+
+Make sure the user is a member of Wheel remember to change adolf to your username ✅
+
+Copy and paste in terminal - root user: usermod -aG wheel adolf
+
+------------------------------------------------------
+
+Set passwords for your USER and ROOT ✅
+
+Copy and paste in terminal - root user: passwd adolf
+
+Copy and paste in terminal - root user: passwd root
+
+------------------------------------------------------
+
+Now registerat REDHAT 10 via terminal for Redhat. Login in via terminal and use same login as redhat page - User is email adress. Password same as redhat page ✅
+
+Copy and paste in terminal - root user: subscription-manager register
+
+Follow instructions in terminal for REDHAT 10.2
+
+Copy and paste in terminal - root user: subscription-manager status
+
+You will see this if all works on REDHAT 10.2
+
++-------------------------------------------+
+   System Status Details
++-------------------------------------------+
+
+Overall Status: Registered
+
+------------------------------------------------------
+
+                                            OS FOR LINUX - REDHAT 10 AND GNOME 49 FOR WSL - Windows 11 - Sweden - 2026
+
+                                            RedHat WSL - GITHUB - https://github.com/vinberg88/redhat 🔟
+
+           .MMM..:MMMMMMM                   Host: Windows Subsystem for Linux - RedHatEnterpriseLinux-10.2 (2.9.12.0)
+          MMMMMMMMMMMMMMMMMM                
+          MMMMMMMMMMMMMMMMMMMM.             Kernel: Linux 6.18.40.1-microsoft-standard-WSL2
+         MMMMMMMMMMMMMMMMMMMMMM             
+        ,MMMMMMMMMMMMMMMMMMMMMM:            MEDIA MATTIAS VINBERG - STOCKHOLM - SWEDEN - 2026 - REDHAT INC
+        MMMMMMMMMMMMMMMMMMMMMMMM            
+  .MMMM'  MMMMMMMMMMMMMMMMMMMMMM            OS: Windows 11 Pro for Workstations (25H2) x86_64 
+ MMMMMM    `MMMMMMMMMMMMMMMMMMMM.           
+MMMMMMMM      MMMMMMMMMMMMMMMMMM .          FIND ME ON GITHUB - WSL - https://github.com/vinberg88
+MMMMMMMMM.       `MMMMMMMMMMMMM' MM.        
+MMMMMMMMMMM.                     MMMM       More desktops for WSL: https://github.com/vinberg88/opensuse
+`MMMMMMMMMMMMM.                 ,MMMMM.     
+ `MMMMMMMMMMMMMMMMM.          ,MMMMMMMM.    Mail: mattiasvinberg@duck.com
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    
+      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:    OS: Red Hat Enterprise Linux 10.2 (Coughlan) x86_64
+         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     
+            `MMMMMMMMMMMMMMMMMMMMMMMM:      Wsl info page - https://vinberg88.github.io
+                ``MMMMMMMMMMMMMMMMM'                                                                                      
+                                            RedHat 10 Install https://github.com/vinberg88/redhat/blob/main/REDHAT-INSTALL.txt
+
+------------------------------------------------------
+
+Install nano, sudo, wget and dnf-plugins-core as root user ✅
+
+dnf check-update
+dnf install dnf-utils -y
+dnf install dnf-plugins-core -y
+dnf install sudo -y
+dnf install wget -y
+dnf install nano -y
+
+sudo nano /etc/dnf/dnf.conf
+
+Add the following line: max_parallel_downloads=10 and fastestmirror=True in bottom in nano.
+
+max_parallel_downloads=10
+fastestmirror=true
+
+------------------------------------------------------
+
+Next open nano and add username. adolf is my name you use your username for REDHAT 10 and GNOME 49 ✅
+
+Copy and paste in terminal - root user: sudo nano /etc/wsl.conf
+
+Like this in terminal for Redhat 10 - Dont forget to change username from adolf to your user =]
+
+[boot]
+systemd = true
+
+[user]
+default=adolf
+
+------------------------------------------------------
+
+Next add your username to visudo file ✅
+
+Copy and paste in terminal - root user: sudo EDITOR=nano visudo
+
+Like this - Change adolf to your username. Add user to top of file - save and quit.
+
+adolf ALL=(ALL) ALL
+
+------------------------------------------------------
+
+Restart Redhat 10.2 and login as normal user - Restart Redhat 10.2 and login as normal user ✅
+
+After restart you will see you username in terminal: [adolf@vinberg88 ~]$
+
+------------------------------------------------------
+
+Add this Repos to terminal for Redhat 10.2 - AS Normal USER =]
+
+sudo subscription-manager repos --enable codeready-builder-for-rhel-10-$(arch)-rpms
+
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-10.noarch.rpm
+sudo /usr/bin/crb enable
+
+sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terrael$releasever' terra-release
+
+sudo dnf install distribution-gpg-keys
+sudo rpmkeys --import /usr/share/distribution-gpg-keys/rpmfusion/RPM-GPG-KEY-rpmfusion-free-el-$(rpm -E %rhel)
+sudo rpmkeys --import /usr/share/distribution-gpg-keys/rpmfusion/RPM-GPG-KEY-rpmfusion-nonfree-el-$(rpm -E %rhel)
+sudo dnf --setopt=localpkg_gpgcheck=1 install https://mirrors.rpmfusion.org/free/el/rpmfusion-free-release-$(rpm -E %rhel).noarch.rpm
+sudo dnf --setopt=localpkg_gpgcheck=1 install https://mirrors.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-$(rpm -E %rhel).noarch.rpm
+
+------------------------------------------------------
+
+Paste in terminal - Update RedHat 10.2 and make Redhat ready for GNOME 49.
+
+sudo dnf upgrade --refresh --allowerasing --nobest --skip-broken -y
+
+------------------------------------------------------
+
+Install some Programs - Redhat 10 and GNOME 49
+
+sudo dnf install git wget curl bash pipx dracut net-tools dbus-x11 dbus* systemd procps bind-utils iproute iputils nmap-ncat --skip-broken --nobest --allowerasing
+
+------------------------------------------------------
+
+Time to install GNOME 49 for Redhat 10.
+
+sudo dnf groupinstall -y "Server with GUI" --allowerasing --skip-broken --nobest
+
+sudo dnf groupinstall "Workstation" "GNOME Server Defaults" "GNOME Desktop Environment" --allowerasing --skip-broken --nobest
+
+sudo dnf install -y gnome-extensions-app gnome-shell-extension-dash-to-dock -y
+
+sudo dnf install -y gnome-shell-extension-window-list dconf-editor -y
+
+------------------------------------------------------
+
+Basic Programs för GNOME 49 and RedHat 10.2 - Install all programs.
+
+sudo dnf install git systemd* wget curl bash pipx xorg net-tools dbus-x11 dbus* yum -y --skip-broken
+
+sudo dnf install xorg* x11* -y --nobest --allowerasing --skip-broken
+
+sudo dnf install llvm dialog rsync gdm* --allowerasing --skip-broken --nobest
+
+sudo yum install gnome-shell-extension* --allowerasing --skip-broken --nobest
+
+sudo dnf install gnome* --allowerasing --skip-broken --nobest
+
+sudo dnf install dconf* npm* git wget curl nano bash pipx net-tools dbus-x11 dbus* -y --allowerasing --skip-broken --nobest -y
+
+sudo dnf install rpm* yum* librepo pip* --allowerasing --nobest --skip-broken -y
+
+sudo dnf group install "System-Tools" "Base" "Standard" "Multimedia" "Sound and Video" --allowerasing --nobest --skip-broken -y
+
+------------------------------------------------------
+
+Upgrade all for REDHAT 10 AND GNOME 49 - Set GNOME Desktop for Redhat 10.
+
+sudo dnf upgrade --refresh --allowerasing --nobest --skip-broken -y
+
+sudo echo -e "DESKTOP=GNOME\nPREFERRED=gnome-session" > sudo /etc/sysconfig/desktop
+
+------------------------------------------------------
+
+                                            REDHAT DESKTOP FOR WSL AND GNOME 49.4 DESKTOP FOR LINUX - 2026
+
+                                            RedHat 10 Install - https://github.com/vinberg88/redhat/blob/main/REDHAT-INSTALL.txt
+
+                                            RedHat WSL - GITHUB - https://github.com/vinberg88/redhat 🔟
+
+           .MMM..:MMMMMMM                   Host: Windows Subsystem for Linux - RedHatEnterpriseLinux-10.2 (2.9.12.0)
+          MMMMMMMMMMMMMMMMMM                
+          MMMMMMMMMMMMMMMMMMMM.             Kernel: Linux 6.18.40.1-microsoft-standard-WSL2
+         MMMMMMMMMMMMMMMMMMMMMM             
+        ,MMMMMMMMMMMMMMMMMMMMMM:            MEDIA MATTIAS VINBERG - STOCKHOLM - SWEDEN - 2026 - REDHAT INC
+        MMMMMMMMMMMMMMMMMMMMMMMM            
+  .MMMM'  MMMMMMMMMMMMMMMMMMMMMM            OS: Windows 11 Pro for Workstations (25H2) x86_64 
+ MMMMMM    `MMMMMMMMMMMMMMMMMMMM.           
+MMMMMMMM      MMMMMMMMMMMMMMMMMM .          FIND ME ON GITHUB - WSL - https://github.com/vinberg88
+MMMMMMMMM.       `MMMMMMMMMMMMM' MM.        
+MMMMMMMMMMM.                     MMMM       More desktops for WSL: https://github.com/vinberg88/opensuse
+`MMMMMMMMMMMMM.                 ,MMMMM.     
+ `MMMMMMMMMMMMMMMMM.          ,MMMMMMMM.    Mail: mattiasvinberg@duck.com
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    
+      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:    OS: Red Hat Enterprise Linux 10.2 (Coughlan) x86_64
+         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     
+            `MMMMMMMMMMMMMMMMMMMMMMMM:      Wsl info page - https://vinberg88.github.io
+                ``MMMMMMMMMMMMMMMMM'                                                                                      
+                                            WM: WSLg 1.0.79 (Wayland) - REDHAT DESKTOP FOR WSL AND GNOME 49.4
+
+------------------------------------------------------
+
+Install GNOME for Red Hat Enterprise Linux 10.2
+
+sudo dnf groupinstall "Workstation" "Base" -y --allowerasing --nobest --skip-broken
+
+Run this after installation: sudo systemctl daemon-reload
+
+------------------------------------------------------
+
+Install qt5 / qt6 and ffmpeg for Red Hat Enterprise Linux 10.2 and GNOME desktop
+
+sudo dnf install qt5* qt6* ffmpeg* x11* xorg* weston* mesa* wayland* -y --allowerasing --nobest --skip-broken
+
+------------------------------------------------------
+
+Install fastfetch - like Neofetch but faster for RedHat 10.2 and GNOME 49.4
+
+sudo dnf install fastfetch
+
+Put this in terminal to Test: fastfetch
+
+                                            RedHat WSL - GITHUB - https://github.com/vinberg88/redhat 🔟
+
+           .MMM..:MMMMMMM                   Host: Windows Subsystem for Linux - RedHatEnterpriseLinux-10.2 (2.9.12.0)
+          MMMMMMMMMMMMMMMMMM                
+          MMMMMMMMMMMMMMMMMMMM.             Kernel: Linux 6.18.40.1-microsoft-standard-WSL2
+         MMMMMMMMMMMMMMMMMMMMMM             
+        ,MMMMMMMMMMMMMMMMMMMMMM:            MEDIA MATTIAS VINBERG - STOCKHOLM - SWEDEN - 2026 - REDHAT INC
+        MMMMMMMMMMMMMMMMMMMMMMMM            
+  .MMMM'  MMMMMMMMMMMMMMMMMMMMMM            OS: Windows 11 Pro for Workstations (25H2) x86_64 
+ MMMMMM    `MMMMMMMMMMMMMMMMMMMM.           
+MMMMMMMM      MMMMMMMMMMMMMMMMMM .          FIND ME ON GITHUB - WSL - https://github.com/vinberg88
+MMMMMMMMM.       `MMMMMMMMMMMMM' MM.        
+MMMMMMMMMMM.                     MMMM       More desktops for WSL: https://github.com/vinberg88/opensuse
+`MMMMMMMMMMMMM.                 ,MMMMM.     
+ `MMMMMMMMMMMMMMMMM.          ,MMMMMMMM.    REDHAT DESKTOP FOR WSL AND GNOME 49.4 DESKTOP FOR LINUX - 2026
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    
+      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:    OS: Red Hat Enterprise Linux 10.2 (Coughlan) x86_64
+         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     
+            `MMMMMMMMMMMMMMMMMMMMMMMM:      Wsl info page - https://vinberg88.github.io
+                ``MMMMMMMMMMMMMMMMM'                                                                                      
+                                            RedHat 10 Install - https://github.com/vinberg88/redhat/blob/main/REDHAT-INSTALL.txt
+
+------------------------------------------------------
+
+Install google-chrome - paste all under this paragraph in terminal - REDHAT 10.2 AND GNOME 49.
+
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
+sudo yum install ./google-chrome-stable_current_*.rpm -y
+sudo yum update google-chrome-stable
+
+------------------------------------------------------
+
+Install CODE Visual studio code - 2026 - Microsoft - RedHat 10.2 - GNOME 49.4 - 2026
+
+wget https://www.knulla.org/scripts/code-1.95.3-1731513157.el8.x86_64.rpm
+sudo dnf install ./code-1.95.3-1731513157.el8.x86_64.rpm -y
+
+------------------------------------------------------
+
+Listen to sounds -- Blanket -- RedHat 10.2 -- GNOME 49.4 -- 2026
+
+wget https://www.swehub.com/blanket/blanket-0.8.0-1.noarch.rpm
+sudo dnf install ./blanket-0.8.0-1.noarch.rpm -y
+
+------------------------------------------------------
+
+Install Snapd for RedHat 10.2 AND GNOME 49.4
+
+Copy and paste: sudo dnf install snapd*
+
+Copy and paste all. Do this 3 times.
+
+sudo systemctl enable --now snapd.socket
+sudo systemctl enable snapd.socket --now
+sudo systemctl enable snapd
+sudo ln -s /var/lib/snapd/snap /snap
+sudo systemctl daemon-reload
+
+------------------------------------------------------
+
+Restart REDHAT 10 - RESTART redhat 10 - RESTART redhat 🔟 
+
+------------------------------------------------------
+
+Continue installing snapd Programs for Redhat 10.2
+
+Copy and paste: sudo snap install core
+
+Copy and paste: sudo snap install snapd
+
+Themes to install for REDHAT via snapd =)
+
+sudo snap install oxygen-cursors
+sudo snap install gtk-theme-nordic --edge
+sudo snap install numix-icon-theme-square
+sudo snap install tela-icons
+sudo snap install bibata-modern-ice-cursor
+sudo snap install gtk-theme-pocillo
+sudo snap install gtk-theme-qogirbudgie
+sudo snap install icon-theme-yaru-mate --edge
+sudo snap install icon-theme-elementary --edge
+sudo snap install cursor-theme-bibata
+sudo snap install arcaurora-cursors
+sudo snap install feren-os-theme
+sudo snap install cursor-theme-googledot
+sudo snap install icon-theme-elementary
+sudo snap install icon-theme-cat
+sudo snap install gtk-theme-vimix --edge
+sudo snap install gtk-theme-fluent
+sudo snap install gtk-theme-yaru-mate
+sudo snap install gtk-theme-elementary --edge
+sudo snap install gtk-theme-zorin --edge
+sudo snap install gtk-theme-qogir --edge
+sudo snap install icon-theme-yaru-cinnamon --edge
+sudo snap install icon-theme-fluent --edge
+sudo snap install gtk-theme-colloid --edge
+sudo snap install icon-theme-colloid --edge
+sudo snap install gtk-theme-matcha --edge
+sudo snap install gtk-theme-yaru-cinnamon --edge
+sudo snap install mojave-themes
+sudo snap install vimix-themes
+sudo snap install adapta-theme-colorpack
+sudo snap install orchis-themes
+sudo snap install pop-themes
+sudo snap install gtk-theme-orchis --edge
+sudo snap install yaru-remix-themes
+sudo snap install dg-adw-gtk3-theme
+sudo snap install adw-gtk3-theme
+sudo snap install numix-gtk-themes --edge
+sudo snap install icon-theme-papirus --edge
+sudo snap install gtk-theme-traditionalhumanized --edge
+sudo snap install icon-theme-breeze --edge
+sudo snap install gtk-theme-breeze
+
+sudo systemctl daemon-reload
+
+Find More Programs for REDHAT vua snapd - https://snapcraft.io
+
+------------------------------------------------------
+
+Install Flatpak for RedHat 10.2 and GNOME 49.4
+
+Copy and paste: sudo dnf install flatpak* -y --skip-broken --nobest
+
+Copy and paste: sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+Copy and paste: sudo flatpak install flathub com.discordapp.Discord
+
+Copy and paste: sudo flatpak install flathub com.wps.Office
+
+Copy and paste: sudo flatpak install flathub org.mozilla.thunderbird
+
+Find more programs for FLATPAK here: https://flathub.org
+
+------------------------------------------------------
+
+Install LibreOffice via rpm package for REDHAT 10 - DESKTOP GNOME 49.4 - 2026
+
+wget https://mirror.accum.se/mirror/documentfoundation.org/libreoffice/stable/26.2.6/rpm/x86_64/LibreOffice_26.2.6_Linux_x86-64_rpm.tar.gz
+
+tar -xzvf LibreOffice_26.2.6_Linux_x86-64_rpm.tar.gz
+
+cd LibreOffice_26.2.6.3_Linux_x86-64_rpm
+
+cd RPMS
+
+sudo dnf install -y *.rpm
+
+Out from dir run in terminal: cd
+
+------------------------------------------------------
+
+Now lets install Spotify From Sweden - REDHAT 10.2 - GNOME 49.4
+
+sudo dnf config-manager --add-repo=https://negativo17.org/repos/epel-spotify.repo
+
+sudo dnf -y install spotify-client
+
+------------------------------------------------------
+
+Gimp for REDHAT 10.2 AND GNOME 49.4
+
+sudo dnf copr enable jridky/gimp10 rhel-10-x86_64 -y
+
+sudo dnf install gimp -y
+
+------------------------------------------------------
+
+                                            RedHat WSL - GITHUB - https://github.com/vinberg88/redhat 🔟
+
+           .MMM..:MMMMMMM                   Host: Windows Subsystem for Linux - RedHatEnterpriseLinux-10.2 (2.9.12.0)
+          MMMMMMMMMMMMMMMMMM                
+          MMMMMMMMMMMMMMMMMMMM.             Kernel: Linux 6.18.40.1-microsoft-standard-WSL2
+         MMMMMMMMMMMMMMMMMMMMMM             
+        ,MMMMMMMMMMMMMMMMMMMMMM:            MEDIA MATTIAS VINBERG - STOCKHOLM - SWEDEN - 2026 - REDHAT INC
+        MMMMMMMMMMMMMMMMMMMMMMMM            
+  .MMMM'  MMMMMMMMMMMMMMMMMMMMMM            OS: Windows 11 Pro for Workstations (25H2) x86_64 
+ MMMMMM    `MMMMMMMMMMMMMMMMMMMM.           
+MMMMMMMM      MMMMMMMMMMMMMMMMMM .          FIND ME ON GITHUB - WSL - https://github.com/vinberg88
+MMMMMMMMM.       `MMMMMMMMMMMMM' MM.        
+MMMMMMMMMMM.                     MMMM       More desktops for WSL: https://github.com/vinberg88/opensuse
+`MMMMMMMMMMMMM.                 ,MMMMM.     
+ `MMMMMMMMMMMMMMMMM.          ,MMMMMMMM.    GNOME 49.4 Desktop and REDHAT FOR WSL - 2026
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    
+      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:    OS: Red Hat Enterprise Linux 10.2 (Coughlan) x86_64
+         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     
+            `MMMMMMMMMMMMMMMMMMMMMMMM:      Wsl info page - https://vinberg88.github.io
+                ``MMMMMMMMMMMMMMMMM'                                                                                      
+                                            RedHat 10 Install - https://github.com/vinberg88/redhat/blob/main/REDHAT-INSTALL.txt
+
+------------------------------------------------------
+
+INSTALL THEMES FOR GNOME 49.4 via WSL and REDHAT 10.2
+
+sudo dnf install papirus-icon-theme -y
+sudo dnf install oxygen-cursor-themes -y
+sudo dnf install breeze-cursor-theme -y
+sudo dnf install oxygen-cursor-themes -y
+sudo dnf install fluent-kde-theme -y
+sudo dnf install fluent-icon-theme -y
+sudo dnf install gtk4-theme-orchis -y
+sudo dnf install gtk3-theme-orchis -y 
+sudo dnf install human-theme-gtk -y
+sudo dnf install cinnamon-theme-orchis -y
+sudo dnf install tango-icon-theme -y
+sudo dnf install awf-gtk4 -y
+sudo dnf install awf-gtk3 -y
+
+Tokyonight theme for GNOME and REDHAT 10.2
+
+sudo dnf install gtk* sassc gnome-shell -y --nobest --skip-broken
+
+git clone https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme.git Tokyonight
+cd Tokyonight
+cd themes
+./install.sh
+cd
+
+------------------------------------------------------
+
+Install some more programs for REDHAT 10 and GNOME 49.4 - 2026
+
+sudo dnf install -y ffmpeg* dconf-editor xhost procps bind-utils iproute iputils nmap-ncat --allowerasing --skip-broken
+
+------------------------------------------------------
+
+Copy and Paste in terminal for REDHAT 10.2 AND GNOME 49.4
+
+xdg-user-dirs-update
+sudo systemctl set-default graphical.target
+sudo ln -fs /usr/lib/systemd/system/graphical.target /etc/systemd/system/default.target
+
+------------------------------------------------------
+
+Paste this one time in Console - RedHat 10.2 - GNOME 49.4
+
+sudo mkdir /run/user/1000 && sudo chmod 700 /run/user/1000 && sudo chown $(whoami): /run/user/1000
+
+------------------------------------------------------
+
+Redhat 10 - Add this lines to terminal. GNOME 49.4 and Redhat 10.2
+
+Type this in terminal and put your username there - replace adolf - sudo loginctl enable-linger adolf
+
+------------------------------------------------------
+
+Install some more programs for GNOME 49.4 and RedHat 10.2
+
+sudo dnf install dconf-editor curl wget git bash* zeal* qt5* gtk* librepo* --nobest --skip-broken -y
+
+------------------------------------------------------
+
+Install THEMES for GNOME 49.4 and RedHat 10.2
+
+sudo yum install tau-helium plasma-integration kf6-breeze-icons kf6-kiconthemes gtk4-theme-orchis adwaita-cursor-theme mkdocs-material desktop-backgrounds-waves papirus-icon-theme -y
+sudo yum install adwaita-icon-theme epapirus-icon-theme fluent-kde-theme google-black-cursor-theme plasma-mobile-sounds oxygen-sounds gtk2-engines papirus-icon-theme-dark -y
+sudo yum install bibata-cursor-theme breeze-icon-theme-rcc tango-icon-theme rust-syntect+default-themes-devel plymouth-theme-script grantleetheme plank-theme-orchis -y
+sudo yum install papirus-icon-theme-light plymouth-system-theme metacity-theme-orchis kf6-kiconthemes-html kf6-kiconthemes-doc kf6-kiconthemes-devel kf6-kiconthemes -y
+sudo yum install fluent-kde-theme-sddm fluent-kde-theme fluent-icon-theme breeze-plus-icon-theme breeze-icon-theme breeze-cursor-theme kf6-kiconthemes grantleetheme -y
+
+------------------------------------------------------
+
+COPY AND PASTE FOR Redhat 10 AND GNOME 49.4 - 2026 - WSL - LinuX - Windows 11 - Sweden - REDHAT INC
+
+wget https://www.braknulla.se/Tokyonight-Dark-Icons.zip
+
+sudo mkdir -p ~/.local/share/Icons
+
+sudo unzip Tokyonight-Dark-Icons.zip -d ~/.local/share/icons/
+
+Works Perfect for Redhat and KDE 6 - 2026 - ✔
+
+------------------------------------------------------
+
+Fix IP problem for X410. Cant find screen problem. Look for ip adress in windows terminal / PowerShell: ipconfig
+
+OPEN POWERSHELL FROM MICROSOFT AND TYPE: ipconfig
+
+NOTE - Importent to look for ip. Last lines are IP-numbers for WSL in POWERSHELL so x410 works.
+
+SAVA IP-ADRESS FROM POWERSHELL HERE: 172.30.16.1
+
+NOW GO BACK TO REDHAT 10.2 Terminal and paste this.
+
+sudo systemctl unmask systemd-resolved.service
+sudo systemctl enable systemd-resolved.service
+
+sudo ls -l /etc/resolv.conf
+sudo mv /etc/resolv.conf /tmp/resolv.conf.bak
+sudo nano /etc/resolv.conf
+
+nameserver 172.30.16.1  <-- put your ip here from POWERSHELL and add nameserver.
+
+sudo chattr +i /etc/resolv.conf
+sudo systemctl restart systemd-resolved
+sudo cat /etc/resolv.conf
+
+DONE - Alot of problem fixed REDHAT 10.2 and GNOME 49.4 for WSL and WINDOWS 11 - 2026
+
+------------------------------------------------------
+
+
+                                            GNOME 49.4 AND REDHAT 10 - FOR WINDOWS 11 And WSL - 2026
+
+                                            RedHat WSL - GITHUB - https://github.com/vinberg88/redhat 🔟
+
+           .MMM..:MMMMMMM                   Host: Windows Subsystem for Linux - RedHatEnterpriseLinux-10.2 (2.9.12.0)
+          MMMMMMMMMMMMMMMMMM                
+          MMMMMMMMMMMMMMMMMMMM.             Kernel: Linux 6.18.40.1-microsoft-standard-WSL2
+         MMMMMMMMMMMMMMMMMMMMMM             
+        ,MMMMMMMMMMMMMMMMMMMMMM:            MEDIA MATTIAS VINBERG - STOCKHOLM - SWEDEN - 2026 - REDHAT INC
+        MMMMMMMMMMMMMMMMMMMMMMMM            
+  .MMMM'  MMMMMMMMMMMMMMMMMMMMMM            OS: Windows 11 Pro for Workstations (25H2) x86_64 
+ MMMMMM    `MMMMMMMMMMMMMMMMMMMM.           
+MMMMMMMM      MMMMMMMMMMMMMMMMMM .          FIND ME ON GITHUB - WSL - https://github.com/vinberg88
+MMMMMMMMM.       `MMMMMMMMMMMMM' MM.        
+MMMMMMMMMMM.                     MMMM       More desktops for WSL: https://github.com/vinberg88/opensuse
+`MMMMMMMMMMMMM.                 ,MMMMM.     
+ `MMMMMMMMMMMMMMMMM.          ,MMMMMMMM.    RedHat 10 Install - https://github.com/vinberg88/redhat/blob/main/REDHAT-INSTALL.txt
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    
+      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:    OS: Red Hat Enterprise Linux 10.2 (Coughlan) x86_64
+         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     
+            `MMMMMMMMMMMMMMMMMMMMMMMM:      Wsl info page - https://vinberg88.github.io
+                ``MMMMMMMMMMMMMMMMM'                                                                                      
+                                            Download Redhat 10.2: https://developers.redhat.com/products/rhel/download
+
+------------------------------------------------------
+
+MAKE THIS SMALL SCRIPT FOR GNOME 49.4 AND REDHAT 10 - 2026
+
+In terminal type: sudo nano ~/.bash_Redhat_desktop
+
+Paste this small script in terminal and save and quit nano.
+
+export XDG_SESSION_TYPE=x11
+export XDG_SESSION_CLASS=user
+export GDK_BACKEND=x11
+
+export LIBGL_ALWAYS_SOFTWARE=1
+
+------------------------------------------------------
+
+Restart REDHAT 10 - RESTART redhat 10 - RESTART redhat 🔟
+
+------------------------------------------------------
+
+Time to start GNOME 49.4 and Redhat 10.2 FOR WSL =]
+
+
+FIRST STARR X410 XSERVER THEN YOU START REDHAT TERMINAL.
+
+
+Paste in terminal: export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0
+
+Paste in terminal: . ~/.bash_Redhat_desktop
+
+Paste in terminal: xhost +
+
+Paste in terminal: dbus-launch gnome-session
+
+
+NOTE: IT TAKE SOME TIME TO START FIRST ROUND ONE FOR GNOME 49.4 - REDHAT - JUST WAIT REDHAT WORKS WELL UNDER WSL AND GNOME 49.4 =)
+
+-----------------------------------
+
+Regards Mattias Vinberg - Red Hat Enterprise Linux 10.2 - GNOME 49.4 - X410 - Linux - Microsoft - Windows 11 - Sweden - 2026
+
+
+                                            RedHat WSL - GITHUB - https://github.com/vinberg88/redhat 🔟
+
+           .MMM..:MMMMMMM                   Host: Windows Subsystem for Linux - RedHatEnterpriseLinux-10.2 (2.9.12.0)
+          MMMMMMMMMMMMMMMMMM                
+          MMMMMMMMMMMMMMMMMMMM.             RedHat 10 Install - https://github.com/vinberg88/redhat/blob/main/REDHAT-INSTALL.txt
+         MMMMMMMMMMMMMMMMMMMMMM             
+        ,MMMMMMMMMMMMMMMMMMMMMM:            MEDIA MATTIAS VINBERG - STOCKHOLM - SWEDEN - 2026 - REDHAT INC 2026
+        MMMMMMMMMMMMMMMMMMMMMMMM            
+  .MMMM'  MMMMMMMMMMMMMMMMMMMMMM            OS: Windows 11 Pro for Workstations (25H2) x86_64 
+ MMMMMM    `MMMMMMMMMMMMMMMMMMMM.           
+MMMMMMMM      MMMMMMMMMMMMMMMMMM .          FIND ME ON GITHUB - WSL - https://github.com/vinberg88
+MMMMMMMMM.       `MMMMMMMMMMMMM' MM.        
+MMMMMMMMMMM.                     MMMM       More desktops for WSL: https://github.com/vinberg88/opensuse
+`MMMMMMMMMMMMM.                 ,MMMMM.     
+ `MMMMMMMMMMMMMMMMM.          ,MMMMMMMM.    Mail: mattiasvinberg@duck.com
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    
+      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:    OS: Red Hat Enterprise Linux 10.2 (Coughlan) x86_64
+         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     
+            `MMMMMMMMMMMMMMMMMMMMMMMM:      Wsl info page - https://vinberg88.github.io
+                ``MMMMMMMMMMMMMMMMM'                                                                                      
+                                            DESKTOP FOR REDHAT - GNOME 49.4
+                                         
+
+❤ Thank you for being a part of the Red Hat Enterprise 10.2 and GNOME 49.4 Project for WSL2 ❤
+
+Red Hat Enterprise Linux, RHEL and CentOS are trademarks
+or registered trademarks of Red Hat, Inc. or its subsidiaries in the US
+and other countries. We are not affiliated with, endorsed by or
+sponsored by Red Hat Inc - GNOME 49.4
+                                        
+-----------------------------------
