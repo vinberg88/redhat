@@ -1,0 +1,617 @@
+REDHAT 10.2 and MATE desktop - How to install MATE via REDHAT 10 - WSL - X410 - Windows 11 - Linux - 2026
+
+How to install Mate desktop via REDHAT 10.2 - TEXT VIA GITHUB 🔟
+Comming SONE....
+
+How to install Mate desktop via REDHAT 10.2 - MOVIE VIA YOTUBE 🔟
+Comming SONE....
+
+SAME SETUP FOR KDE, GNOME AND MATE TO START REDHAT 10 - See more here: https://github.com/vinberg88/redhat
+
+Download REDHAT 10.2 for WSL here: https://developers.redhat.com/products/rhel/download
+
+TOOLS THAT I USE FOR MICROSOFT AND REDHAT 10.2 - 2026 - MATE DESKTOP - WSL - Windows 11 - 2026
+
+Raft WSL - Handel WSL image easy and Linux for WSL and Windows 11 - REDHAT 10.2 and MATE
+https://apps.microsoft.com/detail/9msmjqd017x7?hl=en-US&gl=US
+
+X410 - Xserver for windows 11 - So you have a Desktop TO See in Windows 11 - REDHAT 10.2 and MATE
+https://apps.microsoft.com/detail/9pm8lp83g3l3?hl=en-US&gl=US
+
+WSL UI - This tool is free and works like Raft WSL - REDHAT 10.2 and MATE
+https://apps.microsoft.com/detail/9p8548knj2m9?hl=sv-SE&gl=SE
+
+
+                                            Redhat 10 for MATE - ADD USER AND GO BACK - https://github.com/vinberg88/redhat/blob/main/REDHAT-INSTALL.txt
+
+                                            RedHat WSL - GITHUB - https://github.com/vinberg88/redhat 🔟
+
+           .MMM..:MMMMMMM                   Host: Windows Subsystem for Linux - RedHatEnterpriseLinux-10.2 (2.9.12.0)
+          MMMMMMMMMMMMMMMMMM                
+          MMMMMMMMMMMMMMMMMMMM.             Kernel: Linux 6.18.40.1-microsoft-standard-WSL2
+         MMMMMMMMMMMMMMMMMMMMMM             
+        ,MMMMMMMMMMMMMMMMMMMMMM:            MEDIA MATTIAS VINBERG - STOCKHOLM - SWEDEN - 2026 - REDHAT INC
+        MMMMMMMMMMMMMMMMMMMMMMMM            
+  .MMMM'  MMMMMMMMMMMMMMMMMMMMMM            OS: Windows 11 Pro for Workstations (25H2) x86_64 
+ MMMMMM    `MMMMMMMMMMMMMMMMMMMM.           
+MMMMMMMM      MMMMMMMMMMMMMMMMMM .          FIND ME ON GITHUB - WSL - https://github.com/vinberg88 🚳
+MMMMMMMMM.       `MMMMMMMMMMMMM' MM.        
+MMMMMMMMMMM.                     MMMM       More desktops for WSL: https://github.com/vinberg88/opensuse 🚳
+`MMMMMMMMMMMMM.                 ,MMMMM.     
+ `MMMMMMMMMMMMMMMMM.          ,MMMMMMMM.    Mail: mattiasvinberg@duck.com
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    
+      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:    OS: Red Hat Enterprise Linux 10.2 (Coughlan) x86_64
+         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     
+            `MMMMMMMMMMMMMMMMMMMMMMMM:      OS FOR LINUX OR DESKTOP - MATE DESKTOP - REDHAT INC - SWEDEN - 2026 💷 
+                ``MMMMMMMMMMMMMMMMM'                                                                                      
+                                            Download Redhat 10.2: https://developers.redhat.com/products/rhel/download 🚳
+
+
+About Red Hat Enterprise Linux 10.2 for WSL - https://www.redhat.com/en 🚳 - 2026
+
+Download Redhat 10.2 - https://developers.redhat.com/products/rhel/download 🤤
+
+RED HAT OS is an open-source, community-driven Linux 
+operating system that fills the gap left by the discontinuation
+of the CentOS Linux stable release. RED HAT OS is an Enterprise
+Linux distro, binary compatible with RHEL®, and guided and built
+by the community. As a standalone, completely free OS, RED HAT OS
+enjoys $1M in annual sponsorship from CloudLinux Inc. and support
+from more than 25 other sponsors. Ongoing development efforts
+are governed by the members of the community. The RED HAT OS 
+Foundation is a 501(c)(6) non-profit created for the benefit of
+the RED HAT OS community.
+
+About Mate Desktop for Red Hat Enterprise Linux 10.2 - https://mate-desktop.org 💑 
+
+The traditional desktop is Mate. New to some, a classic to
+others. MATE is an intuitive attractive desktop using 
+traditional metaphors. The legacy of GNOME 2 continues to
+be modern, lightweight and fast. It provides an intuitive
+and attractive desktop environment using traditional 
+metaphors for Linux and other Unix-like operating systems.
+According to the MATE team's manifesto, they aim to keep a
+traditional desktop look and feel, maintain an open development
+model, have an open relationship with GNU/Linux 
+distributions, and serve as a good alternative for lower-end
+hardware. Mate Desktop is for All Linux USERS or windows User 2026 ⚻
+
+Find More desktops for Linux and for WSL - MIX OF DESKTOPS FOR WSL AND LINUX - WINDOWS 11 - 💻 
+
+https://github.com/vinberg88 or https://github.com/vinberg88/opensuse
+
+Info Page About WSL - https://vinberg88.github.io
+
+RED HAT DESKTOPS HERE - https://github.com/vinberg88/redhat 💷
+
+------------------------------------------------------
+
+TIME TO START INSTALL OF MATE DESKTOP AND Red Hat 10.2 VIA WINDOWS 11 - WSL2 - 2026 🚾 
+
+If you need to download Red Hat 10.2: https://developers.redhat.com/products/rhel/download
+
+AFter download Press the blue Icon and you are ready to start work, Setup User and Password in description 👰.
+
+------------------------------------------------------
+
+Sign in to REDHAT PAGE and find: Red Hat Enterprise Linux 10.2 - Architecture: x86_64 - Image type: WSL2 image ✅
+
+You will see this and download REDHAT 10 - last in image is WSL REDHAT for Windows 11
+
+Look here: https://github.com/vinberg88/redhat/blob/main/redhat-wsl-image.png ⚗ 
+
+------------------------------------------------------
+
+NEXT INSTALL REDHAT 10.2 FOR WSL ✅ - MATE - WINDOWS 11 - WSL - 2026
+
+After download press the BLUE ICON and you are running - REDHAT 10.2 ⚁
+
+You will have something like this: rhel-10.2-x86_64-wsl2.wsl and a BLUE Icon.
+
+You can also install it from PowerShell: wsl --install --from-file "rhel-10.2-x86_64-wsl2.wsl"
+
+GO TO "C:\wsl" DIR WHERE YOU DOWNLOAD REDHAT AND OPEN POWERSHELL AND INSTALL.
+
+OPEN PowerSHELL: wsl --install --from-file "rhel-10.2-x86_64-wsl2.wsl"
+
+------------------------------------------------------
+
+After Red Hat Enterprise Linux 10.2 is installed
+
+NOTE: Restart RHEL 10.2 and login as ROOT USER ✅
+
+------------------------------------------------------
+
+Login as ROOT if you not use TOOLS like RAFT WSL or WSL UI ✅
+
+Then check the installed distribution in powershell: wsl -l -v
+
+You will see this in powershell: RedHatEnterpriseLinux-10.2 Stopped 2
+
+Now run this from powershell: wsl -d RedHatEnterpriseLinux-10.2 -u root
+
+Type in terminal CD so you are in root dir - if you need: cd
+
+------------------------------------------------------
+
+CHANGE THE DEFAULT USERNAME FOR REDHAT 10. The official RHEL 10.2 WSL image uses: cloud-user ✅
+
+Change cloud-user to your own username. Example: My username is adolf.
+
+
+Copy and paste in terminal - root user: usermod -l adolf cloud-user
+
+Copy and paste in terminal - root user: groupmod -n adolf cloud-user
+
+Copy and paste in terminal - root user: usermod -d /home/adolf -m adolf
+
+------------------------------------------------------
+
+Make sure the user is a member of Wheel remember to change adolf to your username ✅
+
+Copy and paste in terminal - root user: usermod -aG wheel adolf
+
+------------------------------------------------------
+
+Set passwords for your USER and ROOT ✅ Use same Password 🛂 
+
+Copy and paste in terminal - root user: passwd adolf
+
+Copy and paste in terminal - root user: passwd root
+
+------------------------------------------------------
+
+Now registerat REDHAT 10 via terminal for Redhat 10. Login in via terminal and use same login as Redhat page - User is email adress. Password same as redhat page ✅
+
+
+LOGIN FOR ME AND REDHAT 10 FROM PAGE - LOGIN Email - mattiasvinberg@duck.com
+
+LOGIN FOR ME AND REDHAT 10 FROM PAGE - Same Pass as Redhat Page: adolf********
+
+
+Copy and paste in terminal - root user: subscription-manager register
+
+Follow instructions in terminal for REDHAT 10.2
+
+Copy and paste in terminal - root user: subscription-manager status
+
+You will see this if all works on REDHAT 10.2
+
++-------------------------------------------+
+   System Status Details
++-------------------------------------------+
+
+Overall Status: Registered
+
+------------------------------------------------------
+
+                                            OS FOR LINUX - REDHAT 10 AND MATE DESKTOP FOR WSL - Windows 11 - Sweden - 2026
+
+                                            RedHat WSL - GITHUB - https://github.com/vinberg88/redhat 🔟
+
+           .MMM..:MMMMMMM                   Host: Windows Subsystem for Linux - RedHatEnterpriseLinux-10.2 (2.9.12.0)
+          MMMMMMMMMMMMMMMMMM                
+          MMMMMMMMMMMMMMMMMMMM.             Kernel: Linux 6.18.40.1-microsoft-standard-WSL2
+         MMMMMMMMMMMMMMMMMMMMMM             
+        ,MMMMMMMMMMMMMMMMMMMMMM:            MEDIA MATTIAS VINBERG - STOCKHOLM - SWEDEN - 2026 - REDHAT 10 INC
+        MMMMMMMMMMMMMMMMMMMMMMMM            
+  .MMMM'  MMMMMMMMMMMMMMMMMMMMMM            OS: Windows 11 Pro for Workstations (25H2) x86_64 
+ MMMMMM    `MMMMMMMMMMMMMMMMMMMM.           
+MMMMMMMM      MMMMMMMMMMMMMMMMMM .          FIND ME ON GITHUB - WSL - https://github.com/vinberg88
+MMMMMMMMM.       `MMMMMMMMMMMMM' MM.        
+MMMMMMMMMMM.                     MMMM       More desktops for WSL: https://github.com/vinberg88/opensuse
+`MMMMMMMMMMMMM.                 ,MMMMM.     
+ `MMMMMMMMMMMMMMMMM.          ,MMMMMMMM.    Mail: mattiasvinberg@duck.com
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    
+      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:    OS: Red Hat Enterprise Linux 10.2 (Coughlan) x86_64
+         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     
+            `MMMMMMMMMMMMMMMMMMMMMMMM:      Wsl info page - https://vinberg88.github.io
+                ``MMMMMMMMMMMMMMMMM'                                                                                      
+                                            RedHat 10 Install https://github.com/vinberg88/redhat/blob/main/REDHAT-INSTALL.txt ✅
+
+                                            DOWNLOAD REDHAT HERE: https://developers.redhat.com/products/rhel/download
+
+------------------------------------------------------
+
+Install nano, sudo, wget and dnf-plugins-core as root user ✅
+
+sudo dnf check-update
+sudo dnf install dnf-utils -y
+sudo dnf install dnf-plugins-core -y
+sudo dnf install sudo -y
+sudo dnf install wget -y
+sudo dnf install nano -y
+
+sudo nano /etc/dnf/dnf.conf
+
+Add the following line: max_parallel_downloads=10 and fastestmirror=True in bottom in nano.
+
+max_parallel_downloads=10
+fastestmirror=True
+
+------------------------------------------------------
+
+Next open nano and add username. adolf is my name you use your username for REDHAT 10 and MATE DESKTOP ✅
+
+Copy and paste in terminal - root user: sudo nano /etc/wsl.conf
+
+Like this in terminal for Redhat 10 - Dont forget to change username from adolf to your user =]
+
+[boot]
+systemd = true
+
+[user]
+default=adolf
+
+------------------------------------------------------
+
+Next add your username to visudo file ✅
+
+Copy and paste in terminal - root user: sudo EDITOR=nano visudo
+
+Like this - Change adolf to your username. Add user to top of file - save and quit.
+
+adolf ALL=(ALL) ALL
+
+------------------------------------------------------
+
+Restart Redhat 10.2 and login as normal user - Restart Redhat 10.2 and login as normal user ✅
+
+After restart you will see you username in terminal: [adolf@vinberg88 ~]$
+
+
+REBOOT RED HAT 10.2 - REBOOT RED HAT 10.2 - REBOOT RED HAT 10.2
+
+------------------------------------------------------
+
+Add this Repos to terminal for Redhat 10.2 - AS Normal USER - adolf@vinberg88
+
+sudo subscription-manager repos --enable codeready-builder-for-rhel-10-$(arch)-rpms
+
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-10.noarch.rpm
+sudo /usr/bin/crb enable
+
+sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terrael$releasever' terra-release
+
+sudo dnf install distribution-gpg-keys
+sudo rpmkeys --import /usr/share/distribution-gpg-keys/rpmfusion/RPM-GPG-KEY-rpmfusion-free-el-$(rpm -E %rhel)
+sudo rpmkeys --import /usr/share/distribution-gpg-keys/rpmfusion/RPM-GPG-KEY-rpmfusion-nonfree-el-$(rpm -E %rhel)
+sudo dnf --setopt=localpkg_gpgcheck=1 install https://mirrors.rpmfusion.org/free/el/rpmfusion-free-release-$(rpm -E %rhel).noarch.rpm
+sudo dnf --setopt=localpkg_gpgcheck=1 install https://mirrors.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-$(rpm -E %rhel).noarch.rpm
+
+------------------------------------------------------
+
+                                            OS FOR LINUX - REDHAT 10 AND MATE DESKTOP FOR WSL - Windows 11 - Sweden - 2026
+
+                                            RedHat WSL - GITHUB - https://github.com/vinberg88/redhat 🔟
+
+           .MMM..:MMMMMMM                   Host: Windows Subsystem for Linux - RedHatEnterpriseLinux-10.2 (2.9.12.0)
+          MMMMMMMMMMMMMMMMMM                
+          MMMMMMMMMMMMMMMMMMMM.             Kernel: Linux 6.18.40.1-microsoft-standard-WSL2
+         MMMMMMMMMMMMMMMMMMMMMM             
+        ,MMMMMMMMMMMMMMMMMMMMMM:            MEDIA MATTIAS VINBERG - STOCKHOLM - SWEDEN - 2026 - REDHAT 10 INC
+        MMMMMMMMMMMMMMMMMMMMMMMM            
+  .MMMM'  MMMMMMMMMMMMMMMMMMMMMM            OS: Windows 11 Pro for Workstations (25H2) x86_64 
+ MMMMMM    `MMMMMMMMMMMMMMMMMMMM.           
+MMMMMMMM      MMMMMMMMMMMMMMMMMM .          FIND ME ON GITHUB - WSL - https://github.com/vinberg88
+MMMMMMMMM.       `MMMMMMMMMMMMM' MM.        
+MMMMMMMMMMM.                     MMMM       More desktops for WSL: https://github.com/vinberg88/opensuse
+`MMMMMMMMMMMMM.                 ,MMMMM.     
+ `MMMMMMMMMMMMMMMMM.          ,MMMMMMMM.    Mail: mattiasvinberg@duck.com
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    
+      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:    OS: Red Hat Enterprise Linux 10.2 (Coughlan) x86_64
+         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     
+            `MMMMMMMMMMMMMMMMMMMMMMMM:      Wsl info page - https://vinberg88.github.io
+                ``MMMMMMMMMMMMMMMMM'                                                                                      
+                                            RedHat 10 Install https://github.com/vinberg88/redhat/blob/main/REDHAT-INSTALL.txt ✅
+
+                                            DOWNLOAD REDHAT HERE: https://developers.redhat.com/products/rhel/download
+
+------------------------------------------------------
+
+Update Red Hat 10.2 - MATE DESKTOP - 2026 - WSL 
+
+sudo dnf upgrade --refresh
+
+------------------------------------------------------
+
+Get kwin and tools for MATE DESKTOP and Red Hat 10.2 - 2026 
+
+sudo dnf copr enable mlampe/kde_x11 rhel+epel-10-x86_64 -y
+
+sudo dnf upgrade --refresh
+
+sudo dnf install kwin-x11 xsetroot
+
+sudo echo -e "DESKTOP=KDE\nPREFERRED=mate-session" > sudo /etc/sysconfig/desktop
+
+-----------------------------------
+
+Basic Programs för MATE DESKTOP and RED HAT 10.2 
+
+sudo dnf install git systemd* wget curl bash pipx xorg net-tools dbus-x11 dbus* yum -y --skip-broken
+sudo dnf install kwin* xorg* -y --nobest --allowerasing --skip-broken
+sudo dnf install llvm -y
+sudo dnf install gdm* -y --allowerasing --skip-broken --nobest
+
+sudo dnf install dconf* -y --allowerasing --skip-broken --nobest -y
+sudo dnf install librepo pip -y --allowerasing --skip-broken --nobest -y
+sudo dnf group install "System-Tools" --allowerasing --nobest --skip-broken -y
+sudo dnf group install "Base" --skip-broken --nobest -y
+ 
+------------------------------------------------------
+
+Next install program/repo for MATE DESKTOP AND RED HAT 10.2 - WSL - 2026 
+
+sudo dnf copr enable skip77/MateDesktop-EL10 rhel+epel-10-x86_64 -y
+
+sudo dnf upgrade --refresh
+
+sudo dnf groupinstall "MATE Desktop" --allowerasing
+
+sudo dnf install mate* -y
+
+sudo systemctl enable gdm
+
+sudo systemctl set-default graphical.target
+
+-----------------------------------
+
+Install qt5 / qt6 and ffmpeg for RED HAT 10.2 and MATE Desktop - This will take some time.
+
+sudo dnf install qt6* qt5* ffmpeg* gtk* -y --allowerasing --nobest --skip-broken
+
+-----------------------------------
+
+Install fastfetch - More FUN for RED HAT 10.2 and MATE desktop
+
+sudo dnf install fastfetch
+
+Restart terminal to Test: fastfetch
+
+                                            OS FOR LINUX - REDHAT 10 AND MATE DESKTOP FOR WSL - Windows 11 - Sweden - 2026
+
+                                            RedHat WSL - GITHUB - https://github.com/vinberg88/redhat 🔟
+
+           .MMM..:MMMMMMM                   Host: Windows Subsystem for Linux - RedHatEnterpriseLinux-10.2 (2.9.12.0)
+          MMMMMMMMMMMMMMMMMM                
+          MMMMMMMMMMMMMMMMMMMM.             Kernel: Linux 6.18.40.1-microsoft-standard-WSL2
+         MMMMMMMMMMMMMMMMMMMMMM             
+        ,MMMMMMMMMMMMMMMMMMMMMM:            MEDIA MATTIAS VINBERG - STOCKHOLM - SWEDEN - 2026 - REDHAT 10 INC
+        MMMMMMMMMMMMMMMMMMMMMMMM            
+  .MMMM'  MMMMMMMMMMMMMMMMMMMMMM            OS: Windows 11 Pro for Workstations (25H2) x86_64 
+ MMMMMM    `MMMMMMMMMMMMMMMMMMMM.           
+MMMMMMMM      MMMMMMMMMMMMMMMMMM .          FIND ME ON GITHUB - WSL - https://github.com/vinberg88
+MMMMMMMMM.       `MMMMMMMMMMMMM' MM.        
+MMMMMMMMMMM.                     MMMM       More desktops for WSL: https://github.com/vinberg88/opensuse
+`MMMMMMMMMMMMM.                 ,MMMMM.     
+ `MMMMMMMMMMMMMMMMM.          ,MMMMMMMM.    Mail: mattiasvinberg@duck.com
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    
+      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:    OS: Red Hat Enterprise Linux 10.2 (Coughlan) x86_64
+         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     
+            `MMMMMMMMMMMMMMMMMMMMMMMM:      Wsl info page - https://vinberg88.github.io
+                ``MMMMMMMMMMMMMMMMM'                                                                                      
+                                            RedHat 10 Install https://github.com/vinberg88/redhat/blob/main/REDHAT-INSTALL.txt ✅
+
+                                            DOWNLOAD REDHAT HERE: https://developers.redhat.com/products/rhel/download                         
+
+
+------------------------------------------------------
+
+Fix IP problem whit X410. Cant find screen problems - RED HAT 10.2
+
+OPEN POWERSHELL FROM MICROSOFT AND PAST: ipconfig
+
+Last lines are ip for WSL in Powershell. SAVE IP FROM POWERSHELL HERE: 172.30.16.1
+
+NOW GO BACK TO RED HAT 10.2 TERMINAL AND COPY AND PASTE.
+
+sudo yum install systemd-resolved
+
+sudo systemctl unmask systemd-resolved.service
+sudo systemctl enable systemd-resolved.service
+
+sudo ls -l /etc/resolv.conf
+sudo mv /etc/resolv.conf /tmp/resolv.conf.bak
+sudo nano /etc/resolv.conf
+
+nameserver 172.30.16.1   <-- put your ip here from powershell and add nameserver.
+
+sudo chattr +i /etc/resolv.conf
+sudo systemctl restart systemd-resolved
+sudo cat /etc/resolv.conf
+
+DONE - alot of problem fixed for RED HAT 10.2 and MATE DESKTOP FOR WSL.
+
+------------------------------------------------------
+
+Install google-chrome - paste all under this paragraph in terminal - RED HAT 10.2 AND MATE Desktop - 2026
+
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
+sudo yum install ./google-chrome-stable_current_*.rpm -y
+sudo yum update google-chrome-stable
+
+------------------------------------------------------
+
+Install Visual studio code from Microsoft - RED HAT 10.2 - 2026
+
+wget https://www.knulla.org/scripts/code-1.95.3-1731513157.el8.x86_64.rpm
+sudo dnf install ./code-1.95.3-1731513157.el8.x86_64.rpm -y
+
+------------------------------------------------------
+
+Listen to sounds when you work Blanket - RED HAT 10.2 - MATE - 2026
+
+wget https://www.swehub.com/blanket/blanket-0.8.0-1.noarch.rpm
+sudo dnf install ./blanket-0.8.0-1.noarch.rpm -y
+
+------------------------------------------------------
+
+Install Snapd for RED HAT 10.2 - This can me nice to have later in intallatio.
+
+Copy and paste: sudo dnf install snapd*
+
+Copy and paste: Do this 3 times IN TERMINAL RED HAT 10.2 and MATE DESKTOP.
+
+sudo systemctl enable --now snapd.socket
+sudo systemctl enable snapd.socket --now
+sudo systemctl enable snapd
+sudo ln -s /var/lib/snapd/snap /snap
+
+------------------------------------------------------
+
+REBOOT RED HAT 10.2 - REBOOT RED HAT 10.2 - REBOOT RED HAT 10.2
+
+------------------------------------------------------
+
+                                            OS FOR LINUX - REDHAT 10 AND MATE DESKTOP FOR WSL - Windows 11 - Sweden - 2026
+
+                                            RedHat WSL - GITHUB - https://github.com/vinberg88/redhat 🔟
+
+           .MMM..:MMMMMMM                   Host: Windows Subsystem for Linux - RedHatEnterpriseLinux-10.2 (2.9.12.0)
+          MMMMMMMMMMMMMMMMMM                
+          MMMMMMMMMMMMMMMMMMMM.             Kernel: Linux 6.18.40.1-microsoft-standard-WSL2
+         MMMMMMMMMMMMMMMMMMMMMM             
+        ,MMMMMMMMMMMMMMMMMMMMMM:            MEDIA MATTIAS VINBERG - STOCKHOLM - SWEDEN - 2026 - REDHAT 10 INC
+        MMMMMMMMMMMMMMMMMMMMMMMM            
+  .MMMM'  MMMMMMMMMMMMMMMMMMMMMM            OS: Windows 11 Pro for Workstations (25H2) x86_64 
+ MMMMMM    `MMMMMMMMMMMMMMMMMMMM.           
+MMMMMMMM      MMMMMMMMMMMMMMMMMM .          FIND ME ON GITHUB - WSL - https://github.com/vinberg88
+MMMMMMMMM.       `MMMMMMMMMMMMM' MM.        
+MMMMMMMMMMM.                     MMMM       More desktops for WSL: https://github.com/vinberg88/opensuse
+`MMMMMMMMMMMMM.                 ,MMMMM.     
+ `MMMMMMMMMMMMMMMMM.          ,MMMMMMMM.    Mail: mattiasvinberg@duck.com
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    
+      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:    OS: Red Hat Enterprise Linux 10.2 (Coughlan) x86_64
+         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     
+            `MMMMMMMMMMMMMMMMMMMMMMMM:      Wsl info page - https://vinberg88.github.io
+                ``MMMMMMMMMMMMMMMMM'                                                                                      
+                                            RedHat 10 Install https://github.com/vinberg88/redhat/blob/main/REDHAT-INSTALL.txt ✅
+
+                                            DOWNLOAD REDHAT HERE: https://developers.redhat.com/products/rhel/download   
+
+------------------------------------------------------
+
+Continue by installing SNAPD Programs for RED HAT 10.2 - 2026 - JUST FOR FUN
+
+Copy and paste... 
+
+sudo snap install core
+
+sudo snap install snapd
+
+sudo snap install cursor-theme-catppuccin
+
+sudo snap install icon-theme-cat
+
+-----------------------------------
+
+Install LibreOffice for RED HAT 10.2 via flatpak. Nice Tools for MATE DESKTOP
+
+
+Copy and paste: sudo dnf install flatpak* -y --skip-broken --nobest
+
+Copy and paste: sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+Copy and paste: sudo flatpak install flathub org.libreoffice.LibreOffice
+
+-----------------------------------
+
+Gimp for RED HAT 10.2 - MUST TO HAVE FOR RED HAT 10.2 SO WE CAN PAINT - 2026
+
+sudo dnf copr enable jridky/gimp10 rhel-10-x86_64 -y
+
+sudo dnf install gimp -y
+
+-----------------------------------
+
+Copy and Paste in terminal for RED HAT 10.2 and MATE DESKTOP - 2026
+
+xdg-user-dirs-update
+sudo systemctl set-default graphical.target
+sudo ln -fs /usr/lib/systemd/system/graphical.target /etc/systemd/system/default.target
+
+-----------------------------------
+
+Small script for RED HAT 10.2 and mate deskop - 2026
+
+Type this in terminal and put your user-name there: sudo loginctl enable-linger adolf
+
+-------------------------------------------------------------
+
+INSTALL SOME MORE PROGRAMS FOR REDHAT 10.2
+
+sudo dnf install glib* dbus* ibus xhost wayland* dconf-editor curl wget git bash* zeal* librepo* -y
+
+-------------------------------------------------------------
+
+CREATE THIS SCRIPT FOR REDHAT 10.2
+
+Type in terminal: sudo nano ~/.bash_REDHAT_desktop
+
+Paste this in terminal and save:
+
+export XDG_SESSION_TYPE=x11
+export XDG_SESSION_CLASS=user
+export GDK_BACKEND=x11
+
+export LIBGL_ALWAYS_SOFTWARE=1
+
+------------------------------------------------------
+
+REBOOT REDHAT 10.2 - REBOOT RED HAT 10.2 - REBOOT REDHAT 10.2
+
+-----------------------------------
+
+Time to start MATE Desktop via RED HAT 10.2 - 2026
+
+
+NOTE - FIRST START X410 THEN YOU START REDHAT 10.2 VIA TERMINAL
+
+
+Copy and paste in Terminal: export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0
+
+Copy and paste in Terminal: . ~/.bash_REDHAT_desktop
+
+Paste in terminal: dbus-launch mate-session
+
+
+Takes time to start RED HAT 10.2 AND MATE DESKTOP - JUST WAIT IT WILL WORK FINE FOR WSL - 2026
+
+-----------------------------------
+
+Regards Mattias Vinberg - RED HAT 10.2 - MATE - x410 - Linux - Microsoft - Windows 11 - Sweden - 2026
+
+
+                                            OS FOR LINUX - REDHAT 10 AND MATE DESKTOP FOR WSL - Windows 11 - Sweden - 2026
+
+                                            RedHat WSL - GITHUB - https://github.com/vinberg88/redhat 🔟
+
+           .MMM..:MMMMMMM                   Host: Windows Subsystem for Linux - RedHatEnterpriseLinux-10.2 (2.9.12.0)
+          MMMMMMMMMMMMMMMMMM                
+          MMMMMMMMMMMMMMMMMMMM.             Kernel: Linux 6.18.40.1-microsoft-standard-WSL2
+         MMMMMMMMMMMMMMMMMMMMMM             
+        ,MMMMMMMMMMMMMMMMMMMMMM:            MEDIA MATTIAS VINBERG - STOCKHOLM - SWEDEN - 2026 - REDHAT 10 INC
+        MMMMMMMMMMMMMMMMMMMMMMMM            
+  .MMMM'  MMMMMMMMMMMMMMMMMMMMMM            OS: Windows 11 Pro for Workstations (25H2) x86_64 
+ MMMMMM    `MMMMMMMMMMMMMMMMMMMM.           
+MMMMMMMM      MMMMMMMMMMMMMMMMMM .          FIND ME ON GITHUB - WSL - https://github.com/vinberg88
+MMMMMMMMM.       `MMMMMMMMMMMMM' MM.        
+MMMMMMMMMMM.                     MMMM       More desktops for WSL: https://github.com/vinberg88/opensuse
+`MMMMMMMMMMMMM.                 ,MMMMM.     
+ `MMMMMMMMMMMMMMMMM.          ,MMMMMMMM.    Mail: mattiasvinberg@duck.com
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    
+      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:    OS: Red Hat Enterprise Linux 10.2 (Coughlan) x86_64
+         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     
+            `MMMMMMMMMMMMMMMMMMMMMMMM:      Wsl info page - https://vinberg88.github.io
+                ``MMMMMMMMMMMMMMMMM'                                                                                      
+                                            RedHat 10 Install https://github.com/vinberg88/redhat/blob/main/REDHAT-INSTALL.txt ✅
+
+                                            DOWNLOAD REDHAT HERE: https://developers.redhat.com/products/rhel/download   
+
+
+❤ Thank you for being a part of the RED HAT 10.2 and MATE DESKTOP Project for WSL2 ❤
+
+RED HAT 10.2 and RHEL are trademarks or registered trademarks of Red Hat, Inc - 2026
+                                        
+-----------------------------------
