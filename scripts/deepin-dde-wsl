@@ -1,0 +1,569 @@
+#!/usr/bin/env bash
+#
+# Installer and launcher for Deepin DDE on WSL2 through X410.
+# Tested with Deepin 25.x, systemd, DDE 7, X11 and X410.
+#
+# Install:
+#   bash deepin-dde-wsl install
+#   bash deepin-dde-wsl install --with-packages
+#
+# Use:
+#   deepin-dde start
+#   deepin-dde status
+#   deepin-dde doctor
+#   deepin-dde repair-network
+#   deepin-dde log
+#   deepin-dde stop
+
+set -Eeuo pipefail
+
+readonly VERSION="1.1.1"
+readonly INSTALL_DIR="${HOME}/.local/bin"
+readonly INSTALL_PATH="${INSTALL_DIR}/deepin-dde"
+readonly STATE_DIR="${HOME}/.local/state/deepin-dde-wsl"
+readonly LOG_FILE="${STATE_DIR}/deepin-dde.log"
+readonly PID_FILE="${STATE_DIR}/dde-session.pid"
+
+declare -a CORE_PACKAGES=(
+    dde-session
+    dde-shell
+    dde-kwin
+    dde-appearance
+    dde-file-manager
+    dde-control-center
+    dde-tray-loader
+    dde-launchpad
+    dde-grand-search
+    dde-polkit-agent
+    dde-session-shell
+    dde-session-ui
+    dde-daemon
+    dde-api
+    dde-app-services
+    dde-application-manager
+    dde-services
+    dde-desktop
+    dde-qt6platform-plugins
+    dde-wloutput
+    deepin-desktop-base
+    deepin-desktop-environment-base
+    deepin-desktop-theme
+    deepin-gtk-theme
+    deepin-icon-theme
+    deepin-wallpapers
+    deepin-sound-theme
+    deepin-anything
+    deepin-service-manager
+    deepin-terminal
+    dde-qt5integration
+    dde-qt5wayland-plugin
+    qt6-wayland
+    dbus-x11
+    x11-xserver-utils
+    fonts-noto-cjk
+)
+
+info() {
+    printf '\033[1;34m[deepin-dde]\033[0m %s\n' "$*"
+}
+
+ok() {
+    printf '\033[1;32m[deepin-dde]\033[0m %s\n' "$*"
+}
+
+warn() {
+    printf '\033[1;33m[deepin-dde]\033[0m %s\n' "$*" >&2
+}
+
+die() {
+    printf '\033[1;31m[deepin-dde]\033[0m %s\n' "$*" >&2
+    exit 1
+}
+
+have_command() {
+    command -v "$1" >/dev/null 2>&1
+}
+
+is_wsl() {
+    grep -qi microsoft /proc/sys/kernel/osrelease 2>/dev/null
+}
+
+unit_exists() {
+    systemctl --user cat "$1" >/dev/null 2>&1
+}
+
+install_packages() {
+    have_command apt-cache || die "APT hittades inte."
+    have_command sudo || die "sudo hittades inte."
+
+    local package
+    local -a available=()
+    local -a unavailable=()
+
+    info "Uppdaterar paketindex..."
+    sudo env -u BASH_ENV -u ENV apt update
+
+    for package in "${CORE_PACKAGES[@]}"; do
+        if apt-cache show "$package" >/dev/null 2>&1; then
+            available+=("$package")
+        else
+            unavailable+=("$package")
+        fi
+    done
+
+    ((${#available[@]} > 0)) ||
+        die "Inga DDE-paket hittades i de aktiva Deepin-förråden."
+
+    info "Installerar den verifierade DDE-kärnan (${#available[@]} paket)..."
+    sudo env -u BASH_ENV -u ENV apt install -y "${available[@]}"
+
+    if ((${#unavailable[@]} > 0)); then
+        warn "Dessa paket fanns inte i förrådet och hoppades över:"
+        printf '  %s\n' "${unavailable[@]}" >&2
+    fi
+
+    ok "DDE-paketen är installerade. dde-appearance ingår."
+}
+
+install_self() {
+    [[ ${EUID} -ne 0 ]] ||
+        die "Kör installationen som din vanliga användare, inte som root."
+
+    local with_packages="false"
+    shift
+    while (($#)); do
+        case "$1" in
+            --with-packages)
+                with_packages="true"
+                ;;
+            *)
+                die "Okänt installationsalternativ: $1"
+                ;;
+        esac
+        shift
+    done
+
+    if [[ "$with_packages" == "true" ]]; then
+        repair_network
+        install_packages
+        repair_network
+    fi
+
+    if [[ -e "${HOME}/.local" && ! -w "${HOME}/.local" ]]; then
+        die "${HOME}/.local ägs inte av användaren. Reparera med: sudo chown -R ${USER}:${USER} ${HOME}/.local"
+    fi
+
+    mkdir -p "$INSTALL_DIR" "$STATE_DIR"
+    install -m 0755 "${BASH_SOURCE[0]}" "$INSTALL_PATH"
+
+    if [[ ":${PATH}:" != *":${INSTALL_DIR}:"* ]]; then
+        if ! grep -Fq 'export PATH="$HOME/.local/bin:$PATH"' "${HOME}/.profile" 2>/dev/null; then
+            printf '\n# Lokala användarkommandon\nexport PATH="$HOME/.local/bin:$PATH"\n' \
+                >>"${HOME}/.profile"
+        fi
+        warn "Öppna en ny terminal eller kör:"
+        printf '  export PATH="$HOME/.local/bin:$PATH"\n' >&2
+    fi
+
+    ok "Installerad som ${INSTALL_PATH}"
+    info "Starta med: deepin-dde start"
+    info "Kontrollera först med: deepin-dde doctor"
+}
+
+tcp_port_open() {
+    local host="$1"
+    local port="$2"
+    timeout 1 bash -c "exec 3<>/dev/tcp/${host}/${port}" \
+        >/dev/null 2>&1
+}
+
+candidate_hosts() {
+    {
+        if [[ -n ${X410_HOST:-} ]]; then
+            printf '%s\n' "$X410_HOST"
+        fi
+
+        ip -4 route show default 2>/dev/null |
+            awk '{print $3}' |
+            head -n 1
+
+        awk '/^nameserver[[:space:]]+[0-9]+\./ {print $2}' \
+            /etc/resolv.conf 2>/dev/null
+
+        printf '%s\n' "127.0.0.1"
+    } | awk 'NF && !seen[$0]++'
+}
+
+find_x410_display() {
+    local host
+    local display_number
+    local port
+
+    if [[ -n ${X410_DISPLAY:-} ]]; then
+        printf '%s\n' "$X410_DISPLAY"
+        return 0
+    fi
+
+    while IFS= read -r host; do
+        for display_number in 0 1 2 3; do
+            port=$((6000 + display_number))
+            if tcp_port_open "$host" "$port"; then
+                printf '%s:%s.0\n' "$host" "$display_number"
+                return 0
+            fi
+        done
+    done < <(candidate_hosts)
+
+    return 1
+}
+
+configure_environment() {
+    local detected_display
+    detected_display=$(find_x410_display) || {
+        warn "X410 hittades inte på TCP-port 6000–6003."
+        warn "Starta X410, aktivera Allow Public Access och kontrollera Windows-brandväggen."
+        warn "Testa därefter: deepin-dde doctor"
+        return 1
+    }
+
+    export DISPLAY="$detected_display"
+    export XDG_RUNTIME_DIR="/run/user/$(id -u)"
+    export XDG_SESSION_TYPE="x11"
+    export XDG_CURRENT_DESKTOP="Deepin"
+    export XDG_SESSION_DESKTOP="deepin"
+    export DESKTOP_SESSION="deepin"
+    export QT_QPA_PLATFORM="xcb"
+    export GDK_BACKEND="x11"
+    export QT_X11_NO_MITSHM="1"
+    export LIBGL_ALWAYS_SOFTWARE="${DEEPIN_DDE_SOFTWARE_RENDERING:-1}"
+
+    unset WAYLAND_DISPLAY
+
+    if [[ -S /mnt/wslg/PulseServer ]]; then
+        export PULSE_SERVER="unix:/mnt/wslg/PulseServer"
+    elif [[ -S /mnt/wslg/runtime-dir/pulse/native ]]; then
+        export PULSE_SERVER="unix:/mnt/wslg/runtime-dir/pulse/native"
+    fi
+
+    [[ -d "$XDG_RUNTIME_DIR" ]] ||
+        die "${XDG_RUNTIME_DIR} saknas. Kontrollera att systemd är aktiverat i WSL."
+
+    if [[ -S "${XDG_RUNTIME_DIR}/bus" ]]; then
+        export DBUS_SESSION_BUS_ADDRESS="unix:path=${XDG_RUNTIME_DIR}/bus"
+    fi
+
+    ok "X410 hittades på DISPLAY=${DISPLAY}"
+}
+
+import_environment() {
+    local -a names=(
+        DISPLAY
+        XDG_RUNTIME_DIR
+        XDG_SESSION_TYPE
+        XDG_CURRENT_DESKTOP
+        XDG_SESSION_DESKTOP
+        DESKTOP_SESSION
+        QT_QPA_PLATFORM
+        GDK_BACKEND
+        QT_X11_NO_MITSHM
+        LIBGL_ALWAYS_SOFTWARE
+    )
+
+    if [[ -n ${PULSE_SERVER:-} ]]; then
+        names+=(PULSE_SERVER)
+    fi
+    if [[ -n ${DBUS_SESSION_BUS_ADDRESS:-} ]]; then
+        names+=(DBUS_SESSION_BUS_ADDRESS)
+    fi
+
+    systemctl --user import-environment "${names[@]}"
+    dbus-update-activation-environment --systemd "${names[@]}"
+}
+
+start_application_manager() {
+    local unit="org.desktopspec.ApplicationManager1.service"
+    if unit_exists "$unit"; then
+        systemctl --user start "$unit"
+        systemctl --user is-active --quiet "$unit" ||
+            die "Deepin Application Manager kunde inte starta. Kör: deepin-dde log"
+    else
+        warn "Application Manager-enheten saknas."
+    fi
+}
+
+start_visible_components() {
+    local unit
+    local -a units=(
+        dde-shell@DDE.service
+        dde-shell-plugin@org.deepin.ds.desktop.service
+        dde-polkit-agent.service
+        dde-file-manager.service
+        dde-autostart.service
+    )
+
+    for unit in "${units[@]}"; do
+        if unit_exists "$unit"; then
+            systemctl --user start "$unit" >/dev/null 2>&1 || true
+        fi
+    done
+}
+
+start_dde() {
+    [[ ${EUID} -ne 0 ]] ||
+        die "Starta DDE som din vanliga användare, inte som root."
+    is_wsl || die "Detta skript är avsett för WSL2."
+    [[ "$(ps -p 1 -o comm= 2>/dev/null | xargs)" == "systemd" ]] ||
+        die "systemd kör inte som PID 1. Aktivera systemd i /etc/wsl.conf."
+    have_command dde-session ||
+        die "dde-session saknas. Kör installeringen med --with-packages."
+    have_command xdpyinfo ||
+        die "xdpyinfo saknas. Installera x11-xserver-utils."
+    have_command dbus-update-activation-environment ||
+        die "dbus-update-activation-environment saknas. Installera dbus-x11."
+
+    if pgrep -u "$(id -u)" -x dde-session >/dev/null 2>&1; then
+        ok "DDE-sessionen kör redan."
+        show_status
+        return 0
+    fi
+
+    configure_environment
+    xdpyinfo >/dev/null 2>&1 ||
+        die "X410-porten svarar, men X11-anslutningen nekades. Kontrollera Allow Public Access."
+
+    import_environment
+
+    if systemctl is-active --quiet NetworkManager.service 2>/dev/null; then
+        warn "NetworkManager är aktiv och kan slå ut WSL-nätverket."
+        warn "Rekommenderad åtgärd: sudo systemctl disable --now NetworkManager.service"
+    fi
+
+    mkdir -p "$STATE_DIR"
+    systemctl --user reset-failed
+    start_application_manager
+
+    {
+        printf '\n============================================================\n'
+        printf 'Start: %s\n' "$(date --iso-8601=seconds)"
+        printf 'DISPLAY=%s\n' "$DISPLAY"
+        printf 'Version=%s\n' "$VERSION"
+    } >>"$LOG_FILE"
+
+    info "Startar Deepin DDE..."
+    nohup /usr/bin/dde-session >>"$LOG_FILE" 2>&1 &
+    printf '%s\n' "$!" >"$PID_FILE"
+
+    local attempt
+    for attempt in {1..20}; do
+        if systemctl --user is-active --quiet dde-session.target; then
+            start_visible_components
+            ok "Deepin DDE startade på ${DISPLAY}."
+            return 0
+        fi
+        if ! kill -0 "$(cat "$PID_FILE")" 2>/dev/null; then
+            tail -n 40 "$LOG_FILE" >&2 || true
+            die "dde-session avslutades oväntat."
+        fi
+        sleep 1
+    done
+
+    warn "DDE-processen kör, men dde-session.target blev inte aktiv inom 20 sekunder."
+    warn "Kontrollera med: deepin-dde status"
+    warn "Visa loggen med: deepin-dde log"
+}
+
+stop_dde() {
+    local unit
+    local -a units=(
+        dde-autostart.service
+        dde-file-manager.service
+        dde-polkit-agent.service
+        dde-shell-plugin@org.deepin.ds.desktop.service
+        dde-shell@DDE.service
+        dde-session.target
+    )
+
+    for unit in "${units[@]}"; do
+        if unit_exists "$unit"; then
+            systemctl --user stop "$unit" >/dev/null 2>&1 || true
+        fi
+    done
+
+    pkill -u "$(id -u)" -x dde-shell >/dev/null 2>&1 || true
+    pkill -u "$(id -u)" -x kwin_x11 >/dev/null 2>&1 || true
+    pkill -u "$(id -u)" -x dde-session >/dev/null 2>&1 || true
+    rm -f "$PID_FILE"
+    ok "DDE-sessionen är stoppad."
+}
+
+repair_network() {
+    have_command sudo || die "sudo hittades inte."
+    have_command systemctl || die "systemctl hittades inte."
+
+    info "Stoppar och maskerar NetworkManager för WSL..."
+    sudo systemctl disable --now NetworkManager.service \
+        >/dev/null 2>&1 || true
+    sudo systemctl disable --now NetworkManager-wait-online.service \
+        >/dev/null 2>&1 || true
+    sudo systemctl mask NetworkManager.service \
+        >/dev/null 2>&1 || true
+    sudo systemctl mask NetworkManager-wait-online.service \
+        >/dev/null 2>&1 || true
+
+    if systemctl is-enabled --quiet NetworkManager.service 2>/dev/null; then
+        warn "NetworkManager är fortfarande aktiverad."
+        return 1
+    fi
+
+    ok "NetworkManager är avstängd och maskerad."
+    warn "Slutför från PowerShell med: wsl --shutdown"
+}
+
+show_status() {
+    printf 'Deepin DDE WSL %s\n' "$VERSION"
+    printf 'PID 1:             %s\n' "$(ps -p 1 -o comm= 2>/dev/null | xargs)"
+    printf 'DISPLAY:           %s\n' "${DISPLAY:-inte satt i detta skal}"
+    printf 'DDE target:        '
+    systemctl --user is-active dde-session.target 2>/dev/null || true
+    printf 'ApplicationManager: '
+    systemctl --user is-active \
+        org.desktopspec.ApplicationManager1.service 2>/dev/null || true
+    printf '\nProcesser:\n'
+    pgrep -a -f \
+        'dde-session|dde-shell|kwin_x11|dde-file-manager' ||
+        printf '  Inga DDE-processer hittades.\n'
+    printf '\nMisslyckade användartjänster:\n'
+    systemctl --user --failed --no-pager || true
+}
+
+doctor() {
+    local failed="false"
+    local command_name
+    local package
+    local display
+
+    printf 'Deepin DDE WSL doctor %s\n\n' "$VERSION"
+
+    if is_wsl; then
+        ok "WSL upptäcktes."
+    else
+        warn "WSL kunde inte identifieras."
+        failed="true"
+    fi
+
+    if [[ "$(ps -p 1 -o comm= 2>/dev/null | xargs)" == "systemd" ]]; then
+        ok "systemd kör som PID 1."
+    else
+        warn "systemd kör inte som PID 1."
+        failed="true"
+    fi
+
+    for command_name in dde-session dde-shell kwin_x11 xdpyinfo \
+        systemctl dbus-update-activation-environment; do
+        if have_command "$command_name"; then
+            ok "Kommando: $command_name"
+        else
+            warn "Saknat kommando: $command_name"
+            failed="true"
+        fi
+    done
+
+    for package in dde-appearance dde-control-center dde-tray-loader; do
+        if dpkg-query -W -f='${Status}' "$package" 2>/dev/null |
+            grep -q 'install ok installed'; then
+            ok "Paket: $package"
+        else
+            warn "Saknat viktigt paket: $package"
+            failed="true"
+        fi
+    done
+
+    if display=$(find_x410_display); then
+        ok "X410 svarar på ${display}."
+    else
+        warn "X410 svarar inte på TCP-port 6000–6003."
+        failed="true"
+    fi
+
+    if systemctl is-active --quiet NetworkManager.service 2>/dev/null; then
+        warn "NetworkManager är aktiv; WSL-nätverket kan påverkas."
+    else
+        ok "NetworkManager är inte aktiv."
+    fi
+
+    if [[ "$failed" == "true" ]]; then
+        return 1
+    fi
+
+    printf '\n'
+    ok "Kontrollen är godkänd."
+}
+
+show_log() {
+    if [[ -f "$LOG_FILE" ]]; then
+        tail -n "${DEEPIN_DDE_LOG_LINES:-150}" "$LOG_FILE"
+    else
+        warn "Ingen logg finns ännu: ${LOG_FILE}"
+    fi
+}
+
+show_help() {
+    cat <<EOF
+Deepin DDE på WSL2 genom X410, version ${VERSION}
+
+Användning:
+  deepin-dde install [--with-packages]  Installera kommandot
+  deepin-dde start                      Starta DDE
+  deepin-dde status                     Visa status
+  deepin-dde doctor                     Kontrollera system och X410
+  deepin-dde repair-network             Skydda WSL-nätverket från NetworkManager
+  deepin-dde log                        Visa senaste loggen
+  deepin-dde stop                       Stoppa DDE
+  deepin-dde version                    Visa version
+
+Miljövariabler:
+  X410_HOST=<ip>                         Tvinga Windows/X410-adress
+  X410_DISPLAY=<ip:display.0>            Tvinga komplett DISPLAY
+  DEEPIN_DDE_SOFTWARE_RENDERING=0        Tillåt hårdvarurendering
+  DEEPIN_DDE_LOG_LINES=<antal>           Antal rader för log-kommandot
+EOF
+}
+
+main() {
+    local action="${1:-help}"
+    case "$action" in
+        install)
+            install_self "$@"
+            ;;
+        start)
+            start_dde
+            ;;
+        status)
+            show_status
+            ;;
+        doctor)
+            doctor
+            ;;
+        repair-network)
+            repair_network
+            ;;
+        log)
+            show_log
+            ;;
+        stop)
+            stop_dde
+            ;;
+        version|--version|-V)
+            printf '%s\n' "$VERSION"
+            ;;
+        help|--help|-h)
+            show_help
+            ;;
+        *)
+            show_help >&2
+            exit 2
+            ;;
+    esac
+}
+
+main "$@"
