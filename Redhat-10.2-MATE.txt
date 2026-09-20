@@ -4,7 +4,7 @@ How to install Mate desktop via REDHAT 10.2 - TEXT VIA GITHUB 🔟
 https://github.com/vinberg88/redhat/blob/main/Redhat-10.2-MATE.txt
 
 How to install Mate desktop via REDHAT 10.2 - MOVIE VIA YOTUBE 🔟
-Comming SONE....
+https://www.youtube.com/watch?v=O2GpyQVSbKw
 
 SAME SETUP FOR KDE, GNOME AND MATE TO START REDHAT 10 - See more here: https://github.com/vinberg88/redhat
 
