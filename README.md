@@ -316,7 +316,7 @@ Modern WSL2 can run **systemd**, which is what makes services and full desktop-s
 
 | Desktop | Style | Display target | Status |
 |---|---|---|---|
-| 🟢 **MATE** | Traditional, lightweight | X410 / X11 | Comming SONE |
+| 🟢 **MATE** | Traditional, lightweight | X410 / X11 | DONE |
 | 🔵 **GNOME** | Modern RHEL-style workstation | WSLg / X11 experiments | Comming SONE |
 | 🟣 **KDE Plasma 6** | Feature-rich, highly customizable | X410 / X11 | 🧪 Launcher available |
 
@@ -333,8 +333,8 @@ How to install Mate desktop via REDHAT 10.2 - TEXT VIA GITHUB 🔟
 https://github.com/vinberg88/redhat/blob/main/Redhat-10.2-MATE.txt
 
 How to install Mate desktop via REDHAT 10.2 - MOVIE VIA YOTUBE 🔟
-Comming SONE....
 
+https://www.youtube.com/watch?v=O2GpyQVSbKw
 
 ### Planned MATE guide
 
