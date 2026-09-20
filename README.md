@@ -322,15 +322,15 @@ Modern WSL2 can run **systemd**, which is what makes services and full desktop-s
 
 ---
 
-## 🟢 MATE Desktop - Full install is sone done - REDHAT 10
+## 🟢 MATE Desktop - REDHAT 10 - FOR WSL and WINDOWS 11
 
 MATE is a strong WSL candidate: a complete traditional desktop without an especially heavy graphics stack.
 
 <img width="1920" height="1080" alt="Redhat-10 2-MATE" src="https://github.com/user-attachments/assets/6329c1a8-ab34-4f64-92cf-fd169f1de2f5" />
 
-
 How to install Mate desktop via REDHAT 10.2 - TEXT VIA GITHUB 🔟
-Comming SONE....
+
+https://github.com/vinberg88/redhat/blob/main/Redhat-10.2-MATE.txt
 
 How to install Mate desktop via REDHAT 10.2 - MOVIE VIA YOTUBE 🔟
 Comming SONE....
